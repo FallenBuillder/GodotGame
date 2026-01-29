@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bhch1otofhdas"]
+
+[ext_resource type="Texture2D" uid="uid://d35i2xj5t7coi" path="res://Game/Graphics/PNG/Default size/towerDefense_tile270.png" id="1_c0ks2"]
+[ext_resource type="Script" uid="uid://c5m7nx6y2w0dh" path="res://Game/scenes/enemies/enemy.gd" id="1_j3o3s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ggmf4"]
+radius = 24.020824
+
+[node name="Enemy" type="Area2D" unique_id=1599528463]
+collision_mask = 2
+script = ExtResource("1_j3o3s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1630522285]
+texture = ExtResource("1_c0ks2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1831596445]
+visibility_layer = 2
+shape = SubResource("CircleShape2D_ggmf4")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

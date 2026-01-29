@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://db2116w3cvmor"]
+
+[ext_resource type="PackedScene" uid="uid://dmn23jsx7gk7e" path="res://Game/scenes/Towers/tower.tscn" id="1_4kh0h"]
+[ext_resource type="Texture2D" uid="uid://b1ubanwitukpj" path="res://Game/Graphics/PNG/Default size/towerDefense_tile249.png" id="2_4p8e4"]
+[ext_resource type="Script" uid="uid://fmtlvh6aw2at" path="res://Game/scenes/Towers/tower_basic.gd" id="2_wp2q1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wp2q1"]
+radius = 237.10335
+
+[node name="TowerBasic" unique_id=1403865122 instance=ExtResource("1_4kh0h")]
+script = ExtResource("2_wp2q1")
+
+[node name="Base" parent="." index="0" unique_id=1160422813]
+position = Vector2(128, 263)
+
+[node name="Turret" parent="." index="1" unique_id=886214313]
+texture = ExtResource("2_4p8e4")
+
+[node name="CollisionShape2D" parent="EnemyDetectionArea" parent_id_path=PackedInt32Array(3900119) index="0" unique_id=1157741288]
+shape = SubResource("CircleShape2D_wp2q1")
+
+[node name="ReloadTimer" parent="." index="3" unique_id=1370904565]
+wait_time = 0.301
+
+[connection signal="timeout" from="ReloadTimer" to="." method="_on_reload_timer_timeout"]
