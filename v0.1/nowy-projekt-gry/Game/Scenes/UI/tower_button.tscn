@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://5v5gpfnnyso4"]
+
+[ext_resource type="Script" uid="uid://dfncswohokwga" path="res://Game/Scenes/UI/tower_button.gd" id="1_ct5id"]
+[ext_resource type="Texture2D" uid="uid://djhlvhgxl1bag" path="res://Game/Graphics/PNG/Default size/towerDefense_tile247.png" id="2_cbvvf"]
+
+[node name="Panel" type="Panel" unique_id=446331340]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ct5id")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=622364912]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer" unique_id=386576343]
+layout_mode = 2
+texture = ExtResource("2_cbvvf")
+expand_mode = 4
+
+[node name="NameLabel" type="Label" parent="VBoxContainer" unique_id=215838359]
+layout_mode = 2
+text = "Basic"
+
+[node name="CostLabel" type="Label" parent="VBoxContainer" unique_id=1779134763]
+layout_mode = 2
+text = "100$"
