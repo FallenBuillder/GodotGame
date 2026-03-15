@@ -5,7 +5,7 @@ v0.1 changes:
 - changed tower AI
 - quality of life
 
-v0.2 chnages:
+v0.2 changes:
 - 
 
 To add:
