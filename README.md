@@ -1,10 +1,12 @@
-Added version 0.1, all old files are in version 0.0  
 v0.1 changes:
 - redone all scripts
 - added basic UI
 - new and quicker way of adding new towers and enemies
 - changed tower AI
 - quality of life
+
+v0.2 chnages:
+- 
 
 To add:
 - more enemies
