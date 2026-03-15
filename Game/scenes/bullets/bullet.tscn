@@ -1,17 +1,16 @@
 [gd_scene format=3 uid="uid://dtx7qqlh5nlno"]
 
-[ext_resource type="Texture2D" uid="uid://d12jpps7jbp4" path="res://Game/Graphics/PNG/Default size/towerDefense_tile274.png" id="1_ixw4u"]
-[ext_resource type="Script" uid="uid://b746nq7lfct4x" path="res://Game/scenes/bullets/bullet.gd" id="1_ric48"]
+[ext_resource type="Script" uid="uid://b8kjs3wurgqrj" path="res://Game/Scenes/Bullets/bullet.gd" id="1_rftlv"]
+[ext_resource type="Texture2D" uid="uid://cfuvhpbj7ofcw" path="res://Game/Graphics/PNG/Default size/towerDefense_tile275.png" id="2_4yeqf"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ric48"]
-size = Vector2(18, 18)
+[sub_resource type="CircleShape2D" id="CircleShape2D_3h6b2"]
+radius = 9.055386
 
-[node name="Bullet" type="Area2D" unique_id=1080667549]
-collision_layer = 2
-script = ExtResource("1_ric48")
+[node name="Bullet" type="Area2D" unique_id=1583972615]
+script = ExtResource("1_rftlv")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=411085575]
-texture = ExtResource("1_ixw4u")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1134165799]
+texture = ExtResource("2_4yeqf")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=35947343]
-shape = SubResource("RectangleShape2D_ric48")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=998652334]
+shape = SubResource("CircleShape2D_3h6b2")

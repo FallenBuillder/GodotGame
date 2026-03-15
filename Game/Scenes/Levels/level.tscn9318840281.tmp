@@ -27,7 +27,6 @@ script = ExtResource("2_5ay8n")
 
 [node name="Tower" parent="turrets" unique_id=1376173315 instance=ExtResource("1_t3fsi")]
 position = Vector2(-195, -46)
-detection_range = 200.0
 
 [node name="SpawnButton" type="Button" parent="." unique_id=1458153123]
 offset_left = -742.0

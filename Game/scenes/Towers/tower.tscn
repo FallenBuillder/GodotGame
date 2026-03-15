@@ -1,22 +1,32 @@
-[gd_scene format=3 uid="uid://dmn23jsx7gk7e"]
+[gd_scene format=3 uid="uid://b27jxtafmygk2"]
 
-[ext_resource type="Script" uid="uid://iudieaxuqsp2" path="res://Game/scenes/Towers/tower.gd" id="1_hexds"]
+[ext_resource type="Script" uid="uid://7w8crscepu3h" path="res://Game/Scenes/Towers/tower.gd" id="1_jju6k"]
+[ext_resource type="PackedScene" uid="uid://dtx7qqlh5nlno" path="res://Game/Scenes/Bullets/bullet.tscn" id="2_caycw"]
+[ext_resource type="Texture2D" uid="uid://djhlvhgxl1bag" path="res://Game/Graphics/PNG/Default size/towerDefense_tile247.png" id="2_tb7mp"]
 
-[node name="Tower" type="Node2D" unique_id=1403865122]
-script = ExtResource("1_hexds")
+[sub_resource type="CircleShape2D" id="CircleShape2D_tb7mp"]
+radius = 79.15807
 
-[node name="Base" type="Sprite2D" parent="." unique_id=1160422813]
-rotation = 3.1415927
+[sub_resource type="CircleShape2D" id="CircleShape2D_caycw"]
+radius = 14.0
 
-[node name="Turret" type="Sprite2D" parent="." unique_id=886214313]
+[node name="Tower" type="Node2D" unique_id=1376173315]
+script = ExtResource("1_jju6k")
+detection_range = 298.4
+projectile_speed = 750
+bullet_scene = ExtResource("2_caycw")
 
-[node name="EnemyDetectionArea" type="Area2D" parent="." unique_id=3900119]
-collision_layer = 0
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=707101222]
+texture = ExtResource("2_tb7mp")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyDetectionArea" unique_id=1157741288]
+[node name="Area2D" type="Area2D" parent="." unique_id=268038414]
 
-[node name="ReloadTimer" type="Timer" parent="." unique_id=1370904565]
-autostart = true
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1496828702]
+shape = SubResource("CircleShape2D_tb7mp")
 
-[connection signal="area_entered" from="EnemyDetectionArea" to="." method="_on_enemy_detection_area_area_entered"]
-[connection signal="area_exited" from="EnemyDetectionArea" to="." method="_on_enemy_detection_area_area_exited"]
+[node name="PlacementArea" type="Area2D" parent="." unique_id=449447161]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlacementArea" unique_id=1546877400]
+shape = SubResource("CircleShape2D_caycw")

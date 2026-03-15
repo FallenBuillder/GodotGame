@@ -1,20 +1,17 @@
-[gd_scene format=3 uid="uid://bhch1otofhdas"]
+[gd_scene format=3 uid="uid://bpivj5nb274ls"]
 
-[ext_resource type="Texture2D" uid="uid://d35i2xj5t7coi" path="res://Game/Graphics/PNG/Default size/towerDefense_tile270.png" id="1_c0ks2"]
-[ext_resource type="Script" uid="uid://c5m7nx6y2w0dh" path="res://Game/scenes/enemies/enemy.gd" id="1_j3o3s"]
+[ext_resource type="Texture2D" uid="uid://ctba8s06xljnt" path="res://Game/Graphics/PNG/Default size/towerDefense_tile183.png" id="1_lhxl4"]
+[ext_resource type="Script" uid="uid://c5m7nx6y2w0dh" path="res://Game/Scenes/Enemies/enemy.gd" id="1_mk3ek"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ggmf4"]
-radius = 24.020824
+[sub_resource type="CircleShape2D" id="CircleShape2D_mk3ek"]
+radius = 27.018513
 
-[node name="Enemy" type="Area2D" unique_id=1599528463]
-collision_mask = 2
-script = ExtResource("1_j3o3s")
+[node name="Enemy" type="Area2D" unique_id=1010572463]
+script = ExtResource("1_mk3ek")
+health = 50
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1630522285]
-texture = ExtResource("1_c0ks2")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=242599431]
+texture = ExtResource("1_lhxl4")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1831596445]
-visibility_layer = 2
-shape = SubResource("CircleShape2D_ggmf4")
-
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=134822881]
+shape = SubResource("CircleShape2D_mk3ek")
