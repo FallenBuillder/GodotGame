@@ -1,14 +1,14 @@
 # Changelog
 
+## v0.2 changes:
+- 
+
 ## v0.1 changes:
 - redone all scripts
 - added basic UI
 - new and quicker way of adding new towers and enemies
 - changed tower AI
 - quality of life
-
-## v0.2 changes:
-- 
 
 ### To add:
 - more enemies
