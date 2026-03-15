@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://btffn13n21ei4"]
+
+[ext_resource type="Script" uid="uid://dm2s8i4h1lbtg" path="res://Game/scenes/Levels/level.gd" id="1_572hm"]
+[ext_resource type="PackedScene" uid="uid://db2116w3cvmor" path="res://Game/scenes/Towers/tower_basic.tscn" id="2_e17ym"]
+
+[sub_resource type="Curve2D" id="Curve2D_icuji"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 123, 106, 0, 0, 0, 0, 326, 108, 0, 0, 0, 0, 329, 410, 0, 0, 0, 0, 667, 412, 0, 0, 0, 0, 665, 212, 0, 0, 0, 0, 908, 218)
+}
+point_count = 6
+
+[node name="Level" type="Node2D" unique_id=1554566763]
+position = Vector2(739, 477)
+script = ExtResource("1_572hm")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=616553916]
+position = Vector2(-722.23694, -559.13074)
+scale = Vector2(1.4165604, 2.1993463)
+curve = SubResource("Curve2D_icuji")
+
+[node name="towers" type="Node2D" parent="." unique_id=1805127741]
+
+[node name="TowerBasic" parent="towers" unique_id=1403865122 instance=ExtResource("2_e17ym")]
+position = Vector2(-116, 214)
+
+[node name="Bullets" type="Node2D" parent="." unique_id=370150491]
