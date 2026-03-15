@@ -1,4 +1,4 @@
-Added version 0.1, all old files are in version 0.0
+Added version 0.1, all old files are in version 0.0  
 v0.1 changes:
 - redone all scripts
 - added basic UI
