@@ -3,9 +3,10 @@ Added:
 - Home Screen with 4 options Play , Quit , Settings , Collection
 - Basic Wave system
 - quality of life improvments
+
 Removed:
 
-*
+None
 
 To add:
 - button for going back to the home screen thjat also freezes the game
