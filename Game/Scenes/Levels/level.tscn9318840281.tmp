@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://btffn13n21ei4"]
+
+[ext_resource type="Script" uid="uid://dm2s8i4h1lbtg" path="res://Game/Scenes/Levels/level.gd" id="1_1g2lx"]
+[ext_resource type="PackedScene" uid="uid://b27jxtafmygk2" path="res://Game/Scenes/Towers/tower.tscn" id="1_t3fsi"]
+[ext_resource type="Script" uid="uid://f2i38jt7h6b" path="res://Game/Scenes/Levels/path_2d.gd" id="2_5ay8n"]
+[ext_resource type="PackedScene" uid="uid://dnxg1vwdmfm84" path="res://Game/Scenes/UI/ui.tscn" id="3_oyfj6"]
+[ext_resource type="PackedScene" uid="uid://dffe8tinbocvx" path="res://Game/Scenes/UI/tower_shop.tscn" id="4_1ywok"]
+
+[sub_resource type="Curve2D" id="Curve2D_xgo2x"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 206, -4, 0, 0, 0, 0, 649, 0, 0, 0, 0, 0, 651, 393, 0, 0, 0, 0, 999, 395, 0, 0, 0, 0, 998, -11, 0, 0, 0, 0, 1492, 0)
+}
+point_count = 6
+
+[node name="Level" type="Node2D" unique_id=1551246077]
+script = ExtResource("1_1g2lx")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=746235040]
+position = Vector2(-899.5793, -241.50616)
+scale = Vector2(1, 1.0344827)
+curve = SubResource("Curve2D_xgo2x")
+script = ExtResource("2_5ay8n")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=936545561]
+
+[node name="turrets" type="Node" parent="." unique_id=662301070]
+
+[node name="Tower" parent="turrets" unique_id=1376173315 instance=ExtResource("1_t3fsi")]
+position = Vector2(-195, -46)
+
+[node name="SpawnButton" type="Button" parent="." unique_id=1458153123]
+offset_left = -742.0
+offset_top = -406.0
+offset_right = -626.0
+offset_bottom = -375.0
+text = "Spawn Enemy"
+
+[node name="UI" parent="." unique_id=283741080 instance=ExtResource("3_oyfj6")]
+
+[node name="Tower Shop" parent="." unique_id=1746240896 instance=ExtResource("4_1ywok")]

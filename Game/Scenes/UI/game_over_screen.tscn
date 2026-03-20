@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dbnrdau0t1gqw"]
+
+[ext_resource type="Script" uid="uid://6h2i255kyj5h" path="res://Game/Scenes/UI/restart_button.gd" id="1_xs2ah"]
+
+[node name="GameOverScreen" type="Node2D" unique_id=1830817111]
+
+[node name="Panel" type="Panel" parent="." unique_id=488400421]
+offset_right = 1501.0
+offset_bottom = 1000.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=1276544951]
+layout_mode = 0
+offset_left = 494.0
+offset_top = 328.0
+offset_right = 953.0
+offset_bottom = 438.0
+theme_override_colors/font_color = Color(1, 0.08235294, 0.043137256, 1)
+theme_override_font_sizes/font_size = 80
+text = "GAME OVER"
+
+[node name="restart_button" type="Button" parent="Panel" unique_id=814596956]
+process_mode = 3
+layout_mode = 0
+offset_left = 641.0
+offset_top = 440.0
+offset_right = 828.0
+offset_bottom = 471.0
+text = "Restart"
+script = ExtResource("1_xs2ah")
+
+[connection signal="pressed" from="Panel/restart_button" to="Panel/restart_button" method="_on_pressed"]
