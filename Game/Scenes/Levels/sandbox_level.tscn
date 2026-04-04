@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://c4vbwijqd03oe"]
+
+[ext_resource type="Script" uid="uid://bmqjmf4c88w7s" path="res://Game/Scripts/Levels/sandbox_level.gd" id="1_q18a4"]
+[ext_resource type="Script" uid="uid://f2i38jt7h6b" path="res://Game/Scripts/Levels/path_2d.gd" id="2_phros"]
+[ext_resource type="PackedScene" uid="uid://bv37lnnncwab8" path="res://Game/Scenes/UI/Game UI/General UI/game_ui.tscn" id="3_yg0r4"]
+[ext_resource type="PackedScene" uid="uid://dffe8tinbocvx" path="res://Game/Scenes/UI/Game UI/Tower Shop/tower_shop.tscn" id="4_1s57v"]
+[ext_resource type="PackedScene" uid="uid://bswmmidd7f07y" path="res://Game/Scenes/UI/Game UI/Tower Info/tower_info.tscn" id="5_c0hqv"]
+[ext_resource type="Script" uid="uid://6tlb0r58pfje" path="res://Game/Scripts/UI/Game UI/Enemy Shop/enemy_shop_button.gd" id="6_lx7n3"]
+
+[sub_resource type="Curve2D" id="Curve2D_y1dnx"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 206, -4, 0, 0, 0, 0, 649, 0, 0, 0, 0, 0, 651, 393, 0, 0, 0, 0, 999, 395, 0, 0, 0, 0, 998, -11, 0, 0, 0, 0, 1492, 0)
+}
+point_count = 6
+
+[node name="Sandbox Level" type="Node2D" unique_id=1852185902]
+script = ExtResource("1_q18a4")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=1691544683]
+position = Vector2(-899.5793, -241.50616)
+scale = Vector2(1, 1.0344827)
+curve = SubResource("Curve2D_y1dnx")
+script = ExtResource("2_phros")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=717306517]
+
+[node name="Game UI" parent="." unique_id=1372351205 instance=ExtResource("3_yg0r4")]
+
+[node name="Tower Shop" parent="." unique_id=1746240896 instance=ExtResource("4_1s57v")]
+
+[node name="Tower Info" parent="." unique_id=1116105594 instance=ExtResource("5_c0hqv")]
+
+[node name="Enemy Shop Button" type="Button" parent="." unique_id=6494378]
+offset_left = 225.0
+offset_top = 118.0
+offset_right = 385.0
+offset_bottom = 149.0
+text = "Enemy shop Button"
+script = ExtResource("6_lx7n3")

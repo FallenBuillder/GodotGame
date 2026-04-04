@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://d3qy8scbxu4ac"]
+
+[ext_resource type="Script" uid="uid://bl11s3enrbdps" path="res://Game/Scripts/UI/Menus/Collection/collection_info_popup.gd" id="1_d5v6a"]
+
+[node name="Collection Info" type="CanvasLayer" unique_id=543404747]
+script = ExtResource("1_d5v6a")
+
+[node name="Panel" type="Panel" parent="." unique_id=1777856384]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1406351688]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Name" type="Label" parent="Panel/VBoxContainer" unique_id=2067081188]
+layout_mode = 2
+
+[node name="Sprite" type="TextureRect" parent="Panel/VBoxContainer" unique_id=941798833]
+layout_mode = 2
+
+[node name="Stats" type="Label" parent="Panel/VBoxContainer" unique_id=419158098]
+layout_mode = 2
+
+[node name="Close" type="Button" parent="Panel/VBoxContainer" unique_id=908962748]
+layout_mode = 2
+text = "Close"

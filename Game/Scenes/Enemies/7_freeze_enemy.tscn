@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://6g0bjpfuhhms"]
+
+[ext_resource type="Script" uid="uid://c5m7nx6y2w0dh" path="res://Game/Scripts/Enemies/enemy.gd" id="1_tdgj6"]
+[ext_resource type="Texture2D" uid="uid://cvsjggx32eqtu" path="res://Graphics/PNG/Default size/towerDefense_tile283.png" id="2_iwekg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mk3ek"]
+radius = 27.018513
+
+[node name="7 Freeze Enemy" type="Area2D" unique_id=1010572463]
+script = ExtResource("1_tdgj6")
+enemy_id = 7
+speed = 140.0
+health = 1
+damage = 11
+damage_immunities = Array[int]([2])
+child_enemy_ids = Array[int]([5, 5])
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=242599431]
+texture = ExtResource("2_iwekg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=134822881]
+shape = SubResource("CircleShape2D_mk3ek")
