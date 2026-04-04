@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://dw6vobju81miu"]
+
+[ext_resource type="Script" uid="uid://disuy6qnllcb4" path="res://Game/Scripts/UI/Menus/Stage Selector/stage_selector.gd" id="1_ufxhx"]
+
+[node name="Stage Selector" type="Control" unique_id=994455421]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ufxhx")
+
+[node name="Overlay" type="ColorRect" parent="." unique_id=1068356660]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.09803922)
+
+[node name="ExitButton" type="Button" parent="." unique_id=681750737]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 73.0
+offset_right = 142.0
+offset_bottom = 123.0
+text = "Exit"
+
+[node name="DebugStage" type="Button" parent="." unique_id=2045343972]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 79.0
+offset_right = 582.0
+offset_bottom = 129.0
+theme_override_font_sizes/font_size = 23
+text = "Debug Level"
+
+[node name="Tutorial" type="Button" parent="." unique_id=1284496963]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 795.0
+offset_right = 428.0
+offset_bottom = 873.0
+theme_override_font_sizes/font_size = 51
+text = "Tutorial"
+
+[node name="Level1" type="Button" parent="." unique_id=2014403188]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 517.0
+offset_right = 574.0
+offset_bottom = 595.0
+theme_override_font_sizes/font_size = 51
+text = "Level 1"
+
+[node name="Level2" type="Button" parent="." unique_id=2120768723]
+layout_mode = 0
+offset_left = 876.0
+offset_top = 651.0
+offset_right = 1054.0
+offset_bottom = 729.0
+theme_override_font_sizes/font_size = 51
+text = "Level 2"
+
+[node name="Level3" type="Button" parent="." unique_id=533577713]
+layout_mode = 0
+offset_left = 797.0
+offset_top = 222.0
+offset_right = 975.0
+offset_bottom = 300.0
+theme_override_font_sizes/font_size = 51
+text = "Level 3"
+
+[node name="Level4" type="Button" parent="." unique_id=1435814081]
+layout_mode = 0
+offset_left = 1258.0
+offset_top = 373.0
+offset_right = 1436.0
+offset_bottom = 451.0
+theme_override_font_sizes/font_size = 51
+text = "Level 4"
+
+[node name="Level5" type="Button" parent="." unique_id=1117687762]
+layout_mode = 0
+offset_left = 1565.0
+offset_top = 135.0
+offset_right = 1743.0
+offset_bottom = 213.0
+theme_override_font_sizes/font_size = 51
+text = "Level 5"
+
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="DebugStage" to="." method="_on_debug_stage_pressed"]
+[connection signal="pressed" from="Tutorial" to="." method="_on_tutorial_pressed"]
+[connection signal="pressed" from="Level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="Level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="Level5" to="." method="_on_level_5_pressed"]

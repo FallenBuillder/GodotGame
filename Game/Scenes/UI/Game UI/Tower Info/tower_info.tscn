@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bswmmidd7f07y"]
+
+[ext_resource type="Script" uid="uid://7xa5wc1c47mr" path="res://Game/Scripts/UI/Game UI/Tower Info/tower_info.gd" id="1_rksre"]
+
+[node name="Tower Info" type="CanvasLayer" unique_id=1116105594]
+script = ExtResource("1_rksre")
+
+[node name="Panel" type="Panel" parent="." unique_id=204206837]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -127.0
+offset_right = 0.7199707
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=333084070]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TowerNameLabel" type="Label" parent="Panel/VBoxContainer" unique_id=2146423829]
+layout_mode = 2
+
+[node name="DamageLabel" type="Label" parent="Panel/VBoxContainer" unique_id=278431140]
+layout_mode = 2
+
+[node name="FocusModeContainer" type="HBoxContainer" parent="Panel/VBoxContainer" unique_id=808206659]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="PrevButton" type="Button" parent="Panel/VBoxContainer/FocusModeContainer" unique_id=1716235229]
+layout_mode = 2
+text = "<"
+
+[node name="FocusModeLabel" type="Label" parent="Panel/VBoxContainer/FocusModeContainer" unique_id=270885385]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "First"
+horizontal_alignment = 1
+
+[node name="NextButton" type="Button" parent="Panel/VBoxContainer/FocusModeContainer" unique_id=550295367]
+layout_mode = 2
+text = ">"
+
+[node name="SellButton" type="Button" parent="Panel/VBoxContainer" unique_id=1193050798]
+layout_mode = 2
+text = "Sell
+"
+
+[connection signal="pressed" from="Panel/VBoxContainer/FocusModeContainer/PrevButton" to="." method="_on_prev_button_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/FocusModeContainer/NextButton" to="." method="_on_next_button_pressed"]
