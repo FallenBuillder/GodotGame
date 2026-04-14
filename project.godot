@@ -19,14 +19,18 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 GameManager="*uid://c7xjnp7hyl6h4"
 WaveManager="*uid://7n2pgs7v4ska"
 SettingsManager="*uid://b4ikp3bcy10c"
+ScreenManager="*uid://xn5m1y0fu2pj"
+ProgressManager="*uid://ccj85gsi852mx"
+CollectionData="*uid://c4aoha58r2mg3"
+PlacementManager="*uid://di455vn5brsuv"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=3
-window/stretch/mode="viewport"
-window/stretch/aspect="expand"
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_width"
 
 [physics]
 

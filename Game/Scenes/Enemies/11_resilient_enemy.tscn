@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bpfbctmqlnaw4"]
+
+[ext_resource type="Script" uid="uid://c5m7nx6y2w0dh" path="res://Game/Scripts/Enemies/enemy.gd" id="1_f1r0j"]
+[ext_resource type="Texture2D" uid="uid://cejhbovn38tfi" path="res://Game/Graphics/Enemies/11 Resilient/SerResiliantBasicCeramic.png" id="2_f1r0j"]
+[ext_resource type="Texture2D" uid="uid://b6xm5ymsekox1" path="res://Game/Graphics/Enemies/11 Resilient/SerResiliantBasicCeramicRegen.png" id="2_few3c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mk3ek"]
+radius = 13.0
+
+[node name="11 Resilient Enemy" type="Area2D" unique_id=1010572463]
+texture_filter = 1
+script = ExtResource("1_f1r0j")
+enemy_name = "Parmesan"
+enemy_id = 11
+speed = 175.0
+health = 10
+damage = 104
+regen_texture = ExtResource("2_few3c")
+child_enemy_ids = Array[int]([10, 10])
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=242599431]
+position = Vector2(1.42, 0)
+texture = ExtResource("2_f1r0j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=134822881]
+shape = SubResource("CircleShape2D_mk3ek")

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://do0yg8cj1f5ce"]
+
+[ext_resource type="Script" uid="uid://b8kjs3wurgqrj" path="res://Game/Scripts/Projectiles/bullet.gd" id="1_m2ecp"]
+[ext_resource type="Texture2D" uid="uid://byjcb7em0rq3x" path="res://Game/Graphics/Projectiles/Sniper/AtakSnajperLVL4.png" id="2_m2ecp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iq5f1"]
+size = Vector2(9, 6)
+
+[node name="Bullet" type="Area2D" unique_id=1583972615]
+script = ExtResource("1_m2ecp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1134165799]
+texture = ExtResource("2_m2ecp")
+offset = Vector2(0, -0.425)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=998652334]
+shape = SubResource("RectangleShape2D_iq5f1")

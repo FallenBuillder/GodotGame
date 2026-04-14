@@ -2,9 +2,9 @@ extends Button
 
 @export var bus_name: String = "Master"
 
-var icon_music  = preload("res://Graphics/PNG/Default size/towerDefense_tile018.png")
-var icon_sounds = preload("res://Graphics/PNG/Default size/towerDefense_tile016.png")
-var icon_muted  = preload("res://Graphics/PNG/Default size/towerDefense_tile017.png")
+var icon_music  = preload("res://Game/Graphics/Temp/circle.png")
+var icon_sounds = preload("res://Game/Graphics/Temp/wrench.png")
+var icon_muted  = preload("res://Game/Graphics/Temp/x.png")
 
 var icon_on: Texture2D
 var muted := false

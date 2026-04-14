@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bx0mrf5qqbq7r"]
+
+[ext_resource type="Script" uid="uid://b8kjs3wurgqrj" path="res://Game/Scripts/Projectiles/bullet.gd" id="1_ld11m"]
+[ext_resource type="Texture2D" uid="uid://daia6bi5sn34v" path="res://Game/Graphics/Projectiles/Bomb/AtakBombaLVL4.png" id="2_ld11m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1db5a"]
+radius = 6.0207973
+
+[node name="Bullet" type="Area2D" unique_id=1583972615]
+script = ExtResource("1_ld11m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1134165799]
+texture = ExtResource("2_ld11m")
+offset = Vector2(-0.5, 0.39)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=998652334]
+shape = SubResource("CircleShape2D_1db5a")

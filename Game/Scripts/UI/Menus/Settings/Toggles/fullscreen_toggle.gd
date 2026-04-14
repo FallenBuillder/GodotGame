@@ -1,7 +1,7 @@
 extends Button
 
-var icon_fullscreen = preload("res://Graphics/PNG/Default size/towerDefense_tile015.png")
-var icon_windowed = preload("res://Graphics/PNG/Default size/towerDefense_tile018.png")
+var icon_fullscreen = preload("res://Game/Graphics/Temp/empty.png")
+var icon_windowed = preload("res://Game/Graphics/Temp/circle.png")
 
 const GAME_ASPECT_W := 16
 const GAME_ASPECT_H := 9
@@ -29,10 +29,10 @@ func _enforce_aspect_ratio() -> void:
 	var new_w: int = 0
 	var new_h: int = 0
 	
-	new_h = int(w * GAME_ASPECT_H / GAME_ASPECT_W)
+	new_h = int(float(w) * GAME_ASPECT_H / GAME_ASPECT_W)
 	if new_h > h:
 		new_h = h
-		new_w = int(h * GAME_ASPECT_W / GAME_ASPECT_H)
+		new_w = int(float(h) * GAME_ASPECT_W / GAME_ASPECT_H)
 	else:
 		new_w = w
 	
