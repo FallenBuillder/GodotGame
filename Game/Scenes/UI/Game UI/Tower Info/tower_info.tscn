@@ -2,10 +2,17 @@
 
 [ext_resource type="Script" uid="uid://7xa5wc1c47mr" path="res://Game/Scripts/UI/Game UI/Tower Info/tower_info.gd" id="1_rksre"]
 
-[node name="Tower Info" type="CanvasLayer" unique_id=1116105594]
+[node name="Tower Info" type="Control" unique_id=1487783753]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_rksre")
 
 [node name="Panel" type="Panel" parent="." unique_id=204206837]
+layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -49,6 +56,3 @@ text = ">"
 layout_mode = 2
 text = "Sell
 "
-
-[connection signal="pressed" from="Panel/VBoxContainer/FocusModeContainer/PrevButton" to="." method="_on_prev_button_pressed"]
-[connection signal="pressed" from="Panel/VBoxContainer/FocusModeContainer/NextButton" to="." method="_on_next_button_pressed"]

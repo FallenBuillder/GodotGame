@@ -4,14 +4,22 @@ var from_game_menu = false
 
 signal closed
 
+func _ready() -> void:
+	process_mode = Node.PROCESS_MODE_ALWAYS
+
 func _on_return_button_pressed() -> void:
 	closed.emit()
 	queue_free()
 
 func _on_exit_button_pressed() -> void:
 	get_tree().paused = false
-	
+
 	if from_game_menu:
+		var parent = get_parent()
+		while parent and not parent is CanvasLayer:
+			parent = parent.get_parent()
+		if parent:
+			parent.queue_free()
 		get_tree().change_scene_to_file("res://Game/Scenes/UI/Menus/Main Menu/main_menu.tscn")
 	else:
 		get_tree().quit()

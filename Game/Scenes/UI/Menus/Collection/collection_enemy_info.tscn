@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://dpisuqc0cd08u"]
+
+[ext_resource type="Script" uid="uid://dwfiqpls48e05" path="res://Game/Scripts/UI/Menus/Collection/collection_enemy_info.gd" id="1_ly63m"]
+[ext_resource type="Texture2D" uid="uid://dd8i83ay1hhor" path="res://Game/Graphics/Enemies/1 Basic/SerBasicRed.png" id="2_mvgjk"]
+
+[node name="Collection Enemy Info" type="Control" unique_id=1085745599]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ly63m")
+
+[node name="Panel" type="Panel" parent="." unique_id=1907045688]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -359.368
+offset_top = -240.5
+offset_right = 359.368
+offset_bottom = 240.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=116612299]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -480.5
+offset_right = 280.0
+grow_vertical = 0
+alignment = 1
+
+[node name="Sprite" type="TextureRect" parent="Panel/VBoxContainer" unique_id=352774763]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("2_mvgjk")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Panel/VBoxContainer" unique_id=1472710903]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Basic"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Stats" type="Label" parent="Panel/VBoxContainer" unique_id=1509598623]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Speed: 25
+a
+a"
+horizontal_alignment = 1
+
+[node name="Close" type="Button" parent="Panel" unique_id=584433165]
+layout_mode = 0
+offset_left = -102.63197
+offset_top = -43.5
+offset_right = 13.1579895
+offset_bottom = 0.625
+scale = Vector2(0.8, 0.8)
+theme_override_font_sizes/font_size = 26
+text = "Close"
+
+[node name="Lore" type="Label" parent="Panel" unique_id=440042737]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -438.36792
+offset_right = 0.36810303
+grow_horizontal = 0
+grow_vertical = 2

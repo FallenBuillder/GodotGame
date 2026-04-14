@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://d1jh2h27xyawo"]
 
 [ext_resource type="Script" uid="uid://b8vx3kkek2ju6" path="res://Game/Scripts/UI/Menus/Collection/collections_menu.gd" id="1_b81cb"]
-[ext_resource type="PackedScene" uid="uid://d3qy8scbxu4ac" path="res://Game/Scenes/UI/Menus/Collection/collection_info_popup.tscn" id="2_40hkf"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xtc83"]
 bg_color = Color(0.17657751, 0.17657751, 0.17657751, 1)
@@ -25,12 +24,16 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_xtc83")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=31528631]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="TopButtons" type="HBoxContainer" parent="Panel/VBoxContainer" unique_id=1631960714]
 layout_mode = 2
+alignment = 1
 
 [node name="ExitButton" type="Button" parent="Panel/VBoxContainer/TopButtons" unique_id=1227861725]
 layout_mode = 2
@@ -50,6 +53,7 @@ text = "Cheeses"
 
 [node name="MiceGrid" type="GridContainer" parent="Panel/VBoxContainer" unique_id=750553244]
 layout_mode = 2
+columns = 7
 
 [node name="CheesesGrid" type="GridContainer" parent="Panel/VBoxContainer" unique_id=2015424622]
 visible = false
@@ -57,9 +61,6 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 columns = 7
-
-[node name="Collection Info" parent="." unique_id=543404747 instance=ExtResource("2_40hkf")]
-visible = false
 
 [connection signal="pressed" from="Panel/VBoxContainer/TopButtons/ExitButton" to="." method="_on_exit_button_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/TopButtons/MiceButton" to="." method="_on_mice_button_pressed"]

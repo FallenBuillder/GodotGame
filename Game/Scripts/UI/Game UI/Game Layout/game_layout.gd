@@ -1,66 +1,151 @@
 extends Control
 
-const GAME_WIDTH = 1280
-const GAME_HEIGHT = 720
-const SHOP_WIDTH = 300
-const INFO_HEIGHT = 150
-
-@onready var left_bar = $LeftBlackBar
-@onready var right_bar = $RightBlackBar
 @onready var game_viewport = $GameViewport
-@onready var tower_shop = $TowerShop
-@onready var bottom_info = $BottomInfo
-@onready var tower_info_panel = $TowerInfoPanel
+@onready var bottom_info = $"Bottom Info"
+@onready var shop_info_panel = $ShopInfoPanel
+@onready var shop_money_label = $ShopInfoPanel/VBoxContainer/MoneyContainer/ShopMoneyLabel
+@onready var shop_health_label = $ShopInfoPanel/VBoxContainer/HealthContainer/ShopHealthLabel
+@onready var wave_select_container = $ShopInfoPanel/VBoxContainer/WaveSelectContainer
+@onready var wave_input = $ShopInfoPanel/VBoxContainer/WaveSelectContainer/WaveInput
+@onready var start_wave_btn = $ShopInfoPanel/VBoxContainer/WaveSelectContainer/StartWaveButton
+@onready var game_ui = $"Game UI"
+@onready var tower_shop = $"Tower Shop"
+@onready var enemy_shop = $"Enemy Shop"
+@onready var tower_info = $"Tower Info"
 
 var current_level_scene: Node = null
+var level_path := ""
 
 func _ready() -> void:
-	_setup_layout()
-	get_viewport().size_changed.connect(_on_viewport_size_changed)
+	GameManager.layout_node = self
+	GameManager._on_reset_callback = Callable()
+	GameManager._sandbox_mode = false
 
-func _setup_layout() -> void:
-	var window_size = get_viewport_rect().size
-	
-	var game_x = (window_size.x - GAME_WIDTH) / 2.0
-	var game_y = (window_size.y - GAME_HEIGHT - INFO_HEIGHT) / 2.0
-	
-	left_bar.position = Vector2.ZERO
-	left_bar.size = Vector2(game_x, window_size.y)
-	
-	var right_bar_x = game_x + GAME_WIDTH + SHOP_WIDTH
-	right_bar.position = Vector2(right_bar_x, 0)
-	right_bar.size = Vector2(window_size.x - right_bar_x, window_size.y)
-	
-	game_viewport.position = Vector2(game_x, game_y)
-	game_viewport.size = Vector2(GAME_WIDTH, GAME_HEIGHT)
-	
-	tower_shop.position = Vector2(game_x + GAME_WIDTH, game_y)
-	tower_shop.size = Vector2(SHOP_WIDTH, GAME_HEIGHT)
-	
-	bottom_info.position = Vector2(game_x, game_y + GAME_HEIGHT)
-	bottom_info.size = Vector2(GAME_WIDTH + SHOP_WIDTH, INFO_HEIGHT)
-	
-	tower_info_panel.position = bottom_info.position
-	tower_info_panel.size = bottom_info.size
-	tower_info_panel.hide()
+	GameManager.money_changed.connect(_on_money_changed)
+	GameManager.health_changed.connect(_on_health_changed)
 
-func _on_viewport_size_changed() -> void:
-	_setup_layout()
+	shop_money_label.text = "$%d" % GameManager.money
+	shop_health_label.text = "%d" % GameManager.health
 
-func load_level(level_path: String) -> void:
+	wave_select_container.visible = false
+
+	if level_path != "":
+		await load_level(level_path)
+		call_deferred("_refresh_wave_label")
+
+	var saved = GameManager.get_saved_wave_for_level(level_path)
+	if saved > 1 and GameManager.ui and GameManager.ui.has_method("set_start_wave"):
+		GameManager.ui.set_start_wave(saved)
+
+func _input(event: InputEvent) -> void:
+	if not GameManager.level_node:
+		return
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if PlacementManager.preview_tower != null:
+			return
+		var vp_container = get_node_or_null("GameViewport")
+		if vp_container and not vp_container.get_global_rect().has_point(get_viewport().get_mouse_position()):
+			return
+		var sub_vp = get_node_or_null("GameViewport/SubViewport")
+		if not sub_vp:
+			return
+		var mouse_pos = GameManager.level_node.get_local_mouse_position()
+		var clicked_tower: Node = null
+		for tower in get_tree().get_nodes_in_group("towers"):
+			if not tower.is_placed:
+				continue
+			var shape_node = tower.get_node_or_null("ClickArea/CollisionShape2D")
+			if shape_node and shape_node.shape is CircleShape2D:
+				if tower.global_position.distance_to(mouse_pos) <= shape_node.shape.radius * tower.scale.x:
+					clicked_tower = tower
+					break
+		if clicked_tower:
+			clicked_tower.on_clicked()
+			get_viewport().set_input_as_handled()
+		else:
+			_deselect_all_towers()
+
+func _deselect_all_towers() -> void:
+	for tower in get_tree().get_nodes_in_group("towers"):
+		tower.set_selected(false)
+	if tower_info:
+		tower_info.hide_info()
+
+func _refresh_wave_label() -> void:
+	var bi = get_node_or_null("Bottom Info")
+	if bi and bi.has_method("_update_label"):
+		bi._update_label()
+
+func load_level(path: String) -> void:
 	if current_level_scene:
 		current_level_scene.queue_free()
-	
-	var level_scene = load(level_path)
-	current_level_scene = level_scene.instantiate()
-	$GameViewport/SubViewport.add_child(current_level_scene)
+		await get_tree().process_frame
+
+	var scene = load(path)
+	if not scene:
+		push_error("Failed to load level: ", path)
+		return
+
+	current_level_scene = scene.instantiate()
+	var sub_vp = get_node("GameViewport/SubViewport")
+	sub_vp.add_child(current_level_scene)
+	sub_vp.handle_input_locally = false
+	sub_vp.physics_object_picking = true
+	sub_vp.physics_object_picking_sort = true
+
+	var cam = current_level_scene.get_node_or_null("Camera2D")
+	if cam:
+		cam.make_current()
 
 func show_tower_info(tower: Node) -> void:
-	bottom_info.hide()
-	tower_info_panel.show()
-	tower_info_panel.display_tower(tower)
+	if not tower_info:
+		push_error("Tower Info node is null in layout!")
+		return
+	if bottom_info:
+		bottom_info.hide()
+	tower_info.show_tower_info(tower)
 
 func hide_tower_info() -> void:
-	tower_info_panel.hide()
-	bottom_info.show()
-	
+	if tower_info:
+		tower_info.hide_info()
+
+func show_tower_shop() -> void:
+	if tower_shop:
+		tower_shop.show()
+	if enemy_shop:
+		enemy_shop.hide()
+
+func show_enemy_shop() -> void:
+	if enemy_shop:
+		enemy_shop.show()
+	if tower_shop:
+		tower_shop.hide()
+
+func toggle_shop() -> void:
+	if tower_shop and tower_shop.visible:
+		show_enemy_shop()
+	else:
+		show_tower_shop()
+
+func show_sandbox_wave_select() -> void:
+	wave_select_container.visible = true
+	wave_input.max_length = 2
+	if not start_wave_btn.pressed.is_connected(_on_sandbox_wave_select):
+		start_wave_btn.pressed.connect(_on_sandbox_wave_select)
+	if not wave_input.text_changed.is_connected(_on_sandbox_wave_input_changed):
+		wave_input.text_changed.connect(_on_sandbox_wave_input_changed)
+
+func _on_sandbox_wave_input_changed(new_text: String) -> void:
+	if new_text.is_valid_int():
+		GameManager.change_wave(clamp(int(new_text), 1, 85))
+
+func _on_sandbox_wave_select() -> void:
+	if not wave_input.text.is_valid_int():
+		return
+	WaveManager.start_wave(clamp(int(wave_input.text), 1, 85))
+
+func _on_money_changed(value: int) -> void:
+	shop_money_label.text = "$%d" % value
+
+func _on_health_changed(value: int) -> void:
+	shop_health_label.text = "%d" % value

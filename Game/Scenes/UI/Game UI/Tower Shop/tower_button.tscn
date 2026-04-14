@@ -1,28 +1,47 @@
 [gd_scene format=3 uid="uid://5v5gpfnnyso4"]
 
 [ext_resource type="Script" uid="uid://dfncswohokwga" path="res://Game/Scripts/UI/Game UI/Tower Shop/tower_button.gd" id="1_ct5id"]
-[ext_resource type="Texture2D" uid="uid://djhlvhgxl1bag" path="res://Graphics/PNG/Default size/towerDefense_tile247.png" id="2_cbvvf"]
+[ext_resource type="PackedScene" uid="uid://5xrtjli7j8tn" path="res://Game/Scenes/Towers/Basic.tscn" id="2_qloiq"]
+[ext_resource type="Texture2D" uid="uid://b34p0cq4o8th8" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL1Spo.png" id="3_qloiq"]
 
 [node name="Panel" type="Panel" unique_id=446331340]
+texture_filter = 1
+custom_minimum_size = Vector2(90, 90)
 offset_left = 1.0
 offset_right = 41.0
 offset_bottom = 40.0
 script = ExtResource("1_ct5id")
+tower_scene = ExtResource("2_qloiq")
+tower_name = "Basic"
+tower_cost = 200
+tower_icon = ExtResource("3_qloiq")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=622364912]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -45.0
+offset_right = 45.0
+offset_bottom = 132.0
+grow_horizontal = 2
+theme_override_constants/separation = -2
 
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer" unique_id=386576343]
+custom_minimum_size = Vector2(90, 0)
 layout_mode = 2
-texture = ExtResource("2_cbvvf")
-expand_mode = 4
+texture = ExtResource("3_qloiq")
+expand_mode = 5
+stretch_mode = 5
 
 [node name="NameLabel" type="Label" parent="VBoxContainer" unique_id=215838359]
 layout_mode = 2
+size_flags_horizontal = 4
 text = "Basic"
+horizontal_alignment = 1
 
 [node name="CostLabel" type="Label" parent="VBoxContainer" unique_id=1779134763]
 layout_mode = 2
-text = "100$"
+size_flags_horizontal = 4
+text = "$200"
+horizontal_alignment = 1
