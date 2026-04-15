@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://bgw4xfnqsoldt"]
+
+[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1_qy1at"]
+[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2_y0ou8"]
+
+[sub_resource type="Resource" id="Resource_yfff0"]
+script = ExtResource("1_qy1at")
+enemy_id = 8
+count = 100
+end = 32.35
+
+[sub_resource type="Resource" id="Resource_8gt57"]
+script = ExtResource("1_qy1at")
+enemy_id = 10
+count = 70
+start = 32.59
+end = 46.9
+
+[sub_resource type="Resource" id="Resource_n2rt1"]
+script = ExtResource("1_qy1at")
+enemy_id = 11
+count = 50
+start = 47.32
+end = 58.17
+
+[sub_resource type="Resource" id="Resource_k55ym"]
+script = ExtResource("1_qy1at")
+enemy_id = 12
+count = 3
+start = 58.57
+end = 59.14
+
+[sub_resource type="Resource" id="Resource_elrsa"]
+script = ExtResource("1_qy1at")
+enemy_id = 13
+count = 2
+start = 60.0
+end = 62.0
+
+[resource]
+script = ExtResource("2_y0ou8")
+groups = Array[ExtResource("1_qy1at")]([SubResource("Resource_yfff0"), SubResource("Resource_8gt57"), SubResource("Resource_n2rt1"), SubResource("Resource_k55ym"), SubResource("Resource_elrsa")])

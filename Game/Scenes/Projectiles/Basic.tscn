@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c0qskk5ivm6yn"]
+
+[ext_resource type="Script" uid="uid://b8kjs3wurgqrj" path="res://Game/Scripts/Projectiles/bullet.gd" id="1_1soda"]
+[ext_resource type="Texture2D" uid="uid://r8sd2eil8sd8" path="res://Game/Graphics/Projectiles/Basic/AtakNormalny.png" id="2_1soda"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iq5f1"]
+size = Vector2(15, 7)
+
+[node name="Bullet" type="Area2D" unique_id=1583972615]
+script = ExtResource("1_1soda")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1134165799]
+texture = ExtResource("2_1soda")
+offset = Vector2(0, 0.45)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=998652334]
+shape = SubResource("RectangleShape2D_iq5f1")

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://hnjvp8auldf5"]
+
+[ext_resource type="Script" uid="uid://b8kjs3wurgqrj" path="res://Game/Scripts/Projectiles/bullet.gd" id="1_u2g44"]
+[ext_resource type="Texture2D" uid="uid://b6dqbgtyv44bs" path="res://Game/Graphics/Projectiles/Basic/AtakNormalnyLVL4.png" id="2_u2g44"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iq5f1"]
+size = Vector2(15, 13)
+
+[node name="Bullet" type="Area2D" unique_id=1583972615]
+script = ExtResource("1_u2g44")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1134165799]
+texture = ExtResource("2_u2g44")
+offset = Vector2(0, 0.45)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=998652334]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_iq5f1")

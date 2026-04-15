@@ -1,0 +1,278 @@
+[gd_scene format=3 uid="uid://5xrtjli7j8tn"]
+
+[ext_resource type="Script" uid="uid://7w8crscepu3h" path="res://Game/Scripts/Towers/tower.gd" id="1_5c7dt"]
+[ext_resource type="PackedScene" uid="uid://c0qskk5ivm6yn" path="res://Game/Scenes/Projectiles/Basic.tscn" id="2_5c7dt"]
+[ext_resource type="Texture2D" uid="uid://b34p0cq4o8th8" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL1Spo.png" id="3_5c7dt"]
+[ext_resource type="Script" uid="uid://8wddbevg57e2" path="res://Game/Scripts/Data/TowerUpgradeData.gd" id="3_b47pl"]
+[ext_resource type="Texture2D" uid="uid://ds2qngj1ux4mh" path="res://Game/Graphics/Temp/empty.png" id="4_bcgmw"]
+[ext_resource type="Texture2D" uid="uid://bnbs7wd1y5xqv" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL1ATK.png" id="4_h31p2"]
+[ext_resource type="Texture2D" uid="uid://c2q1klogclx8k" path="res://Game/Graphics/Towers/Basic/MyszNormalna1.5Spo.png" id="5_8jhcb"]
+[ext_resource type="Texture2D" uid="uid://bahm4kh8gur3u" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL1.5ATK.png" id="6_12vme"]
+[ext_resource type="Texture2D" uid="uid://di4lk1ufl0ppu" path="res://Game/Graphics/Temp/wrench.png" id="6_fmjws"]
+[ext_resource type="PackedScene" uid="uid://cfglcxxavvei5" path="res://Game/Scenes/Projectiles/Basic_3.tscn" id="7_klqbq"]
+[ext_resource type="Texture2D" uid="uid://c81exbnwxhwyq" path="res://Game/Graphics/Temp/circle.png" id="8_fgdp8"]
+[ext_resource type="Texture2D" uid="uid://dpjf00cjto4yu" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL3Spo.png" id="8_nuyse"]
+[ext_resource type="Texture2D" uid="uid://bfmefmgsmyu2n" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL3ATK.png" id="9_midgb"]
+[ext_resource type="Texture2D" uid="uid://bibwkd28xfx48" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL2Spo.png" id="9_v5tjb"]
+[ext_resource type="Script" uid="uid://lbyvro0ekv6l" path="res://Game/Scripts/Data/StatChange.gd" id="10_bcgmw"]
+[ext_resource type="Texture2D" uid="uid://cyo5d4wy6g6a3" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL2ATK.png" id="10_uv5il"]
+[ext_resource type="Texture2D" uid="uid://cvi2nk40pw67m" path="res://Game/Graphics/Temp/x.png" id="11_8jhcb"]
+[ext_resource type="PackedScene" uid="uid://hnjvp8auldf5" path="res://Game/Scenes/Projectiles/Basic_4.tscn" id="12_12vme"]
+[ext_resource type="Texture2D" uid="uid://evcxlnv6dj2w" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL4Spo.png" id="13_fgdp8"]
+[ext_resource type="Texture2D" uid="uid://cjiw3pacdywg4" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL4ATK.png" id="14_v5tjb"]
+
+[sub_resource type="Resource" id="Resource_r7aub"]
+script = ExtResource("10_bcgmw")
+stat = "range"
+value = 45.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_3lvju"]
+script = ExtResource("10_bcgmw")
+stat = "camo"
+mode = 1
+value = 1.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_41bva"]
+script = ExtResource("10_bcgmw")
+stat = "travel_distance"
+value = 25.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_8jhcb"]
+script = ExtResource("10_bcgmw")
+stat = "pierce"
+value = 2.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_pe3pp"]
+script = ExtResource("3_b47pl")
+upgrade_name = "Enhanced Eyesight"
+icon = ExtResource("8_fgdp8")
+cost = 120
+description = "Shoots even further and can detect Camo bloons and can destroy 2 more cheeses per shot."
+new_tower_sprite_idle = ExtResource("5_8jhcb")
+new_tower_sprite_shoot = ExtResource("6_12vme")
+stat_changes = Array[ExtResource("10_bcgmw")]([SubResource("Resource_r7aub"), SubResource("Resource_3lvju"), SubResource("Resource_41bva"), SubResource("Resource_8jhcb")])
+metadata/_custom_type_script = "uid://8wddbevg57e2"
+
+[sub_resource type="Resource" id="Resource_uv5il"]
+script = ExtResource("10_bcgmw")
+stat = "damage"
+mode = 1
+value = 3.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_nqtat"]
+script = ExtResource("10_bcgmw")
+stat = "pierce"
+value = 2.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_mptpb"]
+script = ExtResource("10_bcgmw")
+stat = "projectile_speed"
+mode = 1
+value = 400.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_stdly"]
+script = ExtResource("10_bcgmw")
+stat = "range"
+value = 68.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_afcho"]
+script = ExtResource("10_bcgmw")
+stat = "tavel_distance"
+value = 38.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_qpdq7"]
+script = ExtResource("3_b47pl")
+upgrade_name = "Trible Bolts"
+icon = ExtResource("6_fmjws")
+cost = 600
+description = "Uses a long range bolt that can destroy 3 layers of Cheese for every hit."
+new_tower_sprite_idle = ExtResource("9_v5tjb")
+new_tower_sprite_shoot = ExtResource("10_uv5il")
+stat_changes = Array[ExtResource("10_bcgmw")]([SubResource("Resource_uv5il"), SubResource("Resource_nqtat"), SubResource("Resource_mptpb"), SubResource("Resource_stdly"), SubResource("Resource_afcho")])
+metadata/_custom_type_script = "uid://8wddbevg57e2"
+
+[sub_resource type="Resource" id="Resource_81r1y"]
+script = ExtResource("10_bcgmw")
+stat = "damage"
+mode = 1
+value = 6.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_3p7xd"]
+script = ExtResource("10_bcgmw")
+stat = "fire_rate"
+mode = 1
+value = 0.475
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_1g68p"]
+script = ExtResource("10_bcgmw")
+stat = "projectile_speed"
+mode = 1
+value = 600.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_nrbk3"]
+script = ExtResource("10_bcgmw")
+stat = "crit_shots"
+mode = 1
+value = 10.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_fmjws"]
+script = ExtResource("10_bcgmw")
+stat = "crit_damage"
+mode = 1
+value = 50.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_g0k5a"]
+script = ExtResource("3_b47pl")
+upgrade_name = "Golden Bolts"
+icon = ExtResource("11_8jhcb")
+cost = 1900
+description = "Golden Bolts attack faster and do powerful Crit shots every few shots that do a lot more damage."
+new_bullet_scene = ExtResource("7_klqbq")
+new_tower_sprite_idle = ExtResource("8_nuyse")
+new_tower_sprite_shoot = ExtResource("9_midgb")
+stat_changes = Array[ExtResource("10_bcgmw")]([SubResource("Resource_81r1y"), SubResource("Resource_3p7xd"), SubResource("Resource_1g68p"), SubResource("Resource_nrbk3"), SubResource("Resource_fmjws")])
+metadata/_custom_type_script = "uid://8wddbevg57e2"
+
+[sub_resource type="Resource" id="Resource_bcgmw"]
+script = ExtResource("10_bcgmw")
+stat = "fire_rate"
+mode = 1
+value = 0.24
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_12vme"]
+script = ExtResource("10_bcgmw")
+stat = "damage"
+mode = 1
+value = 10.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_fgdp8"]
+script = ExtResource("10_bcgmw")
+stat = "crit_damage"
+mode = 1
+value = 80.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_v5tjb"]
+script = ExtResource("10_bcgmw")
+stat = "pierce"
+mode = 1
+value = 8.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_n7yv8"]
+script = ExtResource("10_bcgmw")
+stat = "range"
+mode = 1
+value = 375.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_jmcn6"]
+script = ExtResource("10_bcgmw")
+stat = "crit_shot"
+mode = 1
+value = 5.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_pwbd2"]
+script = ExtResource("10_bcgmw")
+stat = "frozen"
+mode = 1
+value = 1.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_n3qe3"]
+script = ExtResource("10_bcgmw")
+stat = "lead"
+mode = 1
+value = 1.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_g6gl5"]
+script = ExtResource("3_b47pl")
+upgrade_name = "Crossbow Master"
+icon = ExtResource("4_bcgmw")
+cost = 21500
+description = " Crossbow Master shoots really fast and devastates most Bloon types with ease."
+new_bullet_scene = ExtResource("12_12vme")
+new_tower_sprite_idle = ExtResource("13_fgdp8")
+new_tower_sprite_shoot = ExtResource("14_v5tjb")
+stat_changes = Array[ExtResource("10_bcgmw")]([SubResource("Resource_bcgmw"), SubResource("Resource_12vme"), SubResource("Resource_fgdp8"), SubResource("Resource_v5tjb"), SubResource("Resource_n7yv8"), SubResource("Resource_jmcn6"), SubResource("Resource_pwbd2"), SubResource("Resource_n3qe3")])
+metadata/_custom_type_script = "uid://8wddbevg57e2"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g7l84"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_5c7dt")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_h31p2")
+}],
+"loop": false,
+"name": &"shoot",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tb7mp"]
+radius = 79.15807
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y3h2v"]
+radius = 19.0
+
+[node name="Tower" type="Node2D" unique_id=1376173315]
+texture_filter = 1
+script = ExtResource("1_5c7dt")
+detection_range = 225.0
+tower_name = "Crossbow Mouse"
+tower_id = 1
+unlocked = true
+fire_rate = 0.94
+damage = 1
+pierce = 2
+projectile_speed = 300
+cost = 200
+bullet_scene = ExtResource("2_5c7dt")
+upgrades = Array[ExtResource("3_b47pl")]([SubResource("Resource_pe3pp"), SubResource("Resource_qpdq7"), SubResource("Resource_g0k5a"), SubResource("Resource_g6gl5")])
+max_projectile_travel_distance = 225.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=198514786]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_g7l84")
+animation = &"shoot"
+autoplay = "idle"
+offset = Vector2(-2.535, -3)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=268038414]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1496828702]
+shape = SubResource("CircleShape2D_tb7mp")
+
+[node name="ClickArea" type="Area2D" parent="." unique_id=319618098]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea" unique_id=712842676]
+position = Vector2(1, 0)
+scale = Vector2(1.5, 1.5)
+shape = SubResource("CircleShape2D_y3h2v")

@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://bw435atg0lpdr"]
+
+[ext_resource type="Script" uid="uid://br82uvgrskqx8" path="res://Game/Scripts/UI/Menus/Collection/collection_tower_info.gd" id="1_ste88"]
+[ext_resource type="Texture2D" uid="uid://b34p0cq4o8th8" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL1Spo.png" id="2_2cqxx"]
+
+[node name="Collection Tower Info" type="Control" unique_id=1085745599]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ste88")
+
+[node name="Panel" type="Panel" parent="." unique_id=1491095182]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -359.36804
+offset_top = -240.5
+offset_right = 359.36804
+offset_bottom = 240.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite" type="TextureRect" parent="Panel" unique_id=348449551]
+layout_mode = 1
+offset_right = 280.0
+offset_bottom = 280.0
+size_flags_vertical = 4
+texture = ExtResource("2_2cqxx")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=855662805]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -223.50003
+offset_right = 280.0
+offset_bottom = -0.00024414063
+grow_vertical = 0
+alignment = 1
+
+[node name="Name" type="Label" parent="Panel/VBoxContainer" unique_id=1338528206]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Basic"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cost" type="Label" parent="Panel/VBoxContainer" unique_id=1330545471]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "$100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DamageType" type="Label" parent="Panel/VBoxContainer" unique_id=1981785880]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Basic"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Stats" type="Label" parent="Panel/VBoxContainer" unique_id=1239111672]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "1
+2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Close" type="Button" parent="Panel" unique_id=332307045]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 0
+offset_left = -102.63196
+offset_top = -43.5
+offset_right = 13.158005
+offset_bottom = 0.625
+scale = Vector2(0.8, 0.8)
+theme_override_font_sizes/font_size = 26
+text = "Close"
+
+[node name="Lore" type="Label" parent="Panel" unique_id=334956720]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -438.36804
+offset_right = 0.36791992
+grow_horizontal = 0
+grow_vertical = 2

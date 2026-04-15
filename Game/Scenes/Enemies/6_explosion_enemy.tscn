@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dddpa77sh6bj0"]
+
+[ext_resource type="Script" uid="uid://c5m7nx6y2w0dh" path="res://Game/Scripts/Enemies/enemy.gd" id="1_msvep"]
+[ext_resource type="Texture2D" uid="uid://bxfygpohovf3j" path="res://Game/Graphics/Enemies/6 Explosion/SerExplosionBlackRegen.png" id="2_6skck"]
+[ext_resource type="Texture2D" uid="uid://p0et2snqfw67" path="res://Game/Graphics/Enemies/6 Explosion/SerExplosionBlack.png" id="2_msvep"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mk3ek"]
+radius = 9.75
+
+[node name="6 Explosion Enemy" type="Area2D" unique_id=1010572463]
+texture_filter = 1
+script = ExtResource("1_msvep")
+enemy_name = "Black Mozzarella"
+enemy_id = 6
+speed = 126.0
+health = 1
+damage = 11
+regen_texture = ExtResource("2_6skck")
+damage_immunities = Array[int]([1])
+child_enemy_ids = Array[int]([5, 5])
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=242599431]
+position = Vector2(0.85, 0)
+texture = ExtResource("2_msvep")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=134822881]
+shape = SubResource("CircleShape2D_mk3ek")

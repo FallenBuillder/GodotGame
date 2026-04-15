@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://dn0es4vx1avhg"]
+
+[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1_ltucc"]
+[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2_eqpwl"]
+
+[sub_resource type="Resource" id="Resource_15lbs"]
+script = ExtResource("1_ltucc")
+enemy_id = 10
+count = 25
+end = 13.7
+
+[sub_resource type="Resource" id="Resource_cru1q"]
+script = ExtResource("1_ltucc")
+enemy_id = 12
+start = 14.275
+end = 14.275
+
+[sub_resource type="Resource" id="Resource_h3ggi"]
+script = ExtResource("1_ltucc")
+enemy_id = 11
+count = 5
+start = 14.85
+end = 17.134
+
+[sub_resource type="Resource" id="Resource_nc62j"]
+script = ExtResource("1_ltucc")
+enemy_id = 12
+start = 17.7
+end = 17.7
+
+[sub_resource type="Resource" id="Resource_jhv0g"]
+script = ExtResource("1_ltucc")
+enemy_id = 11
+count = 5
+start = 18.272
+end = 20.556
+
+[resource]
+script = ExtResource("2_eqpwl")
+groups = Array[ExtResource("1_ltucc")]([SubResource("Resource_15lbs"), SubResource("Resource_cru1q"), SubResource("Resource_h3ggi"), SubResource("Resource_nc62j"), SubResource("Resource_jhv0g")])

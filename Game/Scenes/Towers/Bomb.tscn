@@ -1,0 +1,213 @@
+[gd_scene format=3 uid="uid://c62mddrq2b0ne"]
+
+[ext_resource type="Script" uid="uid://7w8crscepu3h" path="res://Game/Scripts/Towers/tower.gd" id="1_7nc1i"]
+[ext_resource type="PackedScene" uid="uid://cuicmy2yclsv1" path="res://Game/Scenes/Projectiles/Bomb.tscn" id="2_7nc1i"]
+[ext_resource type="Texture2D" uid="uid://d0whmg2o1ihhr" path="res://Game/Graphics/Towers/Bomb/MyszBombowaLVL1Spo.png" id="3_gd1qb"]
+[ext_resource type="Script" uid="uid://8wddbevg57e2" path="res://Game/Scripts/Data/TowerUpgradeData.gd" id="3_xu1pb"]
+[ext_resource type="Texture2D" uid="uid://bpel7gvrldcvk" path="res://Game/Graphics/Towers/Bomb/MyszBombowaLVL1ATK.png" id="4_73lq1"]
+[ext_resource type="Texture2D" uid="uid://c81exbnwxhwyq" path="res://Game/Graphics/Temp/circle.png" id="4_kph4b"]
+[ext_resource type="Texture2D" uid="uid://c4h21vsdvf6yh" path="res://Game/Graphics/Towers/Bomb/MyszBombowaLVL1.5Spo.png" id="5_8noms"]
+[ext_resource type="Texture2D" uid="uid://crqd3ke5wwkna" path="res://Game/Graphics/Towers/Bomb/MyszBombowaLVL1.5ATK.png" id="6_lg1ta"]
+[ext_resource type="Script" uid="uid://lbyvro0ekv6l" path="res://Game/Scripts/Data/StatChange.gd" id="7_dqp28"]
+[ext_resource type="Texture2D" uid="uid://ds2qngj1ux4mh" path="res://Game/Graphics/Temp/empty.png" id="8_duaja"]
+[ext_resource type="Texture2D" uid="uid://c1jskvw2ayyn1" path="res://Game/Graphics/Towers/Bomb/MyszBombowaLVL2Spo.png" id="9_h8c3e"]
+[ext_resource type="Texture2D" uid="uid://4wwsgo6l5y2x" path="res://Game/Graphics/Towers/Bomb/MyszBombowaLVL2ATK.png" id="10_a7ecp"]
+[ext_resource type="Texture2D" uid="uid://di4lk1ufl0ppu" path="res://Game/Graphics/Temp/wrench.png" id="11_h8c3e"]
+[ext_resource type="Texture2D" uid="uid://csv6kj5be1rqg" path="res://Game/Graphics/Towers/Bomb/MyszBombowaLVL3Spo.png" id="12_a7ecp"]
+[ext_resource type="Texture2D" uid="uid://dxe6nmt780lxu" path="res://Game/Graphics/Towers/Bomb/MyszBombowaLVL3ATK.png" id="13_h8y1q"]
+[ext_resource type="PackedScene" uid="uid://bx0mrf5qqbq7r" path="res://Game/Scenes/Projectiles/Bomb_4.tscn" id="14_frgfs"]
+[ext_resource type="Texture2D" uid="uid://dprpui5ig5q3t" path="res://Game/Graphics/Towers/Bomb/MyszBombowaLVL4Spo.png" id="15_635q8"]
+[ext_resource type="Texture2D" uid="uid://dcphd8e6aqsuj" path="res://Game/Graphics/Towers/Bomb/MyszBombowaLVL4ATK.png" id="16_uj44b"]
+
+[sub_resource type="Resource" id="Resource_h8y1q"]
+script = ExtResource("7_dqp28")
+stat = "fire_rate"
+mode = 1
+value = 1.14
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_frgfs"]
+script = ExtResource("7_dqp28")
+stat = "explosion_radius"
+mode = 1
+value = 33.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_635q8"]
+script = ExtResource("7_dqp28")
+stat = "pierce"
+mode = 1
+value = 50.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_uj44b"]
+script = ExtResource("3_xu1pb")
+upgrade_name = "Faster Reload"
+icon = ExtResource("4_kph4b")
+cost = 340
+description = "Reloads faster and shoots larger bombs, they have a larger blast area and more popping power."
+new_tower_sprite_idle = ExtResource("5_8noms")
+new_tower_sprite_shoot = ExtResource("6_lg1ta")
+stat_changes = Array[ExtResource("7_dqp28")]([SubResource("Resource_h8y1q"), SubResource("Resource_frgfs"), SubResource("Resource_635q8")])
+metadata/_custom_type_script = "uid://8wddbevg57e2"
+
+[sub_resource type="Resource" id="Resource_2lac2"]
+script = ExtResource("7_dqp28")
+stat = "fire_rate"
+mode = 1
+value = 0.92
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_8mxlt"]
+script = ExtResource("7_dqp28")
+stat = "projectile_speed"
+mode = 2
+value = 2.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_vqq6a"]
+script = ExtResource("7_dqp28")
+stat = "pierce"
+mode = 1
+value = 60.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_8kef2"]
+script = ExtResource("7_dqp28")
+stat = "range"
+value = 9.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_bdqle"]
+script = ExtResource("7_dqp28")
+stat = "damage"
+value = 1.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_f7wam"]
+script = ExtResource("3_xu1pb")
+upgrade_name = "Missile Launcher"
+icon = ExtResource("8_duaja")
+cost = 850
+description = "Fire faster, fly faster, and increase range and can smash though 2 layers of cheese at once."
+new_tower_sprite_idle = ExtResource("9_h8c3e")
+new_tower_sprite_shoot = ExtResource("10_a7ecp")
+stat_changes = Array[ExtResource("7_dqp28")]([SubResource("Resource_2lac2"), SubResource("Resource_8mxlt"), SubResource("Resource_vqq6a"), SubResource("Resource_8kef2"), SubResource("Resource_bdqle")])
+metadata/_custom_type_script = "uid://8wddbevg57e2"
+
+[sub_resource type="Resource" id="Resource_40huk"]
+script = ExtResource("7_dqp28")
+stat = "boss_damage"
+value = 9.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_1l0xd"]
+script = ExtResource("7_dqp28")
+stat = "range"
+value = 10.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_lh5v5"]
+script = ExtResource("3_xu1pb")
+upgrade_name = "Gouha Mauler"
+icon = ExtResource("11_h8c3e")
+cost = 2930
+description = "Gouha Maulers do much more damage to Gouha-Class Chesees."
+new_tower_sprite_idle = ExtResource("12_a7ecp")
+new_tower_sprite_shoot = ExtResource("13_h8y1q")
+stat_changes = Array[ExtResource("7_dqp28")]([SubResource("Resource_40huk"), SubResource("Resource_1l0xd")])
+metadata/_custom_type_script = "uid://8wddbevg57e2"
+
+[sub_resource type="Resource" id="Resource_dat3q"]
+script = ExtResource("7_dqp28")
+stat = "damage"
+mode = 1
+value = 350.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_nt5nh"]
+script = ExtResource("7_dqp28")
+stat = "boss_damage"
+value = 50.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_kkms4"]
+script = ExtResource("7_dqp28")
+stat = "range"
+value = 10.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_55c3u"]
+script = ExtResource("3_xu1pb")
+upgrade_name = "Gouha Assassin"
+cost = 23800
+description = "Does massive damage to Gouha-Class Cheeses, attack range also increased."
+new_bullet_scene = ExtResource("14_frgfs")
+new_tower_sprite_idle = ExtResource("15_635q8")
+new_tower_sprite_shoot = ExtResource("16_uj44b")
+stat_changes = Array[ExtResource("7_dqp28")]([SubResource("Resource_dat3q"), SubResource("Resource_nt5nh"), SubResource("Resource_kkms4")])
+metadata/_custom_type_script = "uid://8wddbevg57e2"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gd1qb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_gd1qb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_73lq1")
+}],
+"loop": false,
+"name": &"shoot",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tb7mp"]
+radius = 79.15807
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y3h2v"]
+radius = 19.0
+
+[node name="Tower" type="Node2D" unique_id=1376173315]
+script = ExtResource("1_7nc1i")
+detection_range = 108.0
+tower_name = "Bomb Mouse"
+tower_id = 5
+fire_rate = 1.51
+damage = 1
+damage_type = 1
+pierce = 40
+projectile_speed = 180
+cost = 650
+bullet_scene = ExtResource("2_7nc1i")
+can_attack_frozen = true
+upgrades = Array[ExtResource("3_xu1pb")]([SubResource("Resource_uj44b"), SubResource("Resource_f7wam"), SubResource("Resource_lh5v5"), SubResource("Resource_55c3u")])
+can_pop_lead = true
+explosion_radius = 20.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1219258882]
+texture_filter = 1
+position = Vector2(-4.795, 0)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_gd1qb")
+animation = &"idle"
+autoplay = "idle"
+offset = Vector2(0, -3)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=268038414]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1496828702]
+shape = SubResource("CircleShape2D_tb7mp")
+
+[node name="ClickArea" type="Area2D" parent="." unique_id=319618098]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea" unique_id=712842676]
+scale = Vector2(1.5, 1.5)
+shape = SubResource("CircleShape2D_y3h2v")
