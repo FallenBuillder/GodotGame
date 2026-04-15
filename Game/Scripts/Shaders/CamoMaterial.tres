@@ -1,9 +1,0 @@
-[gd_resource type="ShaderMaterial" format=3 uid="uid://o6xehusncarq"]
-
-[ext_resource type="Shader" uid="uid://cddg0o1bkr5q8" path="res://Game/Scripts/Shaders/camo.gdshader" id="1_7p3y3"]
-[ext_resource type="Texture2D" uid="uid://lluvbghf5pc1" path="res://Game/Graphics/Enemies/Camo/SerCamoShade.png" id="2_dmky8"]
-
-[resource]
-shader = ExtResource("1_7p3y3")
-shader_parameter/camo_texture = ExtResource("2_dmky8")
-shader_parameter/camo_strength = 0.7
