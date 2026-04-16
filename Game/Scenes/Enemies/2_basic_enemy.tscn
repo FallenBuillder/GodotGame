@@ -15,6 +15,7 @@ enemy_id = 2
 speed = 98.0
 health = 1
 damage = 2
+unlocked = true
 regen_texture = ExtResource("2_1sjid")
 child_enemy_ids = Array[int]([1])
 

@@ -72,7 +72,7 @@ func spend_money(amount: int) -> bool:
 
 func lose_game() -> void:
 	game_over.emit()
-	SoundManager.play_constant("game over")
+	SoundManager.play_constant("game over ")
 
 func speed_up() -> void:
 	is_fast = !is_fast

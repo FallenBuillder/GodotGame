@@ -31,34 +31,12 @@ func _input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 		_on_back_pressed()
 
-func _on_congrats_pressed() -> void:
-	var congrats = load("res://Game/Scenes/UI/Game UI/Congratulations/congratulations.tscn")
-	if congrats:
-		var canvas = CanvasLayer.new()
-		canvas.layer = 10
-		add_child(canvas)
-		canvas.add_child(congrats.instantiate())
-
 func _on_back_pressed() -> void:
 	closed.emit()
 	queue_free()
 
 func _on_exit_button_pressed() -> void:
 	_on_back_pressed()
-
-func _on_unlock_all_pressed() -> void:
-	for key in ProgressManager.LEVEL_ORDER:
-		if key not in ProgressManager.unlocked_levels:
-			ProgressManager.unlocked_levels.append(key)
-		if key not in ["sandbox"] and key not in ProgressManager.beaten_levels:
-			ProgressManager.beaten_levels.append(key)
-	ProgressManager.save_progress()
-	_refresh_buttons()
-
-func _on_reset_levels_pressed() -> void:
-	ProgressManager.unlocked_levels = ["tutorial"]
-	ProgressManager.save_progress()
-	_refresh_buttons()
 
 func _load_level(path: String) -> void:
 	var layout_scene = load("res://Game/Scenes/UI/Game UI/Game Layout/game_layout.tscn")

@@ -24,10 +24,6 @@
 
 [sub_resource type="ImageTexture" id="ImageTexture_ab75l"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ab75l"]
-bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
-border_color = Color(0.7862614, 0.8052046, 0.8005614, 1)
-
 [node name="Game Layout" type="Control" unique_id=206767018]
 layout_mode = 3
 anchors_preset = 15
@@ -130,6 +126,19 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_o351l")
 
+[node name="DebugOptinonsContainer" type="VBoxContainer" parent="Game UI" unique_id=403732661]
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 116.0
+
+[node name="LoseButton" type="Button" parent="Game UI/DebugOptinonsContainer" unique_id=1602112370]
+layout_mode = 2
+text = "Lose"
+
+[node name="VictoryButton" type="Button" parent="Game UI/DebugOptinonsContainer" unique_id=254425838]
+layout_mode = 2
+text = "Victory"
+
 [node name="Panel" type="Panel" parent="Game UI" unique_id=1519421345]
 layout_mode = 1
 anchors_preset = 3
@@ -146,37 +155,19 @@ grow_vertical = 0
 [node name="SpeedUpButton" type="Button" parent="Game UI/Panel" unique_id=454647165]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 0
-offset_left = -744.0
-offset_top = -813.0
-offset_right = -624.0
-offset_bottom = -781.0
+offset_left = 69.0
+offset_top = 77.5
+offset_right = 189.0
+offset_bottom = 109.5
 text = "Speed up"
-icon_alignment = 1
 
 [node name="SettingsButton" type="Button" parent="Game UI/Panel" unique_id=1841342112]
 layout_mode = 0
-offset_left = 134.0
-offset_top = 79.0
-offset_right = 204.0
-offset_bottom = 111.0
-text = "Menu
-"
-
-[node name="LoseButton" type="Button" parent="Game UI" unique_id=1602112370]
-layout_mode = 0
-offset_left = 1871.0
-offset_top = 7.0
-offset_right = 1918.0
-offset_bottom = 31.0
-text = "Lose"
-
-[node name="VictoryButton" type="Button" parent="Game UI" unique_id=254425838]
-layout_mode = 0
-offset_left = 1859.0
-offset_top = 33.0
-offset_right = 1918.0
-offset_bottom = 57.0
-text = "Victory"
+offset_left = 197.0
+offset_top = 77.5
+offset_right = 267.0
+offset_bottom = 109.5
+text = "Settings"
 
 [node name="Tower Shop" type="Control" parent="." unique_id=891436558]
 layout_mode = 1
@@ -425,30 +416,29 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_ab75l")
 
 [node name="WaveLabel" type="Label" parent="Bottom Info/Panel" unique_id=1862688754]
 layout_mode = 0
-offset_left = 755.0
-offset_top = -879.0
-offset_right = 946.0
-offset_bottom = -796.0
+offset_left = 688.0
+offset_top = -880.0
+offset_right = 879.0
+offset_bottom = -797.0
 theme_override_font_sizes/font_size = 60
 text = "Wave: "
 
 [node name="ShopToggleButton" type="Button" parent="Bottom Info/Panel" unique_id=877740320]
 custom_minimum_size = Vector2(100, 30)
 layout_mode = 0
-offset_left = 1662.0
+offset_left = 1702.0
 offset_top = -41.0
-offset_right = 1845.0
+offset_right = 1804.0
 offset_bottom = -10.0
 size_flags_horizontal = 0
 size_flags_vertical = 4
-text = "Shop Toggle ( Sandbox )
-"
+text = "Shop Toggle"
 
 [node name="Tower Info" type="Control" parent="." unique_id=1565339918]
+visible = false
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -475,7 +465,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-alignment = 1
 
 [node name="TowerNameLabel" type="Label" parent="Tower Info/Panel/VBoxContainer" unique_id=2146250105]
 layout_mode = 2

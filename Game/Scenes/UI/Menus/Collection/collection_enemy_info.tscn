@@ -3,6 +3,12 @@
 [ext_resource type="Script" uid="uid://dwfiqpls48e05" path="res://Game/Scripts/UI/Menus/Collection/collection_enemy_info.gd" id="1_ly63m"]
 [ext_resource type="Texture2D" uid="uid://dd8i83ay1hhor" path="res://Game/Graphics/Enemies/1 Basic/SerBasicRed.png" id="2_mvgjk"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mvgjk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vlgto"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gr4dr"]
+
 [node name="Collection Enemy Info" type="Control" unique_id=1085745599]
 layout_mode = 3
 anchors_preset = 8
@@ -64,13 +70,18 @@ horizontal_alignment = 1
 
 [node name="Close" type="Button" parent="Panel" unique_id=584433165]
 layout_mode = 0
-offset_left = -102.63197
-offset_top = -43.5
-offset_right = 13.1579895
-offset_bottom = 0.625
+offset_left = -128.5177
+offset_top = -24.345572
+offset_right = 27.524643
+offset_bottom = 100.927864
+rotation = -0.6370452
 scale = Vector2(0.8, 0.8)
-theme_override_font_sizes/font_size = 26
-text = "Close"
+theme_override_colors/font_color = Color(0.63132834, 0.11477349, 0.043623216, 1)
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mvgjk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vlgto")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_gr4dr")
+text = "X"
 
 [node name="Lore" type="Label" parent="Panel" unique_id=440042737]
 layout_mode = 1

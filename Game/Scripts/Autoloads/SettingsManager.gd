@@ -3,6 +3,7 @@ extends Node
 enum PlacementMode { CLICK_AND_DROP, DRAG_AND_DROP }
 var placement_mode = PlacementMode.DRAG_AND_DROP
 
+
 func get_placement_mode_name() -> String:
 	match placement_mode:
 		PlacementMode.CLICK_AND_DROP:

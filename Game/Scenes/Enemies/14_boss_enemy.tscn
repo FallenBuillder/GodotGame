@@ -14,6 +14,7 @@ enemy_id = 14
 speed = 12.6
 health = 4000
 damage = 16656
+unlocked = true
 is_boss = true
 child_enemy_ids = Array[int]([13, 13, 13, 13])
 

@@ -1,8 +1,8 @@
 extends Control
 
-@onready var exit_button = $Panel/VBoxContainer/TopButtons/ExitButton
-@onready var mice_button = $Panel/VBoxContainer/TopButtons/MiceButton
-@onready var cheeses_button = $Panel/VBoxContainer/TopButtons/CheesesButton
+@onready var exit_button = $Panel/ExitButton
+@onready var mice_button = $Panel/MiceButton
+@onready var cheeses_button = $Panel/CheesesButton
 @onready var towers_grid = $Panel/VBoxContainer/MiceGrid
 @onready var enemies_grid = $Panel/VBoxContainer/CheesesGrid
 
@@ -64,14 +64,14 @@ func _populate_towers() -> void:
 	sorted_ids.sort()
 	for tid in sorted_ids:
 		_create_tower_button(tower_database[tid])
-	_add_tower_debug_buttons()
+	#_add_tower_debug_buttons()
 
 func _populate_enemies() -> void:
 	var sorted_ids = enemy_database.keys()
 	sorted_ids.sort()
 	for eid in sorted_ids:
 		_create_enemy_button(enemy_database[eid])
-	_add_enemy_debug_buttons()
+	#_add_enemy_debug_buttons()
 
 func _create_tower_button(tower_data: Dictionary) -> void:
 	var container = VBoxContainer.new()
@@ -116,32 +116,18 @@ func _create_enemy_button(enemy_data: Dictionary) -> void:
 	container.add_child(label)
 	enemies_grid.add_child(container)
 
+"""
 func _add_tower_debug_buttons() -> void:
-	var hbox = HBoxContainer.new()
-	hbox.name = "TowerDebugButtons"
-
-	var unlock_btn = Button.new()
-	unlock_btn.text = "Unlock All"
-	unlock_btn.pressed.connect(func():
 		for tid in tower_database:
 			if tid not in ProgressManager.unlocked_towers:
 				ProgressManager.unlocked_towers.append(tid) 
 		ProgressManager.save_progress()
 		_reload_towers()
-	)
 
-	var reset_btn = Button.new()
-	reset_btn.text = "Lock All"
-	reset_btn.pressed.connect(func():
 		ProgressManager.unlocked_towers = [1]
 		ProgressManager.save_progress()
 		_reload_towers()
-	)
 
-	hbox.add_child(unlock_btn)
-	hbox.add_child(reset_btn)
-	towers_grid.add_child(hbox)
-	towers_grid.move_child(hbox, 0)
 
 func _add_enemy_debug_buttons() -> void:
 	var hbox = HBoxContainer.new()
@@ -165,11 +151,13 @@ func _add_enemy_debug_buttons() -> void:
 		ProgressManager.save_progress()
 		_reload_enemies()
 	)
+	
 
 	hbox.add_child(unlock_btn)
 	hbox.add_child(reset_btn)
 	enemies_grid.add_child(hbox)
 	enemies_grid.move_child(hbox, 0)
+"""
 
 func _reload_towers() -> void:
 	for child in towers_grid.get_children():

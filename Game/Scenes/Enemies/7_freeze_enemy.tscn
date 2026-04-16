@@ -15,6 +15,7 @@ enemy_id = 7
 speed = 140.0
 health = 1
 damage = 11
+unlocked = true
 regen_texture = ExtResource("2_tpnqf")
 damage_immunities = Array[int]([2])
 child_enemy_ids = Array[int]([5, 5])

@@ -4,10 +4,10 @@ const SAVE_PATH = "user://progress.cfg"
 const LEVEL_ORDER = ["tutorial", "level_1", "level_2", "level_3", "level_4", "level_5", "sandbox"]
 
 var unlocked_levels: Array = ["tutorial"]
-var unlocked_enemies: Array = []
+var unlocked_enemies: Array = ["1"]
 var killed_enemy_counts: Dictionary = {}
 var beaten_levels: Array = []
-var unlocked_towers: Array = [1]
+var unlocked_towers: Array = [1,2,3,4,5,6,7]
 
 func _ready() -> void:
 	load_progress()
