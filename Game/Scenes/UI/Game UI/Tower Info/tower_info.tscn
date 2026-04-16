@@ -49,10 +49,12 @@ text = "First"
 horizontal_alignment = 1
 
 [node name="NextButton" type="Button" parent="Panel/VBoxContainer/FocusModeContainer" unique_id=550295367]
+custom_minimum_size = Vector2(20, 30)
 layout_mode = 2
 text = ">"
 
 [node name="SellButton" type="Button" parent="Panel/VBoxContainer" unique_id=1193050798]
+custom_minimum_size = Vector2(160, 30)
 layout_mode = 2
 text = "Sell
 "

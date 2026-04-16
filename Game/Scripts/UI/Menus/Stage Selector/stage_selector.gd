@@ -70,7 +70,7 @@ func _load_level(path: String) -> void:
 	queue_free()
 
 func _on_tutorial_pressed() -> void:
-	_load_level("res://Game/Scenes/Levels/tutorial.tscn")
+		_load_level("res://Game/Scenes/Levels/tutorial.tscn")
 
 func _on_level_1_pressed() -> void:
 	if ProgressManager.is_level_unlocked("level_1"):

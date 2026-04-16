@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bw435atg0lpdr"]
 
 [ext_resource type="Script" uid="uid://br82uvgrskqx8" path="res://Game/Scripts/UI/Menus/Collection/collection_tower_info.gd" id="1_ste88"]
-[ext_resource type="Texture2D" uid="uid://d0jsijlf3ns2k" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL1Spo.png" id="2_2cqxx"]
+[ext_resource type="Texture2D" uid="uid://b34p0cq4o8th8" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL1Spo.png" id="2_2cqxx"]
 
 [node name="Collection Tower Info" type="Control" unique_id=1085745599]
 layout_mode = 3
@@ -79,6 +79,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Close" type="Button" parent="Panel" unique_id=332307045]
+custom_minimum_size = Vector2(100, 50)
 layout_mode = 0
 offset_left = -102.63196
 offset_top = -43.5

@@ -35,6 +35,7 @@ func setup(
 	damage_type = bullet_damage_type
 	rotation = direction.angle()
 	tower_owner = owner_tower
+	print(tower_owner.name)
 	explosion_radius = radius
 	pierce = bullet_pierce
 	boss_bonus = boss_damage_bonus
@@ -42,6 +43,10 @@ func setup(
 	is_active = true
 	max_travel_distance = bullet_max_travel_distance
 	_distance_tavelled = 0.0
+	
+	SoundManager.play_random_pitch("crossbow_shoot(tower)") ##for now this is the default
+		
+	
 
 func _process(delta: float) -> void:
 	if not is_active:
@@ -50,7 +55,7 @@ func _process(delta: float) -> void:
 	var step = velocity * delta
 	_distance_tavelled += step.length()
 	if max_travel_distance > 0.0 and _distance_tavelled >= max_travel_distance:
-		print("BULLET EXPIRED after ", _distance_tavelled, "px")
+		##print("BULLET EXPIRED after ", _distance_tavelled, "px")
 		_destroy_bullet()
 		return
 	var enemies = get_tree().get_nodes_in_group("enemies")
@@ -95,6 +100,7 @@ func _explode() -> void:
 			if hits >= pierce - 1:
 				break
 	_show_explosion()
+	SoundManager.play_random_pitch("bomb_explode(tower)")
 	_destroy_bullet()
 
 func _show_explosion() -> void:

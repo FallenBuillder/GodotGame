@@ -257,6 +257,7 @@ upgrades = Array[ExtResource("3_b47pl")]([SubResource("Resource_pe3pp"), SubReso
 max_projectile_travel_distance = 225.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=198514786]
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_g7l84")
 animation = &"shoot"
 autoplay = "idle"
@@ -273,4 +274,5 @@ collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea" unique_id=712842676]
 position = Vector2(1, 0)
+scale = Vector2(1.5, 1.5)
 shape = SubResource("CircleShape2D_y3h2v")

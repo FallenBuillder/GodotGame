@@ -116,6 +116,7 @@ func _on_wave_started(_wave_num: int) -> void:
 func _on_wave_completed(wave_num: int) -> void:
 	if not is_sandbox and wave_num >= WaveManager.get_level_max_wave():
 		_trigger_victory()
+		SoundManager.play_constant("Victory_better")
 
 	if is_sandbox:
 		speed_up_button.text = "Speed Up" if not GameManager.is_fast else "Normal Speed"
@@ -163,6 +164,7 @@ func _show_congratulations() -> void:
 	get_tree().root.add_child(canvas)
 	var congrats = load("res://Game/Scenes/UI/Game UI/Congratulations/congratulations.tscn")
 	if congrats:
+		SoundManager.play_constant("Victory_better")
 		canvas.add_child(congrats.instantiate())
 	get_tree().paused = true
 

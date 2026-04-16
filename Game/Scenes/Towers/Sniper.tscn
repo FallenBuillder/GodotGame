@@ -166,7 +166,7 @@ script = ExtResource("1_f6sye")
 detection_range = -1.0
 tower_name = "Sniper Mouse"
 tower_id = 3
-fire_rate = 1.3599999999999999
+fire_rate = 1.36
 damage = 2
 projectile_speed = -1
 cost = 350
@@ -177,6 +177,7 @@ upgrades = Array[ExtResource("3_2qmqc")]([SubResource("Resource_qixap"), SubReso
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1546485736]
 position = Vector2(-2.645, -1.01)
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_v5dud")
 animation = &"idle"
 autoplay = "idle"
@@ -191,4 +192,5 @@ collision_layer = 8
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea" unique_id=712842676]
+scale = Vector2(1.5, 1.5)
 shape = SubResource("CircleShape2D_y3h2v")

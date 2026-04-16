@@ -74,7 +74,13 @@ func _process(delta: float) -> void:
 		if _regen_timer >= REGEN_DELAY:
 			_regen_timer = 0.0
 			_gain_layer()
-
+			
+func play_cheese_death():
+	if randf() < 0.5:
+		SoundManager.play_random_pitch("CheeseDie1")
+	else:
+		SoundManager.play_random_pitch("CheeseDie2")
+		
 func apply_slow() -> void:
 	if is_slowed:
 		return
@@ -175,6 +181,7 @@ func _die_fully() -> void:
 	ProgressManager.on_enemy_killed(enemy_id)
 	GameManager.add_money(reward)
 	queue_free()
+	play_cheese_death()
 
 func die() -> void:
 	if not is_child_spawn and (regen or not child_enemy_ids.is_empty()) and enemy_id > 1:

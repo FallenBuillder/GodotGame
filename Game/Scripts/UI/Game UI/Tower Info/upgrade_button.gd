@@ -67,6 +67,7 @@ func _refresh_affordability() -> void:
 	modulate = Color.WHITE if can_afford else Color(0.6, 0.6, 0.6, 1.0)
 
 func _pressed() -> void:
+	SoundManager.play_constant("UpgradeTower")
 	if not upgrade_data or not target_tower:
 		return
 	if not GameManager.spend_money(upgrade_data.cost):

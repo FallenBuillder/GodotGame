@@ -6,7 +6,6 @@ var settings_scene = preload("res://Game/Scenes/UI/Game UI/Game Menu/game_menu.t
 var _level_path: String = ""
 
 @onready var path_arrow = $PathArrow
-
 func _ready() -> void:
 	_level_path = get_scene_file_path()
 	var level_key = _level_path.get_file().get_basename()

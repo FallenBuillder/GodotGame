@@ -54,11 +54,13 @@ text = "GAME OVER"
 
 [node name="RestartButton" type="Button" parent="Panel/VBoxContainer" unique_id=1125539843]
 process_mode = 3
+custom_minimum_size = Vector2(400, 30)
 layout_mode = 2
 text = "Restart"
 
 [node name="BackButton" type="Button" parent="Panel/VBoxContainer" unique_id=962576204]
 process_mode = 3
+custom_minimum_size = Vector2(400, 30)
 layout_mode = 2
 text = "Main Menu"
 

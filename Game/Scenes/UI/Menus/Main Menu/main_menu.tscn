@@ -204,6 +204,7 @@ theme_override_constants/separation = 16
 
 [node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=112395050]
 process_mode = 3
+custom_minimum_size = Vector2(350, 50)
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30

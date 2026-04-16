@@ -367,6 +367,7 @@ func _tick_sentry(delta: float) -> void:
 func _spawn_sentry() -> void:
 	if not GameManager.level_node:
 		return
+	SoundManager.play_random_pitch("engineer_place_turret")
 	var sentry = sentry_scene.instantiate()
 	var effective_damage_type := damage_type
 	if sentry_expert:
@@ -492,6 +493,7 @@ func _farm_tick(delta: float) -> void:
 		_show_farm_popup(farm_income)
 
 func _show_farm_popup(amount: int) -> void:
+	SoundManager.play_random_pitch("Farm(tower)")
 	var label = Label.new()
 	label.text = "+$%d" % amount
 	label.add_theme_color_override("font_color", Color(1.0, 0.85, 0.0))
@@ -633,6 +635,7 @@ func shoot(delta: float) -> void:
 					spawn_bullet()
 
 func _do_freeze_pulse() -> void:
+	SoundManager.play_random_pitch("freeze(tower)")
 	var anim = get_node_or_null("AnimatedSprite2D")
 	if anim:
 		anim.play("shoot")
@@ -671,12 +674,13 @@ func _instant_hit() -> void:
 func _show_air_push(target_pos: Vector2) -> void:
 	if not GameManager.level_node:
 		return
-
+	
 	var dir := (target_pos - global_position).normalized()
 	var perp := Vector2(-dir.y, dir.x)
 	var duration := 0.18
 
 	for i in range(3):
+		SoundManager.play_random_pitch("box_punch(tower)")
 		var vfx := Node2D.new()
 		vfx.global_position = global_position
 		vfx.z_index = 5
@@ -743,6 +747,7 @@ func spawn_bullet() -> void:
 			_shot_counter = 0
 			_do_crit()
 func _do_crit() -> void:
+	SoundManager.play_random_pitch("critical")
 	if not closest_enemy or not is_instance_valid(closest_enemy):
 		return
 	if closest_enemy.has_method("take_damage"):
@@ -854,6 +859,7 @@ func finalize_placement() -> void:
 	if not is_not_farm:
 		_setup_farm()
 	queue_redraw()
+	SoundManager.play_random_pitch("tower_place")
 
 func set_focus_mode(mode: FocusMode) -> void:
 	focus_mode = mode

@@ -8,7 +8,6 @@ var right_bar: ColorRect
 
 func _ready() -> void:
 	layer = 1
-
 	left_bar = ColorRect.new()
 	left_bar.color = Color(0, 0, 0, 1)
 	left_bar.mouse_filter = Control.MOUSE_FILTER_IGNORE

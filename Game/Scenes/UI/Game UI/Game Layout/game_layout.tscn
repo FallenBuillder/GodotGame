@@ -169,7 +169,7 @@ theme_override_constants/separation = 8
 alignment = 1
 
 [node name="SpeedUpButton" type="Button" parent="Game UI/Panel/UIButtonsContainer" unique_id=454647165]
-custom_minimum_size = Vector2(116, 31)
+custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
 text = "Speed up"
 
@@ -200,6 +200,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Tower Shop/Panel" unique_id=133375938]
+clip_contents = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -218,52 +219,53 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_constants/h_separation = 8
-theme_override_constants/v_separation = 50
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 70
 columns = 2
 
 [node name="BasicPanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=446331340 instance=ExtResource("3_11rb8")]
 layout_mode = 2
+tower_name = "Crossbow Mouse"
 
 [node name="FreezePanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=2055426772 instance=ExtResource("3_11rb8")]
 layout_mode = 2
 tower_scene = ExtResource("4_pwv23")
-tower_name = "Freeze"
+tower_name = "Magic Mouse"
 tower_cost = 300
 tower_icon = ExtResource("5_2fcvt")
 
 [node name="SniperPanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=1059696837 instance=ExtResource("3_11rb8")]
 layout_mode = 2
 tower_scene = ExtResource("6_lodc7")
-tower_name = "Sniper"
+tower_name = "Sniper Mouse"
 tower_cost = 350
 tower_icon = ExtResource("7_ab75l")
 
 [node name="EngineerPanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=831779071 instance=ExtResource("3_11rb8")]
 layout_mode = 2
 tower_scene = ExtResource("8_2m6ka")
-tower_name = "Engineer"
+tower_name = "Engineer Mouse"
 tower_cost = 450
 tower_icon = ExtResource("9_5i6ao")
 
 [node name="BombPanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=1536722401 instance=ExtResource("3_11rb8")]
 layout_mode = 2
 tower_scene = ExtResource("10_mc22t")
-tower_name = "Bomb"
+tower_name = "Bomber Mouse"
 tower_cost = 650
 tower_icon = ExtResource("11_lckyj")
 
 [node name="MelePanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=1458454471 instance=ExtResource("3_11rb8")]
 layout_mode = 2
 tower_scene = ExtResource("12_a140x")
-tower_name = "Mele"
+tower_name = "Boxing Mouse"
 tower_cost = 750
 tower_icon = ExtResource("13_vr1to")
 
 [node name="FarmPanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=1243030917 instance=ExtResource("3_11rb8")]
 layout_mode = 2
 tower_scene = ExtResource("14_uyt3x")
-tower_name = "Farm"
+tower_name = "Cheese Farm"
 tower_cost = 1000
 tower_icon = ExtResource("15_6pkdi")
 
@@ -430,6 +432,7 @@ layout_mode = 2
 text = "Wave: "
 
 [node name="ShopToggleButton" type="Button" parent="Bottom Info/Panel/VBoxContainer" unique_id=877740320]
+custom_minimum_size = Vector2(100, 30)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4

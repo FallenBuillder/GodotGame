@@ -23,6 +23,7 @@ ScreenManager="*uid://xn5m1y0fu2pj"
 ProgressManager="*uid://ccj85gsi852mx"
 CollectionData="*uid://c4aoha58r2mg3"
 PlacementManager="*uid://di455vn5brsuv"
+SoundManager="*uid://d4nmy8rsj73ho"
 
 [display]
 
@@ -31,6 +32,10 @@ window/size/viewport_height=1080
 window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="keep_width"
+
+[gui]
+
+theme/custom_font="uid://c87wlgt4m1kgk"
 
 [physics]
 

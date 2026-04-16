@@ -58,12 +58,14 @@ alignment = 1
 
 [node name="ReturnButton" type="Button" parent="CategoryButtons" unique_id=1432647194]
 process_mode = 3
+custom_minimum_size = Vector2(150, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Return"
 
 [node name="ExitButton" type="Button" parent="CategoryButtons" unique_id=179655285]
 process_mode = 3
+custom_minimum_size = Vector2(150, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Exit"

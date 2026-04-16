@@ -113,6 +113,7 @@ is_not_farm = false
 upgrades = Array[ExtResource("2_ybb8a")]([SubResource("Resource_y5dyd"), SubResource("Resource_yeqw1"), SubResource("Resource_ye23r"), SubResource("Resource_vho16")])
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=707101222]
+scale = Vector2(3, 3)
 texture = ExtResource("3_2ixum")
 
 [node name="ClickArea" type="Area2D" parent="." unique_id=319618098]
@@ -120,4 +121,5 @@ collision_layer = 8
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea" unique_id=712842676]
+scale = Vector2(3, 3)
 shape = SubResource("CircleShape2D_y3h2v")
