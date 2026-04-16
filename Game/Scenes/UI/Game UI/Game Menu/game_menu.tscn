@@ -3,6 +3,30 @@
 [ext_resource type="Script" uid="uid://cc72a8wihjh06" path="res://Game/Scripts/UI/Game UI/Game Menu/game_menu.gd" id="1_8xxlt"]
 [ext_resource type="Script" uid="uid://by52jcl0tpfov" path="res://Game/Scripts/UI/Game UI/Game Menu/control.gd" id="2_rex2o"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rewo1"]
+bg_color = Color(0.13682574, 0.13682574, 0.13682568, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sftfb"]
+bg_color = Color(0.48570347, 0.48570353, 0.4857034, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3d502"]
+bg_color = Color(0.28118682, 0.2811869, 0.28118676, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 2
+
 [node name="Game Menu" type="CanvasLayer" unique_id=1154868692]
 script = ExtResource("1_8xxlt")
 
@@ -40,24 +64,36 @@ theme_override_constants/separation = 13
 custom_minimum_size = Vector2(250, 60)
 layout_mode = 2
 theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_rewo1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sftfb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3d502")
 text = "Return"
 
 [node name="ResetButton" type="Button" parent="VBoxContainer" unique_id=1882277019]
 custom_minimum_size = Vector2(250, 60)
 layout_mode = 2
 theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_rewo1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sftfb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3d502")
 text = "Reset"
 
 [node name="SettingsButton" type="Button" parent="VBoxContainer" unique_id=471863855]
 custom_minimum_size = Vector2(250, 60)
 layout_mode = 2
 theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_rewo1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sftfb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3d502")
 text = "Settings"
 
 [node name="ExitButton" type="Button" parent="VBoxContainer" unique_id=668021202]
 custom_minimum_size = Vector2(250, 60)
 layout_mode = 2
 theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_rewo1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sftfb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3d502")
 text = "Exit"
 
 [connection signal="pressed" from="VBoxContainer/ReturnButton" to="." method="_on_return_button_pressed"]

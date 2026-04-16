@@ -36,6 +36,11 @@ func _ready() -> void:
 	var saved = GameManager.get_saved_wave_for_level(level_path)
 	if saved > 1 and GameManager.ui and GameManager.ui.has_method("set_start_wave"):
 		GameManager.ui.set_start_wave(saved)
+		
+	var settings_button = get_node_or_null("Panel/UIButtonsContainer/SettingsButton")
+	if settings_button:
+		settings_button.pressed.connect(_on_settings_button_pressed)
+	
 
 func _input(event: InputEvent) -> void:
 	if not GameManager.level_node:
@@ -149,3 +154,10 @@ func _on_money_changed(value: int) -> void:
 
 func _on_health_changed(value: int) -> void:
 	shop_health_label.text = "%d" % value
+
+
+var game_menu_scene = preload("res://Game/Scenes/UI/Game UI/Game Menu/game_menu.tscn")
+func _on_settings_button_pressed() -> void:
+	var menu = game_menu_scene.instantiate()
+	add_child(menu)
+	get_tree().paused = true

@@ -3,6 +3,12 @@
 [ext_resource type="Script" uid="uid://br82uvgrskqx8" path="res://Game/Scripts/UI/Menus/Collection/collection_tower_info.gd" id="1_ste88"]
 [ext_resource type="Texture2D" uid="uid://b34p0cq4o8th8" path="res://Game/Graphics/Towers/Basic/MyszNormalnaLVL1Spo.png" id="2_2cqxx"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2cqxx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gowtj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7a8g2"]
+
 [node name="Collection Tower Info" type="Control" unique_id=1085745599]
 layout_mode = 3
 anchors_preset = 15
@@ -85,9 +91,14 @@ offset_left = -102.63196
 offset_top = -43.5
 offset_right = 13.158005
 offset_bottom = 0.625
+rotation = -0.3700098
 scale = Vector2(0.8, 0.8)
-theme_override_font_sizes/font_size = 26
-text = "Close"
+theme_override_colors/font_color = Color(0.6269517, 0.20532405, 0.04666432, 1)
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2cqxx")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gowtj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7a8g2")
+text = "X"
 
 [node name="Lore" type="Label" parent="Panel" unique_id=334956720]
 layout_mode = 1
@@ -99,3 +110,14 @@ offset_left = -438.36804
 offset_right = 0.36791992
 grow_horizontal = 0
 grow_vertical = 2
+text = "Description:
+
+goofy rat 
+
+
+
+
+
+
+
+"

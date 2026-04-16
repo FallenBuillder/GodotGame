@@ -19,7 +19,7 @@ var sound_configs: Dictionary = {
 var sounds: Dictionary = {}
 
 func _ready() -> void:
-	_load_sounds_from_folder("res://Game/Sounds/")
+	_load_sounds_from_folder("res://Game/Sounds/") 
 	
 func _load_sounds_from_folder(path: String) -> void:
 	var dir = DirAccess.open(path)

@@ -2,8 +2,8 @@ extends Control
 
 var game_menu_scene = preload("res://Game/Scenes/UI/Game UI/Game Menu/game_menu.tscn")
 
-@onready var speed_up_button = $Panel/UIButtonsContainer/SpeedUpButton
-@onready var shop_toggle_button = $"../Bottom Info/Panel/VBoxContainer/ShopToggleButton"
+@onready var speed_up_button = $Panel/SpeedUpButton
+@onready var shop_toggle_button = $"../Bottom Info/Panel/ShopToggleButton"
 
 enum ButtonState { START_WAVE, SPEED_UP }
 var _button_state := ButtonState.START_WAVE
@@ -73,10 +73,6 @@ func _ready() -> void:
 
 	if speed_up_button:
 		speed_up_button.pressed.connect(_on_speed_up_button_pressed)
-
-	var settings_button = get_node_or_null("Panel/UIButtonsContainer/SettingsButton")
-	if settings_button:
-		settings_button.pressed.connect(_on_settings_button_pressed)
 
 	if shop_toggle_button:
 		shop_toggle_button.visible = false

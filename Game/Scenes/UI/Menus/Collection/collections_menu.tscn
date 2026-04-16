@@ -5,6 +5,34 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xtc83"]
 bg_color = Color(0.17657751, 0.17657751, 0.17657751, 1)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ntttj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_40hkf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1oli7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hpfft"]
+bg_color = Color(0.12591082, 0.12591085, 0.12591076, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ntttj"]
+bg_color = Color(0.4570951, 0.45195198, 0.46521294, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_40hkf"]
+bg_color = Color(0.23031503, 0.23031488, 0.23031497, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
 [node name="Collections Menu" type="Control" unique_id=1349233965]
 layout_mode = 3
 anchors_preset = 15
@@ -31,31 +59,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TopButtons" type="HBoxContainer" parent="Panel/VBoxContainer" unique_id=1631960714]
-layout_mode = 2
-alignment = 1
-
-[node name="ExitButton" type="Button" parent="Panel/VBoxContainer/TopButtons" unique_id=1227861725]
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_font_sizes/font_size = 28
-text = "Exit"
-
-[node name="MiceButton" type="Button" parent="Panel/VBoxContainer/TopButtons" unique_id=882980100]
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 28
-text = "Mice"
-
-[node name="CheesesButton" type="Button" parent="Panel/VBoxContainer/TopButtons" unique_id=1921166099]
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-theme_override_font_sizes/font_size = 28
-text = "Cheeses"
-
 [node name="MiceGrid" type="GridContainer" parent="Panel/VBoxContainer" unique_id=750553244]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 columns = 7
 
 [node name="CheesesGrid" type="GridContainer" parent="Panel/VBoxContainer" unique_id=2015424622]
@@ -65,6 +72,56 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 columns = 7
 
-[connection signal="pressed" from="Panel/VBoxContainer/TopButtons/ExitButton" to="." method="_on_exit_button_pressed"]
-[connection signal="pressed" from="Panel/VBoxContainer/TopButtons/MiceButton" to="." method="_on_mice_button_pressed"]
-[connection signal="pressed" from="Panel/VBoxContainer/TopButtons/CheesesButton" to="." method="_on_cheeses_button_pressed"]
+[node name="ExitButton" type="Button" parent="Panel" unique_id=1227861725]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 0
+offset_left = 1772.0
+offset_top = -23.0
+offset_right = 1972.0
+offset_bottom = 60.0
+rotation = 0.24609143
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ntttj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_40hkf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1oli7")
+text = "X"
+
+[node name="MiceButton" type="Button" parent="Panel" unique_id=882980100]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 0
+offset_left = 1001.0
+offset_top = 978.0
+offset_right = 1229.0
+offset_bottom = 1028.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_hpfft")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ntttj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_40hkf")
+text = "Mice"
+
+[node name="CheesesButton" type="Button" parent="Panel" unique_id=1921166099]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 0
+offset_left = 758.0
+offset_top = 977.0
+offset_right = 981.0
+offset_bottom = 1027.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_hpfft")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ntttj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_40hkf")
+text = "Cheeses"
+
+[node name="Label" type="Label" parent="Panel" unique_id=590922483]
+layout_mode = 0
+offset_left = 944.0
+offset_top = 922.0
+offset_right = 1038.0
+offset_bottom = 964.0
+theme_override_font_sizes/font_size = 30
+text = "toggle"
+
+[connection signal="pressed" from="Panel/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="Panel/MiceButton" to="." method="_on_mice_button_pressed"]
+[connection signal="pressed" from="Panel/CheesesButton" to="." method="_on_cheeses_button_pressed"]

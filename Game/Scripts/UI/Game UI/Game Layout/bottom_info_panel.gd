@@ -1,6 +1,6 @@
 extends Control
 
-@onready var wave_label = $Panel/VBoxContainer/WaveLabel
+@onready var wave_label = $Panel/WaveLabel
 
 func _ready() -> void:
 	GameManager.wave_changed.connect(_on_wave_changed)

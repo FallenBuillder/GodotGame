@@ -35,6 +35,7 @@ func _create_logo_layer() -> void:
 		await get_tree().create_timer(1.0, false).timeout
 		await fade_in(1) # istnieje fade 
 		canvas.queue_free()
+		SoundManager.play_constant("HomeMusic")
 		await get_tree().create_timer(1.0, false).timeout
 		fade_out(2)
 		
