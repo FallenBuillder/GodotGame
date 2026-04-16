@@ -24,6 +24,7 @@ ProgressManager="*uid://ccj85gsi852mx"
 CollectionData="*uid://c4aoha58r2mg3"
 PlacementManager="*uid://di455vn5brsuv"
 SoundManager="*uid://d4nmy8rsj73ho"
+FadeManager="*uid://cfh1d6qs0tp5x"
 
 [display]
 

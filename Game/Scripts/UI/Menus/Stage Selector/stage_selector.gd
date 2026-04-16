@@ -70,28 +70,29 @@ func _load_level(path: String) -> void:
 	queue_free()
 
 func _on_tutorial_pressed() -> void:
-		_load_level("res://Game/Scenes/Levels/tutorial.tscn")
+	if ProgressManager.is_level_unlocked("tutorial"):
+		FadeManager.transition_to_level("res://Game/Scenes/Levels/tutorial.tscn")
 
 func _on_level_1_pressed() -> void:
 	if ProgressManager.is_level_unlocked("level_1"):
-		_load_level("res://Game/Scenes/Levels/level_1.tscn")
+		FadeManager.transition_to_level("res://Game/Scenes/Levels/level_1.tscn")
 
 func _on_level_2_pressed() -> void:
 	if ProgressManager.is_level_unlocked("level_2"):
-		_load_level("res://Game/Scenes/Levels/level_2.tscn")
+		FadeManager.transition_to_level("res://Game/Scenes/Levels/level_2.tscn")
 
 func _on_level_3_pressed() -> void:
 	if ProgressManager.is_level_unlocked("level_3"):
-		_load_level("res://Game/Scenes/Levels/level_3.tscn")
+		FadeManager.transition_to_level("res://Game/Scenes/Levels/level_3.tscn")
 
 func _on_level_4_pressed() -> void:
 	if ProgressManager.is_level_unlocked("level_4"):
-		_load_level("res://Game/Scenes/Levels/level_4.tscn")
+		FadeManager.transition_to_level("res://Game/Scenes/Levels/level_4.tscn")
 
 func _on_level_5_pressed() -> void:
 	if ProgressManager.is_level_unlocked("level_5"):
-		_load_level("res://Game/Scenes/Levels/level_5.tscn")
+		FadeManager.transition_to_level("res://Game/Scenes/Levels/level_5.tscn")
 
 func _on_debug_stage_pressed() -> void:
 	if ProgressManager.is_level_unlocked("sandbox"):
-		_load_level("res://Game/Scenes/Levels/sandbox_level.tscn")
+		FadeManager.transition_to_level("res://Game/Scenes/Levels/sandbox_level.tscn")

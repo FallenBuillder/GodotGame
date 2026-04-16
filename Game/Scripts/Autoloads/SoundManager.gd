@@ -12,7 +12,8 @@ var sound_configs: Dictionary = {
 	"CheeseDie2": Vector2(1.0, -17.5),
 	"freeze(tower)": Vector2(1.0, -15.0),
 	"box_punch(tower)": Vector2(1.0, -15.0),
-	"HomeMusic": Vector2(1.0, -14.0)
+	"HomeMusic": Vector2(1.0, -14.0),
+	"intro": Vector2(1.0, 0.0)
 }
 
 var sounds: Dictionary = {}
