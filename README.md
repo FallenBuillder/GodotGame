@@ -15,8 +15,10 @@ TODO:
 
 
 - change settings icons to new icons ( export new for music and sounds + make them work ) 
+- change x button in collection to be on the left 
+
 
 - fix glitch where freeze monkey freezez towers
 - fix rapid fire glitchb
 
-1
+
