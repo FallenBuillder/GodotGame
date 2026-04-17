@@ -14,3 +14,9 @@ TODO:
 - change wave label so it shows Wave and the number below it 
 
 
+- change settings icons to new icons ( export new for music and sounds + make them work ) 
+
+- fix glitch where freeze monkey freezez towers
+- fix rapid fire glitchb
+
+1
