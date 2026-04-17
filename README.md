@@ -1,6 +1,7 @@
 TODO:
 
-- Add balancing to the game 
+- Add balancing to the game
+- Add a better income gathering system 
 - Add the upgrade graphics
 - Add a 10x , 2x speed modifier , keybind 
 - Fix icons not working in collection , in-game ( .remap )
