@@ -1,19 +1,13 @@
 TODO:
 
-- Add a 10x , 2x speed modifier , keybind 
-- Fix icons not working in collection , in-game ( .remap )
-- add monkey village
 - Improve the Main Menu layout 
 - change the Victory , Game Over , congratulation menus 
 - add a mountain tile ( only snipers can be placed there )
-- change wave label so it shows Wave and the number below it
-   
-- Fix wave dissepearing when clicking on tower ( bottom info ) + toogle shop 
-- change engineer and diffrent towers sound when shoot 
+- add mouse village
+- change engineer and diffrent towers sound when shoot
+  
 - fix rapid fire glitch 
-
-- fix bug 2x button works in menu 
-- on exit make gamespeed x1 bassiclly 
 - i dopisz sobie bug do naprawienia że jeżeli gra jest zpauzowana przez game menu i pojawi się exit popup i na nim damy return to gra się odpauzuje, chociaż że ciągle jestećmy w game menu
+- On sandbox wave over dont make then next on start 
 
   
