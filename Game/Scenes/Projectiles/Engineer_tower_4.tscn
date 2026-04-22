@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://bk2qwobq8fd8v"]
 
-[ext_resource type="Script" uid="uid://b8kjs3wurgqrj" path="res://Game/Scripts/Projectiles/bullet.gd" id="1_fy0ps"]
-[ext_resource type="Texture2D" uid="uid://de5ulus75g265" path="res://Game/Graphics/Projectiles/Tower/AtakWiezyczkaLVL4.png" id="2_dw85t"]
+[ext_resource type="Script" uid="uid://b8kjs3wurgqrj" path="res://Game/Scripts/Projectiles/bullet.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://de5ulus75g265" path="res://Game/Graphics/Projectiles/Tower/AtakWiezyczkaLVL4.png" id="2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iq5f1"]
 size = Vector2(6, 4)
 
 [node name="Bullet" type="Area2D" unique_id=1583972615]
-script = ExtResource("1_fy0ps")
+script = ExtResource("1")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1134165799]
-texture = ExtResource("2_dw85t")
+texture = ExtResource("2")
 offset = Vector2(-0.49, -0.545)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=998652334]

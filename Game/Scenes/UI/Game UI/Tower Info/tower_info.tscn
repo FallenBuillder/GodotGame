@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bswmmidd7f07y"]
 
-[ext_resource type="Script" uid="uid://7xa5wc1c47mr" path="res://Game/Scripts/UI/Game UI/Tower Info/tower_info.gd" id="1_rksre"]
+[ext_resource type="Script" uid="uid://7xa5wc1c47mr" path="res://Game/Scripts/UI/Game UI/Tower Info/tower_info.gd" id="1"]
 
 [node name="Tower Info" type="Control" unique_id=1487783753]
 layout_mode = 3
@@ -9,7 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_rksre")
+script = ExtResource("1")
 
 [node name="Panel" type="Panel" parent="." unique_id=204206837]
 layout_mode = 1

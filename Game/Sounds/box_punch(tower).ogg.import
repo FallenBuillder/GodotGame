@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/box_punch(tower).ogg-59e9d526570098ea080d4e89
 [params]
 
 loop=false
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

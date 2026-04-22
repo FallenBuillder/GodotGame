@@ -1,145 +1,146 @@
 [gd_scene format=3 uid="uid://cokk7g3a665kn"]
 
-[ext_resource type="Script" uid="uid://7w8crscepu3h" path="res://Game/Scripts/Towers/tower.gd" id="1_f6sye"]
-[ext_resource type="PackedScene" uid="uid://dk3ok2f6hxbma" path="res://Game/Scenes/Projectiles/Sniper.tscn" id="2_f6sye"]
-[ext_resource type="Script" uid="uid://8wddbevg57e2" path="res://Game/Scripts/Data/TowerUpgradeData.gd" id="3_2qmqc"]
-[ext_resource type="Texture2D" uid="uid://dy2flleug4eo2" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL1Spo.png" id="3_f6sye"]
-[ext_resource type="Texture2D" uid="uid://c81exbnwxhwyq" path="res://Game/Graphics/Temp/circle.png" id="4_2mgrw"]
-[ext_resource type="Texture2D" uid="uid://dguokf7lefftk" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL1ATK.png" id="4_wsq13"]
-[ext_resource type="Texture2D" uid="uid://cfu38ykcg3ijy" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL1.5Spo.png" id="5_d2fc2"]
-[ext_resource type="Texture2D" uid="uid://p18jnk1cfluq" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL1.5ATK.png" id="6_o2j8o"]
-[ext_resource type="Script" uid="uid://lbyvro0ekv6l" path="res://Game/Scripts/Data/StatChange.gd" id="7_phjxj"]
-[ext_resource type="Texture2D" uid="uid://ds2qngj1ux4mh" path="res://Game/Graphics/Temp/empty.png" id="8_eqh26"]
-[ext_resource type="Texture2D" uid="uid://bbht8b16hx15o" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL2Spo.png" id="8_phjxj"]
-[ext_resource type="Texture2D" uid="uid://c0wosyhxo0f2h" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL2ATK.png" id="9_24elm"]
-[ext_resource type="Texture2D" uid="uid://r3xn5p58swjm" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL3Spo.png" id="10_wkrn2"]
-[ext_resource type="Texture2D" uid="uid://bwe43d1vspvif" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL3ATK.png" id="11_qixap"]
-[ext_resource type="Texture2D" uid="uid://di4lk1ufl0ppu" path="res://Game/Graphics/Temp/wrench.png" id="11_wx0ef"]
-[ext_resource type="Texture2D" uid="uid://cvi2nk40pw67m" path="res://Game/Graphics/Temp/x.png" id="14_8gbp6"]
-[ext_resource type="PackedScene" uid="uid://do0yg8cj1f5ce" path="res://Game/Scenes/Projectiles/Sniper_4.tscn" id="15_kf3eq"]
-[ext_resource type="Texture2D" uid="uid://dtxg3y14xse35" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL4Spo.png" id="16_il7x7"]
-[ext_resource type="Texture2D" uid="uid://dfenkp7umrp02" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL4ATK.png" id="17_405yo"]
+[ext_resource type="Script" uid="uid://7w8crscepu3h" path="res://Game/Scripts/Towers/tower.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://dk3ok2f6hxbma" path="res://Game/Scenes/Projectiles/Sniper.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://oy23upr1e12r" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaUpgr1.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://1t714rurhqb1" path="res://Game/Graphics/Towers/Sniper/KartaMyszSnajperska.png" id="3_wx0ef"]
+[ext_resource type="Texture2D" uid="uid://cfu38ykcg3ijy" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL1.5Spo.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://p18jnk1cfluq" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL1.5ATK.png" id="5"]
+[ext_resource type="Script" uid="uid://8wddbevg57e2" path="res://Game/Scripts/Data/TowerUpgradeData.gd" id="6"]
+[ext_resource type="Script" uid="uid://lbyvro0ekv6l" path="res://Game/Scripts/Data/StatChange.gd" id="7"]
+[ext_resource type="Texture2D" uid="uid://dytq2ypy16iad" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaUpgr2.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bbht8b16hx15o" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL2Spo.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://c0wosyhxo0f2h" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL2ATK.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://cuduh2ydl1v8o" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaUpgr3.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://r3xn5p58swjm" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL3Spo.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://bwe43d1vspvif" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL3ATK.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bre3b0gjqagu3" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaUpgr4.png" id="14"]
+[ext_resource type="PackedScene" uid="uid://do0yg8cj1f5ce" path="res://Game/Scenes/Projectiles/Sniper_4.tscn" id="15"]
+[ext_resource type="Texture2D" uid="uid://dtxg3y14xse35" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL4Spo.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://dfenkp7umrp02" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL4ATK.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://dy2flleug4eo2" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL1Spo.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://dguokf7lefftk" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL1ATK.png" id="19"]
 
 [sub_resource type="Resource" id="Resource_wx0ef"]
-script = ExtResource("7_phjxj")
+script = ExtResource("7")
 stat = "lead"
 mode = 1
 value = 1.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_8gbp6"]
-script = ExtResource("7_phjxj")
+script = ExtResource("7")
 stat = "frozen"
 mode = 1
 value = 1.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_kf3eq"]
-script = ExtResource("7_phjxj")
+script = ExtResource("7")
 stat = "damage"
 mode = 1
 value = 4.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_il7x7"]
-script = ExtResource("7_phjxj")
+script = ExtResource("7")
 stat = "fire_rate"
 mode = 1
 value = 0.99
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_qixap"]
-script = ExtResource("3_2qmqc")
+script = ExtResource("6")
 upgrade_name = "Even Faster Firing"
-icon = ExtResource("8_eqh26")
+icon = ExtResource("3")
 cost = 450
 description = "Shoots even faster and chots destroy 4 layers of Cheese, and can destroy Lead and Frozen!"
-new_tower_sprite_idle = ExtResource("5_d2fc2")
-new_tower_sprite_shoot = ExtResource("6_o2j8o")
-stat_changes = Array[ExtResource("7_phjxj")]([SubResource("Resource_wx0ef"), SubResource("Resource_8gbp6"), SubResource("Resource_kf3eq"), SubResource("Resource_il7x7")])
+new_tower_sprite_idle = ExtResource("4")
+new_tower_sprite_shoot = ExtResource("5")
+stat_changes = Array[ExtResource("7")]([SubResource("Resource_wx0ef"), SubResource("Resource_8gbp6"), SubResource("Resource_kf3eq"), SubResource("Resource_il7x7")])
 metadata/_custom_type_script = "uid://8wddbevg57e2"
 
 [sub_resource type="Resource" id="Resource_405yo"]
-script = ExtResource("7_phjxj")
+script = ExtResource("7")
 stat = "damage"
 mode = 1
 value = 7.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_0ve6m"]
-script = ExtResource("7_phjxj")
+script = ExtResource("7")
 stat = "fire_rate"
 mode = 1
 value = 0.35
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_76cni"]
-script = ExtResource("3_2qmqc")
+script = ExtResource("6")
 upgrade_name = "Semi-Automatic"
-icon = ExtResource("11_wx0ef")
+icon = ExtResource("8")
 cost = 2295
 description = "Attacks 3x as fast and shots can destroy 7 layers of Cheese!"
-new_tower_sprite_idle = ExtResource("8_phjxj")
-new_tower_sprite_shoot = ExtResource("9_24elm")
-stat_changes = Array[ExtResource("7_phjxj")]([SubResource("Resource_405yo"), SubResource("Resource_0ve6m")])
+new_tower_sprite_idle = ExtResource("9")
+new_tower_sprite_shoot = ExtResource("10")
+stat_changes = Array[ExtResource("7")]([SubResource("Resource_405yo"), SubResource("Resource_0ve6m")])
 metadata/_custom_type_script = "uid://8wddbevg57e2"
 
 [sub_resource type="Resource" id="Resource_4toxf"]
-script = ExtResource("7_phjxj")
+script = ExtResource("7")
 stat = "fire_rate"
 mode = 1
 value = 0.08
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_mkinj"]
-script = ExtResource("7_phjxj")
+script = ExtResource("7")
 stat = "boss_damage"
 value = 2.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_e5xjp"]
-script = ExtResource("3_2qmqc")
+script = ExtResource("6")
 upgrade_name = "Full Auto Rifle"
-icon = ExtResource("14_8gbp6")
+icon = ExtResource("11")
 cost = 3485
 description = "Fully automatic weapon with incredible popping power."
-new_tower_sprite_idle = ExtResource("10_wkrn2")
-new_tower_sprite_shoot = ExtResource("11_qixap")
-stat_changes = Array[ExtResource("7_phjxj")]([SubResource("Resource_4toxf"), SubResource("Resource_mkinj")])
+new_tower_sprite_idle = ExtResource("12")
+new_tower_sprite_shoot = ExtResource("13")
+stat_changes = Array[ExtResource("7")]([SubResource("Resource_4toxf"), SubResource("Resource_mkinj")])
 metadata/_custom_type_script = "uid://8wddbevg57e2"
 
 [sub_resource type="Resource" id="Resource_eqh26"]
-script = ExtResource("7_phjxj")
+script = ExtResource("7")
 stat = "fire_rate"
 mode = 1
 value = 0.04
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_x7eok"]
-script = ExtResource("7_phjxj")
+script = ExtResource("7")
 stat = "boss_damage"
 value = 4.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_wkrn2"]
-script = ExtResource("3_2qmqc")
+script = ExtResource("6")
 upgrade_name = "Elite Defender"
-icon = ExtResource("4_2mgrw")
+icon = ExtResource("14")
 cost = 12665
 description = "Fires super fast and does more damage to Gouha-class Bloons. Fires faster the further the Cheeses are along the track. Gains 4x attack speed briefly on losing lives."
-new_bullet_scene = ExtResource("15_kf3eq")
-new_tower_sprite_idle = ExtResource("16_il7x7")
-new_tower_sprite_shoot = ExtResource("17_405yo")
+new_bullet_scene = ExtResource("15")
+new_tower_sprite_idle = ExtResource("16")
+new_tower_sprite_shoot = ExtResource("17")
 proximity_speed_bonus = true
 proximity_max_bonus_pct = 0.5
-stat_changes = Array[ExtResource("7_phjxj")]([SubResource("Resource_eqh26"), SubResource("Resource_x7eok")])
+stat_changes = Array[ExtResource("7")]([SubResource("Resource_eqh26"), SubResource("Resource_x7eok")])
 metadata/_custom_type_script = "uid://8wddbevg57e2"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v5dud"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_f6sye")
+"texture": ExtResource("18")
 }],
 "loop": true,
 "name": &"idle",
@@ -147,7 +148,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_wsq13")
+"texture": ExtResource("19")
 }],
 "loop": false,
 "name": &"shoot",
@@ -162,7 +163,7 @@ radius = 19.0
 
 [node name="Tower" type="Node2D" unique_id=1376173315]
 texture_filter = 1
-script = ExtResource("1_f6sye")
+script = ExtResource("1")
 detection_range = -1.0
 tower_name = "Sniper Mouse"
 tower_id = 3
@@ -170,10 +171,11 @@ fire_rate = 1.36
 damage = 2
 projectile_speed = -1
 cost = 350
-bullet_scene = ExtResource("2_f6sye")
+bullet_scene = ExtResource("2")
+display_image_scene = ExtResource("3_wx0ef")
 can_detect_camo = true
 can_attack_frozen = true
-upgrades = Array[ExtResource("3_2qmqc")]([SubResource("Resource_qixap"), SubResource("Resource_76cni"), SubResource("Resource_e5xjp"), SubResource("Resource_wkrn2")])
+upgrades = Array[ExtResource("6")]([SubResource("Resource_qixap"), SubResource("Resource_76cni"), SubResource("Resource_e5xjp"), SubResource("Resource_wkrn2")])
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1546485736]
 position = Vector2(-2.645, -1.01)

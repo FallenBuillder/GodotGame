@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://cgp4yu1bvtx5v"]
 
-[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1_pvwe6"]
-[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2_r2g81"]
+[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1"]
+[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2"]
 
 [sub_resource type="Resource" id="Resource_bidaj"]
-script = ExtResource("1_pvwe6")
+script = ExtResource("1")
 count = 30
 end = 16.559
 
 [resource]
-script = ExtResource("2_r2g81")
-groups = Array[ExtResource("1_pvwe6")]([SubResource("Resource_bidaj")])
+script = ExtResource("2")
+groups = [SubResource("Resource_bidaj")]

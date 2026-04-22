@@ -1,7 +1,7 @@
 class_name StatChange
 extends Resource
 
-enum Mode { ADD, SET, MULTIPLY }
+enum Mode{ADD, SET, MULTIPLY}
 
 @export var stat: String = ""
 @export var mode: Mode = Mode.ADD

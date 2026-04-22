@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bvvyx2dfun03m"]
 
-[ext_resource type="Script" uid="uid://bbqb27e2hj5ma" path="res://Game/Scripts/UI/Game UI/Game Over/game_over.gd" id="1_d8m4d"]
+[ext_resource type="Script" uid="uid://bbqb27e2hj5ma" path="res://Game/Scripts/UI/Game UI/Game Over/game_over.gd" id="1"]
 
 [node name="Vicotry" type="Control" unique_id=2066687393]
 layout_mode = 3
@@ -9,7 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_d8m4d")
+script = ExtResource("1")
 metadata/_edit_use_anchors_ = true
 
 [node name="Overlay" type="ColorRect" parent="." unique_id=1171391373]

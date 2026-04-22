@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://dw6vobju81miu"]
 
-[ext_resource type="Script" uid="uid://disuy6qnllcb4" path="res://Game/Scripts/UI/Menus/Stage Selector/stage_selector.gd" id="1_ufxhx"]
-[ext_resource type="StyleBox" uid="uid://c4m26twhdst54" path="res://Game/Scenes/UI/Menus/Collection/new_style_box_flat.tres" id="2_2pw55"]
-[ext_resource type="Texture2D" uid="uid://mx28bnky3l1n" path="res://Game/Graphics/UI/Trophy.png" id="2_e4i6i"]
-[ext_resource type="StyleBox" uid="uid://kxg3iut0rqda" path="res://Game/Scenes/UI/Menus/Collection/123.tres" id="4_vrgnf"]
-[ext_resource type="Texture2D" uid="uid://c2q1klogclx8k" path="res://Game/Graphics/Towers/Basic/MyszNormalna1.5Spo.png" id="5_4qb6x"]
-[ext_resource type="Script" uid="uid://x2y4od7y81gi" path="res://Game/Scenes/UI/Menus/Stage Selector/mysz_normalna_1_5_spo.gd" id="6_uxoqu"]
-[ext_resource type="Texture2D" uid="uid://dd8i83ay1hhor" path="res://Game/Graphics/Enemies/1 Basic/SerBasicRed.png" id="7_04ysw"]
-[ext_resource type="Texture2D" uid="uid://bwmhvn47str56" path="res://Game/Graphics/Enemies/14 Boss/SerBossZomg.png" id="8_jx7ok"]
-[ext_resource type="Texture2D" uid="uid://uh0iw1prpjmm" path="res://Game/Graphics/Enemies/7 Freeze/SerFreezeWhite.png" id="9_em3gp"]
-[ext_resource type="Texture2D" uid="uid://c5rkbwbik5k6m" path="res://Game/Graphics/Enemies/13 Boss/SerBossBFG.png" id="10_l5tve"]
-[ext_resource type="Texture2D" uid="uid://d4d8rs4vxaoak" path="res://Game/Graphics/Enemies/12 Boss/SerBossMoab.png" id="11_wbc2o"]
+[ext_resource type="Script" uid="uid://disuy6qnllcb4" path="res://Game/Scripts/UI/Menus/Stage Selector/stage_selector.gd" id="1"]
+[ext_resource type="StyleBox" uid="uid://c4m26twhdst54" path="res://Game/Scenes/UI/Menus/Collection/new_style_box_flat.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://mx28bnky3l1n" path="res://Game/Graphics/UI/Trophy.png" id="3"]
+[ext_resource type="StyleBox" uid="uid://kxg3iut0rqda" path="res://Game/Scenes/UI/Menus/Collection/123.tres" id="4"]
+[ext_resource type="Texture2D" uid="uid://cs2kyeif5u4m4" path="res://Game/Graphics/UI/MyszBasic.png" id="5_em3gp"]
+[ext_resource type="Script" uid="uid://x2y4od7y81gi" path="res://Game/Scenes/UI/Menus/Stage Selector/mysz_normalna_1_5_spo.gd" id="6"]
+[ext_resource type="Texture2D" uid="uid://bwmhvn47str56" path="res://Game/Graphics/Enemies/14 Boss/SerBossZomg.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dvwqiblbqfnr" path="res://Game/Graphics/UI/Strzałka300x8.png" id="10_l5tve"]
+[ext_resource type="Texture2D" uid="uid://c23t1hsnqpfu3" path="res://Game/Graphics/UI/Strzałka400x8.png" id="11_wbc2o"]
+[ext_resource type="Texture2D" uid="uid://x8lyeem5rc6q" path="res://Game/Graphics/UI/Strzałka570x8.png" id="12_bnn2j"]
+[ext_resource type="Texture2D" uid="uid://odwgnx4hshx5" path="res://Game/Graphics/UI/Strzałka250x8.png" id="13_wgm8o"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e4i6i"]
 
@@ -66,7 +66,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ufxhx")
+script = ExtResource("1")
 
 [node name="Overlay" type="ColorRect" parent="." unique_id=1623241684]
 modulate = Color(0, 0, 0, 1)
@@ -75,6 +75,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 2.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -94,15 +98,15 @@ text = "X"
 
 [node name="Tutorial" type="Button" parent="." unique_id=1284496963]
 layout_mode = 0
-offset_left = 159.0
+offset_left = 102.0
 offset_top = 459.0
-offset_right = 360.0
+offset_right = 303.0
 offset_bottom = 537.0
 theme_override_font_sizes/font_size = 51
 theme_override_styles/normal = SubResource("StyleBoxFlat_e4i6i")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2pw55")
-theme_override_styles/hover = ExtResource("2_2pw55")
-theme_override_styles/hover_mirrored = ExtResource("2_2pw55")
+theme_override_styles/hover = ExtResource("2")
+theme_override_styles/hover_mirrored = ExtResource("2")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_4sk8y")
 text = "Tutorial"
 
@@ -117,7 +121,7 @@ offset_right = 18.0
 offset_bottom = 31.0
 grow_horizontal = 0
 rotation = -0.28274333
-texture = ExtResource("2_e4i6i")
+texture = ExtResource("3")
 expand_mode = 1
 
 [node name="Level1" type="Button" parent="." unique_id=2014403188]
@@ -129,8 +133,8 @@ offset_bottom = 912.0
 theme_override_font_sizes/font_size = 51
 theme_override_styles/normal = SubResource("StyleBoxFlat_e4i6i")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2pw55")
-theme_override_styles/hover = ExtResource("2_2pw55")
-theme_override_styles/hover_mirrored = ExtResource("2_2pw55")
+theme_override_styles/hover = ExtResource("2")
+theme_override_styles/hover_mirrored = ExtResource("2")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_4sk8y")
 text = "Level 1"
 
@@ -145,20 +149,20 @@ offset_right = 35.0
 offset_bottom = 27.0
 grow_horizontal = 0
 rotation = 0.26703537
-texture = ExtResource("2_e4i6i")
+texture = ExtResource("3")
 expand_mode = 1
 
 [node name="Level2" type="Button" parent="." unique_id=2120768723]
 layout_mode = 0
-offset_left = 553.0
-offset_top = 190.0
-offset_right = 731.0
-offset_bottom = 268.0
+offset_left = 608.0
+offset_top = 185.0
+offset_right = 786.0
+offset_bottom = 263.0
 theme_override_font_sizes/font_size = 51
 theme_override_styles/normal = SubResource("StyleBoxFlat_e4i6i")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2pw55")
-theme_override_styles/hover = ExtResource("2_2pw55")
-theme_override_styles/hover_mirrored = ExtResource("2_2pw55")
+theme_override_styles/hover = ExtResource("2")
+theme_override_styles/hover_mirrored = ExtResource("2")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_4sk8y")
 text = "Level 2"
 
@@ -173,20 +177,20 @@ offset_right = 27.0
 offset_bottom = 40.0
 grow_horizontal = 0
 rotation = -0.15184365
-texture = ExtResource("2_e4i6i")
+texture = ExtResource("3")
 expand_mode = 1
 
 [node name="Level3" type="Button" parent="." unique_id=533577713]
 layout_mode = 0
-offset_left = 909.0
-offset_top = 467.0
-offset_right = 1087.0
-offset_bottom = 545.0
+offset_left = 884.0
+offset_top = 463.0
+offset_right = 1062.0
+offset_bottom = 541.0
 theme_override_font_sizes/font_size = 51
 theme_override_styles/normal = SubResource("StyleBoxFlat_e4i6i")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2pw55")
-theme_override_styles/hover = ExtResource("2_2pw55")
-theme_override_styles/hover_mirrored = ExtResource("2_2pw55")
+theme_override_styles/hover = ExtResource("2")
+theme_override_styles/hover_mirrored = ExtResource("2")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_4sk8y")
 text = "Level 3"
 
@@ -201,7 +205,7 @@ offset_right = 21.0
 offset_bottom = 44.0
 grow_horizontal = 0
 rotation = -0.23038346
-texture = ExtResource("2_e4i6i")
+texture = ExtResource("3")
 expand_mode = 1
 
 [node name="Level4" type="Button" parent="." unique_id=1435814081]
@@ -213,8 +217,8 @@ offset_bottom = 732.0
 theme_override_font_sizes/font_size = 51
 theme_override_styles/normal = SubResource("StyleBoxFlat_e4i6i")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2pw55")
-theme_override_styles/hover = ExtResource("2_2pw55")
-theme_override_styles/hover_mirrored = ExtResource("2_2pw55")
+theme_override_styles/hover = ExtResource("2")
+theme_override_styles/hover_mirrored = ExtResource("2")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_4sk8y")
 text = "Level 4"
 
@@ -229,7 +233,7 @@ offset_right = 28.0
 offset_bottom = 26.0
 grow_horizontal = 0
 rotation = 0.06632251
-texture = ExtResource("2_e4i6i")
+texture = ExtResource("3")
 expand_mode = 1
 
 [node name="Level5" type="Button" parent="." unique_id=1117687762]
@@ -242,8 +246,8 @@ offset_bottom = 551.0
 theme_override_font_sizes/font_size = 51
 theme_override_styles/normal = SubResource("StyleBoxFlat_e4i6i")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2pw55")
-theme_override_styles/hover = ExtResource("2_2pw55")
-theme_override_styles/hover_mirrored = ExtResource("2_2pw55")
+theme_override_styles/hover = ExtResource("2")
+theme_override_styles/hover_mirrored = ExtResource("2")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_4sk8y")
 text = "Level 5"
 
@@ -258,110 +262,98 @@ offset_right = 37.0
 offset_bottom = 19.0
 grow_horizontal = 0
 rotation = 0.38920844
-texture = ExtResource("2_e4i6i")
+texture = ExtResource("3")
 expand_mode = 1
 
 [node name="DebugStage" type="Button" parent="." unique_id=2045343972]
 layout_mode = 0
-offset_left = 638.0
-offset_top = 38.0
-offset_right = 1238.0
-offset_bottom = 88.0
+offset_left = 863.0
+offset_top = 1007.0
+offset_right = 1110.0
+offset_bottom = 1057.0
 theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = ExtResource("4_vrgnf")
-theme_override_styles/pressed = ExtResource("4_vrgnf")
-theme_override_styles/hover = ExtResource("4_vrgnf")
-theme_override_styles/disabled = ExtResource("4_vrgnf")
+theme_override_styles/normal = ExtResource("4")
+theme_override_styles/pressed = ExtResource("4")
+theme_override_styles/hover = ExtResource("4")
+theme_override_styles/disabled = ExtResource("4")
 text = "Enter Sandbox"
-
-[node name="Panel" type="Panel" parent="." unique_id=1539917888]
-modulate = Color(0.6892311, 0.99083585, 0.79161423, 1)
-self_modulate = Color(0.24465051, 0.92780876, 0.3263941, 1)
-layout_mode = 0
-offset_left = 644.65564
-offset_top = 269.4656
-offset_right = 1214.3551
-offset_bottom = 275.26492
-rotation = -4.5570545
-
-[node name="Panel" type="Panel" parent="Panel" unique_id=964844765]
-modulate = Color(0.6892311, 0.99083585, 0.79161423, 1)
-self_modulate = Color(0.24465051, 0.92780876, 0.3263941, 1)
-layout_mode = 0
-offset_left = 155.24777
-offset_top = -300.54434
-offset_right = 436.42355
-offset_bottom = -296.0748
-rotation = -4.064872
-
-[node name="Panel" type="Panel" parent="Panel/Panel" unique_id=1916793858]
-modulate = Color(0.6892311, 0.99083585, 0.79161423, 1)
-self_modulate = Color(0.24465051, 0.92780876, 0.3263941, 1)
-layout_mode = 0
-offset_left = -165.33728
-offset_top = 70.50843
-offset_right = 75.272095
-offset_bottom = 74.977974
-rotation = -3.4191
-
-[node name="Panel" type="Panel" parent="Panel/Panel/Panel" unique_id=139766528]
-modulate = Color(0.6892311, 0.99083585, 0.79161423, 1)
-self_modulate = Color(0.24465051, 0.92780876, 0.3263941, 1)
-layout_mode = 0
-offset_left = 514.23425
-offset_top = -280.95844
-offset_right = 757.074
-offset_bottom = -276.4889
-rotation = -4.2812924
-
-[node name="Panel2" type="Panel" parent="Panel" unique_id=107014028]
-modulate = Color(0.6892311, 0.99083585, 0.79161423, 1)
-self_modulate = Color(0.24465051, 0.92780876, 0.3263941, 1)
-layout_mode = 0
-offset_left = 563.0361
-offset_top = 6.4148474
-offset_right = 919.5466
-offset_bottom = 12.214164
-rotation = -3.9409535
 
 [node name="MyszNormalna1_5Spo" type="Sprite2D" parent="." unique_id=1668336874]
 position = Vector2(1723, 120)
 scale = Vector2(3.953125, 4.109375)
-texture = ExtResource("5_4qb6x")
-script = ExtResource("6_uxoqu")
-
-[node name="SerBasicRed" type="Sprite2D" parent="." unique_id=313081155]
-position = Vector2(49.99997, 1036)
-rotation = 4.886922
-scale = Vector2(2.12, 2.22)
-texture = ExtResource("7_04ysw")
-
-[node name="SerBasicRed" type="Sprite2D" parent="SerBasicRed" unique_id=1619156740]
-position = Vector2(49.99997, 1036)
-rotation = 4.886922
-scale = Vector2(2.12, 2.22)
-texture = ExtResource("7_04ysw")
+texture = ExtResource("5_em3gp")
+script = ExtResource("6")
 
 [node name="SerBossZomg" type="Sprite2D" parent="." unique_id=1663671145]
-position = Vector2(1737.0001, 635)
-scale = Vector2(2.3285713, 2.1714287)
-texture = ExtResource("8_jx7ok")
+position = Vector2(1721.0001, 383.5)
+scale = Vector2(2.3285713, 2.2142856)
+texture = ExtResource("8")
 
-[node name="SerFreezeWhite" type="Sprite2D" parent="." unique_id=817749468]
-position = Vector2(1880.197, 1037.2422)
-rotation = -1.8238691
-scale = Vector2(2.64, 3.2793713)
-texture = ExtResource("9_em3gp")
-
-[node name="SerBossBfg" type="Sprite2D" parent="." unique_id=1564006796]
-position = Vector2(1000, 614)
-scale = Vector2(3.3437502, 2.4142852)
+[node name="Strzałka300x8" type="Sprite2D" parent="." unique_id=258673726]
+position = Vector2(813.3424, 360.92368)
+rotation = 0.8813913
+scale = Vector2(0.80835897, 1.5908191)
 texture = ExtResource("10_l5tve")
 
-[node name="SerBossMoab" type="Sprite2D" parent="." unique_id=2104323634]
-position = Vector2(656, 338)
-scale = Vector2(4.210714, 3.6214285)
+[node name="Strzałka400x8" type="Sprite2D" parent="." unique_id=1531764797]
+position = Vector2(417.39554, 681.78314)
+rotation = 0.89884454
+scale = Vector2(0.89134777, 1.8828773)
 texture = ExtResource("11_wbc2o")
+
+[node name="Strzałka570x8" type="Sprite2D" parent="." unique_id=1768481544]
+position = Vector2(609.76227, 545.4405)
+rotation = -1.3543755
+scale = Vector2(0.9937179, 1.8054733)
+texture = ExtResource("12_bnn2j")
+
+[node name="Strzałka250x8" type="Sprite2D" parent="." unique_id=847849628]
+position = Vector2(1178.5942, 606.3645)
+rotation = 0.5846853
+scale = Vector2(0.99377155, 1.6074371)
+texture = ExtResource("13_wgm8o")
+
+[node name="Strzałka250x9" type="Sprite2D" parent="." unique_id=1737871385]
+position = Vector2(1563, 622.9999)
+rotation = -0.6370452
+scale = Vector2(0.8951663, 1.5354156)
+texture = ExtResource("13_wgm8o")
+
+[node name="LevelSelect" type="Label" parent="." unique_id=1475164084]
+layout_mode = 0
+offset_left = 727.0
+offset_top = 28.0
+offset_right = 1237.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 80
+text = "Stage Selector"
+
+[node name="BOSSLabel" type="Label" parent="." unique_id=1783875745]
+layout_mode = 0
+offset_left = 1694.0
+offset_top = 557.0
+offset_right = 1762.0
+offset_bottom = 637.0
+theme_override_font_sizes/font_size = 30
+text = "BOSS"
+
+[node name="BOSSLabel2" type="Label" parent="." unique_id=679100914]
+layout_mode = 0
+offset_left = 534.0
+offset_top = 919.0
+offset_right = 602.0
+offset_bottom = 999.0
+theme_override_font_sizes/font_size = 30
+text = "BOSS"
+
+[node name="BOSSLabel3" type="Label" parent="." unique_id=162238398]
+layout_mode = 0
+offset_left = 662.0
+offset_top = 154.0
+offset_right = 730.0
+offset_bottom = 234.0
+theme_override_font_sizes/font_size = 30
+text = "BOSS"
 
 [connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
 [connection signal="pressed" from="Tutorial" to="." method="_on_tutorial_pressed"]

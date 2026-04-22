@@ -1,18 +1,1 @@
-extends Panel
-
-
-func _on_speed_up_button_pressed() -> void:
-	if is_sandbox:
-		GameManager.speed_up()
-		_set_button_state(ButtonState.SPEED_UP)
-		return
-	match _button_state:
-		ButtonState.START_WAVE:
-			_set_button_state(ButtonState.SPEED_UP)
-			WaveManager.start_wave(_next_wave_number)
-			if _was_fast_before_eave_end:
-				_was_fast_before_eave_end = false
-				GameManager.set_speed(true)
-		ButtonState.SPEED_UP:
-			GameManager.speed_up()
-			_set_button_state(ButtonState.SPEED_UP)
+"\nextends Panel\n\n\nfunc _on_speed_up_button_pressed() -> void:\n\tif is_sandbox:\n\t\tGameManager.speed_up()\n\t\t_set_button_state(ButtonState.SPEED_UP)\n\t\treturn\n\tmatch _button_state:\n\t\tButtonState.START_WAVE:\n\t\t\t_set_button_state(ButtonState.SPEED_UP)\n\t\t\tWaveManager.start_wave(_next_wave_number)\n\t\t\tif _was_fast_before_eave_end:\n\t\t\t\t_was_fast_before_eave_end = false\n\t\t\t\tGameManager.set_speed(true)\n\t\tButtonState.SPEED_UP:\n\t\t\tGameManager.speed_up()\n\t\t\t_set_button_state(ButtonState.SPEED_UP)\n"

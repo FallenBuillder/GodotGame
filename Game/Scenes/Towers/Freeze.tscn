@@ -1,130 +1,131 @@
 [gd_scene format=3 uid="uid://cxggubm1b21qv"]
 
-[ext_resource type="Script" uid="uid://7w8crscepu3h" path="res://Game/Scripts/Towers/tower.gd" id="1_nvoi0"]
-[ext_resource type="Script" uid="uid://8wddbevg57e2" path="res://Game/Scripts/Data/TowerUpgradeData.gd" id="2_efc7h"]
-[ext_resource type="Texture2D" uid="uid://cvi2nk40pw67m" path="res://Game/Graphics/Temp/x.png" id="3_8mdjy"]
-[ext_resource type="Texture2D" uid="uid://cesbo7wrhgtch" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL1Spo.png" id="3_nvoi0"]
-[ext_resource type="Texture2D" uid="uid://dk3mmkvgabe7u" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL1ATK.png" id="4_62joj"]
-[ext_resource type="Texture2D" uid="uid://b2fnggjflk0eq" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL1.5Spo.png" id="4_evylr"]
-[ext_resource type="Texture2D" uid="uid://bxwpfpxqodk2v" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL1.5ATK.png" id="5_jvjhy"]
-[ext_resource type="Script" uid="uid://lbyvro0ekv6l" path="res://Game/Scripts/Data/StatChange.gd" id="6_cd7q6"]
-[ext_resource type="Texture2D" uid="uid://c81exbnwxhwyq" path="res://Game/Graphics/Temp/circle.png" id="7_sytjc"]
-[ext_resource type="Texture2D" uid="uid://by8te03l4i6tm" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL2Spo.png" id="8_3tguc"]
-[ext_resource type="Texture2D" uid="uid://cultpei00uta7" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL2ATK.png" id="9_0ntjy"]
-[ext_resource type="Texture2D" uid="uid://ds2qngj1ux4mh" path="res://Game/Graphics/Temp/empty.png" id="10_i7gck"]
-[ext_resource type="Texture2D" uid="uid://chx87s0f17k85" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL3Spo.png" id="11_o3pb8"]
-[ext_resource type="Texture2D" uid="uid://dg3insu8eqy27" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL3ATK.png" id="12_i437w"]
-[ext_resource type="Texture2D" uid="uid://di4lk1ufl0ppu" path="res://Game/Graphics/Temp/wrench.png" id="13_jvjhy"]
-[ext_resource type="Texture2D" uid="uid://hq6joqjued0d" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL4Spo.png" id="14_cd7q6"]
-[ext_resource type="Texture2D" uid="uid://ca8gc052dp0e0" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL4ATK.png" id="15_sytjc"]
+[ext_resource type="Script" uid="uid://7w8crscepu3h" path="res://Game/Scripts/Towers/tower.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bf4neu2l5mxqc" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaUpgr1.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://jaq73l3bxhi4" path="res://Game/Graphics/Towers/Freeze/KartaMyszSpowalniająca.png" id="2_cd7q6"]
+[ext_resource type="Texture2D" uid="uid://b2fnggjflk0eq" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL1.5Spo.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bxwpfpxqodk2v" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL1.5ATK.png" id="4"]
+[ext_resource type="Script" uid="uid://8wddbevg57e2" path="res://Game/Scripts/Data/TowerUpgradeData.gd" id="5"]
+[ext_resource type="Script" uid="uid://lbyvro0ekv6l" path="res://Game/Scripts/Data/StatChange.gd" id="6"]
+[ext_resource type="Texture2D" uid="uid://bo6wlwbw0sp2h" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaUpgr2.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://by8te03l4i6tm" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL2Spo.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cultpei00uta7" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL2ATK.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bfgjawpgwr5ym" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaUpgr3.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://chx87s0f17k85" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL3Spo.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://dg3insu8eqy27" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL3ATK.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cci1u0kos4o5f" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaUpgr4.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://hq6joqjued0d" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL4Spo.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://ca8gc052dp0e0" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL4ATK.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://cesbo7wrhgtch" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL1Spo.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://dk3mmkvgabe7u" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL1ATK.png" id="17"]
 
 [sub_resource type="Resource" id="Resource_qcl8q"]
-script = ExtResource("6_cd7q6")
+script = ExtResource("6")
 stat = "range"
 value = 27.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_jkp82"]
-script = ExtResource("6_cd7q6")
+script = ExtResource("6")
 stat = "freeeze_time"
 value = 0.57
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_17vam"]
-script = ExtResource("6_cd7q6")
+script = ExtResource("6")
 stat = "slowed_after_unfreeze"
 mode = 1
 value = 1.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_vemyh"]
-script = ExtResource("2_efc7h")
+script = ExtResource("5")
 upgrade_name = "Enhanced Freeze"
-icon = ExtResource("3_8mdjy")
+icon = ExtResource("2")
 cost = 225
 description = "This enhanced Magic Mouse has a larger freeze area and freezes bloons for longer."
-new_tower_sprite_idle = ExtResource("4_evylr")
-new_tower_sprite_shoot = ExtResource("5_jvjhy")
-stat_changes = Array[ExtResource("6_cd7q6")]([SubResource("Resource_qcl8q"), SubResource("Resource_jkp82"), SubResource("Resource_17vam")])
+new_tower_sprite_idle = ExtResource("3")
+new_tower_sprite_shoot = ExtResource("4")
+stat_changes = Array[ExtResource("6")]([SubResource("Resource_qcl8q"), SubResource("Resource_jkp82"), SubResource("Resource_17vam")])
 metadata/_custom_type_script = "uid://8wddbevg57e2"
 
 [sub_resource type="Resource" id="Resource_4qtro"]
-script = ExtResource("6_cd7q6")
+script = ExtResource("6")
 stat = "damage"
 value = 1.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_gd4mc"]
-script = ExtResource("6_cd7q6")
+script = ExtResource("6")
 stat = "freeze_layers"
 value = 1.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_ranh4"]
-script = ExtResource("2_efc7h")
+script = ExtResource("5")
 upgrade_name = "Snap Freeze"
-icon = ExtResource("7_sytjc")
+icon = ExtResource("7")
 cost = 400
 description = "The tower freezes so fast the bloons pop once before freezing."
-new_tower_sprite_idle = ExtResource("8_3tguc")
-new_tower_sprite_shoot = ExtResource("9_0ntjy")
-stat_changes = Array[ExtResource("6_cd7q6")]([SubResource("Resource_4qtro"), SubResource("Resource_gd4mc")])
+new_tower_sprite_idle = ExtResource("8")
+new_tower_sprite_shoot = ExtResource("9")
+stat_changes = Array[ExtResource("6")]([SubResource("Resource_4qtro"), SubResource("Resource_gd4mc")])
 metadata/_custom_type_script = "uid://8wddbevg57e2"
 
 [sub_resource type="Resource" id="Resource_fshxu"]
-script = ExtResource("6_cd7q6")
+script = ExtResource("6")
 stat = "range"
 value = 54.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_v5rc1"]
-script = ExtResource("6_cd7q6")
+script = ExtResource("6")
 stat = "slowed_in_range"
 mode = 1
 value = 1.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_cd7q6"]
-script = ExtResource("6_cd7q6")
+script = ExtResource("6")
 stat = "show_range"
 mode = 1
 value = 1.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_2mryl"]
-script = ExtResource("2_efc7h")
+script = ExtResource("5")
 upgrade_name = "Arctic Wind"
-icon = ExtResource("10_i7gck")
+icon = ExtResource("10")
 cost = 6500
 description = "Super cold aura that slows all bloons that come near the tower. In addition the regular freeze effect of this tower has much larger area."
-new_tower_sprite_idle = ExtResource("11_o3pb8")
-new_tower_sprite_shoot = ExtResource("12_i437w")
-stat_changes = Array[ExtResource("6_cd7q6")]([SubResource("Resource_fshxu"), SubResource("Resource_v5rc1"), SubResource("Resource_cd7q6")])
+new_tower_sprite_idle = ExtResource("11")
+new_tower_sprite_shoot = ExtResource("12")
+stat_changes = Array[ExtResource("6")]([SubResource("Resource_fshxu"), SubResource("Resource_v5rc1"), SubResource("Resource_cd7q6")])
 metadata/_custom_type_script = "uid://8wddbevg57e2"
 
 [sub_resource type="Resource" id="Resource_jvjhy"]
-script = ExtResource("6_cd7q6")
+script = ExtResource("6")
 stat = "apply_frost"
 mode = 1
 value = 1.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_jooyf"]
-script = ExtResource("2_efc7h")
+script = ExtResource("5")
 upgrade_name = "Viral Frost"
-icon = ExtResource("13_jvjhy")
+icon = ExtResource("13")
 cost = 6000
 description = "Bloons are frozen so cold that they freeze other bloons that come in contact with them, spreading the freeze like a virus."
-new_tower_sprite_idle = ExtResource("14_cd7q6")
-new_tower_sprite_shoot = ExtResource("15_sytjc")
-stat_changes = Array[ExtResource("6_cd7q6")]([SubResource("Resource_jvjhy")])
+new_tower_sprite_idle = ExtResource("14")
+new_tower_sprite_shoot = ExtResource("15")
+stat_changes = Array[ExtResource("6")]([SubResource("Resource_jvjhy")])
 metadata/_custom_type_script = "uid://8wddbevg57e2"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3cjuv"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_nvoi0")
+"texture": ExtResource("16")
 }],
 "loop": true,
 "name": &"idle",
@@ -132,7 +133,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_62joj")
+"texture": ExtResource("17")
 }],
 "loop": false,
 "name": &"shoot",
@@ -146,7 +147,7 @@ radius = 79.15807
 radius = 19.0
 
 [node name="Tower" type="Node2D" unique_id=1376173315]
-script = ExtResource("1_nvoi0")
+script = ExtResource("1")
 detection_range = 108.0
 tower_name = "Magic Mouse"
 tower_id = 2
@@ -156,8 +157,9 @@ damage_type = 2
 pierce = 150
 projectile_speed = 750
 cost = 300
+display_image_scene = ExtResource("2_cd7q6")
 can_attack_frozen = true
-upgrades = Array[ExtResource("2_efc7h")]([SubResource("Resource_vemyh"), SubResource("Resource_ranh4"), SubResource("Resource_2mryl"), SubResource("Resource_jooyf")])
+upgrades = Array[ExtResource("5")]([SubResource("Resource_vemyh"), SubResource("Resource_ranh4"), SubResource("Resource_2mryl"), SubResource("Resource_jooyf")])
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=621850048]
 texture_filter = 1

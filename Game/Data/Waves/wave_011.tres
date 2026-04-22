@@ -1,34 +1,34 @@
 [gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://clxf44i5be2x"]
 
-[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1_bry87"]
-[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2_y2l4q"]
+[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1"]
+[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2"]
 
 [sub_resource type="Resource" id="Resource_52unt"]
-script = ExtResource("1_bry87")
+script = ExtResource("1")
 enemy_id = 4
 count = 2
 end = 0.571
 
 [sub_resource type="Resource" id="Resource_16ws8"]
-script = ExtResource("1_bry87")
+script = ExtResource("1")
 enemy_id = 3
 count = 12
 start = 3.8
 end = 10.081
 
 [sub_resource type="Resource" id="Resource_r8ran"]
-script = ExtResource("1_bry87")
+script = ExtResource("1")
 enemy_id = 2
 count = 10
 start = 10.24
 end = 14.044
 
 [sub_resource type="Resource" id="Resource_e10ek"]
-script = ExtResource("1_bry87")
+script = ExtResource("1")
 count = 10
 start = 13.62
 end = 18.195
 
 [resource]
-script = ExtResource("2_y2l4q")
-groups = Array[ExtResource("1_bry87")]([SubResource("Resource_52unt"), SubResource("Resource_16ws8"), SubResource("Resource_r8ran"), SubResource("Resource_e10ek")])
+script = ExtResource("2")
+groups = [SubResource("Resource_52unt"), SubResource("Resource_16ws8"), SubResource("Resource_r8ran"), SubResource("Resource_e10ek")]

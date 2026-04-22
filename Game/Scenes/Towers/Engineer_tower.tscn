@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://catc1pdroxyx2"]
 
-[ext_resource type="Script" uid="uid://ducefwdeb4jrl" path="res://Game/Scripts/Towers/engineer_tower.gd" id="1_ro68v"]
-[ext_resource type="PackedScene" uid="uid://d32cleqi85msr" path="res://Game/Scenes/Projectiles/Engineer_tower.tscn" id="2_ro68v"]
-[ext_resource type="Texture2D" uid="uid://cknhd51i8fdus" path="res://Game/Graphics/Towers/Tower/WiezaInzynierLVL1Spo.png" id="3_ro68v"]
-[ext_resource type="Texture2D" uid="uid://dib6exq8vfgns" path="res://Game/Graphics/Towers/Tower/WiezaInzynierLVL1ATK.png" id="4_iepj5"]
+[ext_resource type="Script" uid="uid://ducefwdeb4jrl" path="res://Game/Scripts/Towers/engineer_tower.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://d32cleqi85msr" path="res://Game/Scenes/Projectiles/Engineer_tower.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://cknhd51i8fdus" path="res://Game/Graphics/Towers/Tower/WiezaInzynierLVL1Spo.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dib6exq8vfgns" path="res://Game/Graphics/Towers/Tower/WiezaInzynierLVL1ATK.png" id="4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i8wrt"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_ro68v")
+"texture": ExtResource("3")
 }],
 "loop": true,
 "name": &"idle",
@@ -17,7 +17,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_iepj5")
+"texture": ExtResource("4")
 }],
 "loop": false,
 "name": &"shoot",
@@ -30,8 +30,8 @@ radius = 79.15807
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iepj5"]
 
 [node name="Tower" type="Node2D" unique_id=1376173315]
-script = ExtResource("1_ro68v")
-nail_scene = ExtResource("2_ro68v")
+script = ExtResource("1")
+nail_scene = ExtResource("2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=330176808]
 texture_filter = 1

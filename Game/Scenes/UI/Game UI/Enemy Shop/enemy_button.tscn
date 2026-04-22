@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://chvrp73bwgiux"]
 
-[ext_resource type="Script" uid="uid://6tlb0r58pfje" path="res://Game/Scripts/UI/Game UI/Enemy Shop/enemy_shop_button.gd" id="1_1mktp"]
-[ext_resource type="Texture2D" uid="uid://dd8i83ay1hhor" path="res://Game/Graphics/Enemies/1 Basic/SerBasicRed.png" id="2_oua2r"]
+[ext_resource type="Script" uid="uid://6tlb0r58pfje" path="res://Game/Scripts/UI/Game UI/Enemy Shop/enemy_shop_button.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dd8i83ay1hhor" path="res://Game/Graphics/Enemies/1 Basic/SerBasicRed.png" id="2"]
 
 [node name="Enemy Button" type="Button" unique_id=702761378]
 texture_filter = 1
 custom_minimum_size = Vector2(80, 80)
 offset_right = 41.0
 offset_bottom = 41.0
-script = ExtResource("1_1mktp")
+script = ExtResource("1")
 
 [node name="Control" type="Control" parent="." unique_id=650385881]
 clip_contents = true
@@ -33,7 +33,7 @@ offset_right = 76.5125
 offset_bottom = 55.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_oua2r")
+texture = ExtResource("2")
 expand_mode = 3
 stretch_mode = 5
 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bajef04w24d3v"]
 
-[ext_resource type="Script" uid="uid://dh2qosklkbmmk" path="res://Game/Scripts/UI/Menus/Quit Warning/quit_warning.gd" id="1_bafda"]
+[ext_resource type="Script" uid="uid://dh2qosklkbmmk" path="res://Game/Scripts/UI/Menus/Quit Warning/quit_warning.gd" id="1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xtc83"]
 bg_color = Color(0.17657751, 0.17657751, 0.17657751, 1)
@@ -53,7 +53,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_bafda")
+script = ExtResource("1")
 
 [node name="Overlay" type="ColorRect" parent="." unique_id=595416995]
 layout_mode = 1

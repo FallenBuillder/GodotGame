@@ -1,168 +1,169 @@
 [gd_scene format=3 uid="uid://dtejyenrtur05"]
 
-[ext_resource type="Script" uid="uid://7w8crscepu3h" path="res://Game/Scripts/Towers/tower.gd" id="1_eosqn"]
-[ext_resource type="Script" uid="uid://8wddbevg57e2" path="res://Game/Scripts/Data/TowerUpgradeData.gd" id="2_mld6x"]
-[ext_resource type="Texture2D" uid="uid://cw7h08sc0jtct" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL1ATK.png" id="3_1hwyd"]
-[ext_resource type="Texture2D" uid="uid://cvi2nk40pw67m" path="res://Game/Graphics/Temp/x.png" id="3_6qag3"]
-[ext_resource type="Texture2D" uid="uid://d1av8de5hduk4" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL1Spo.png" id="3_eosqn"]
-[ext_resource type="Texture2D" uid="uid://b6x1oxo6v7ypo" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL1.5Spo.png" id="4_e0fvc"]
-[ext_resource type="Texture2D" uid="uid://b07ilwse2sslf" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL1.5ATK.png" id="5_6eyqp"]
-[ext_resource type="Script" uid="uid://lbyvro0ekv6l" path="res://Game/Scripts/Data/StatChange.gd" id="6_mob10"]
-[ext_resource type="Texture2D" uid="uid://di4lk1ufl0ppu" path="res://Game/Graphics/Temp/wrench.png" id="7_cuunf"]
-[ext_resource type="Texture2D" uid="uid://82mytnxjaxw5" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL2Spo.png" id="8_bt37k"]
-[ext_resource type="Texture2D" uid="uid://bhhcsw32t6d53" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL2ATK.png" id="9_fqygv"]
-[ext_resource type="Texture2D" uid="uid://ds2qngj1ux4mh" path="res://Game/Graphics/Temp/empty.png" id="10_61nar"]
-[ext_resource type="Texture2D" uid="uid://cxrjaph0m7xlk" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL3Spo.png" id="11_nyj3u"]
-[ext_resource type="Texture2D" uid="uid://b1fdighofnj8i" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL3ATK.png" id="12_7uhfg"]
-[ext_resource type="Texture2D" uid="uid://c81exbnwxhwyq" path="res://Game/Graphics/Temp/circle.png" id="13_v4lx6"]
-[ext_resource type="Texture2D" uid="uid://bwk1e0esojh77" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL4Spo.png" id="14_eaxdl"]
-[ext_resource type="Texture2D" uid="uid://k46cdocbxlui" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL4ATK.png" id="15_2at2m"]
+[ext_resource type="Script" uid="uid://7w8crscepu3h" path="res://Game/Scripts/Towers/tower.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://ba8n56gj6d345" path="res://Game/Graphics/Towers/Mele/MyszMeleUpg1.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dclutqet3b2b0" path="res://Game/Graphics/Towers/Mele/KartaMyszMele1.png" id="2_bt37k"]
+[ext_resource type="Texture2D" uid="uid://b6x1oxo6v7ypo" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL1.5Spo.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://b07ilwse2sslf" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL1.5ATK.png" id="4"]
+[ext_resource type="Script" uid="uid://8wddbevg57e2" path="res://Game/Scripts/Data/TowerUpgradeData.gd" id="5"]
+[ext_resource type="Script" uid="uid://lbyvro0ekv6l" path="res://Game/Scripts/Data/StatChange.gd" id="6"]
+[ext_resource type="Texture2D" uid="uid://48m0yk6cpvke" path="res://Game/Graphics/Towers/Mele/MyszMeleUpg2.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://82mytnxjaxw5" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL2Spo.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bhhcsw32t6d53" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL2ATK.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://brbkhptqxorsf" path="res://Game/Graphics/Towers/Mele/MyszMeleUpg3.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://cxrjaph0m7xlk" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL3Spo.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://b1fdighofnj8i" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL3ATK.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://dphvs8t4lq3yy" path="res://Game/Graphics/Towers/Mele/MyszMeleUpg4.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bwk1e0esojh77" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL4Spo.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://k46cdocbxlui" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL4ATK.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://d1av8de5hduk4" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL1Spo.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://cw7h08sc0jtct" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL1ATK.png" id="17"]
 
 [sub_resource type="Resource" id="Resource_yijc1"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "damage"
 value = 1.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_vx4tv"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "fire_rate"
 mode = 1
 value = 0.33
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_df7om"]
-script = ExtResource("2_mld6x")
+script = ExtResource("5")
 upgrade_name = "One-Two Punch"
-icon = ExtResource("3_6qag3")
+icon = ExtResource("2")
 cost = 350
 description = "The Boxing Mouse trains harder, landing hits quicker and hitting through one extra layer of Cheese."
-new_tower_sprite_idle = ExtResource("4_e0fvc")
-new_tower_sprite_shoot = ExtResource("5_6eyqp")
-stat_changes = Array[ExtResource("6_mob10")]([SubResource("Resource_yijc1"), SubResource("Resource_vx4tv")])
+new_tower_sprite_idle = ExtResource("3")
+new_tower_sprite_shoot = ExtResource("4")
+stat_changes = Array[ExtResource("6")]([SubResource("Resource_yijc1"), SubResource("Resource_vx4tv")])
 metadata/_custom_type_script = "uid://8wddbevg57e2"
 
 [sub_resource type="Resource" id="Resource_pxkgl"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "damage"
 value = 2.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_sweop"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "pierce"
 value = 3.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_6svrv"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "range"
 value = 20.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_hj7eq"]
-script = ExtResource("2_mld6x")
+script = ExtResource("5")
 upgrade_name = "Steel Fists"
-icon = ExtResource("7_cuunf")
+icon = ExtResource("7")
 cost = 600
 description = "Reinforced knuckles let the Boxing Mouse punch through more layers of Cheese and reach a little further."
-new_tower_sprite_idle = ExtResource("8_bt37k")
-new_tower_sprite_shoot = ExtResource("9_fqygv")
-stat_changes = Array[ExtResource("6_mob10")]([SubResource("Resource_pxkgl"), SubResource("Resource_sweop"), SubResource("Resource_6svrv")])
+new_tower_sprite_idle = ExtResource("8")
+new_tower_sprite_shoot = ExtResource("9")
+stat_changes = Array[ExtResource("6")]([SubResource("Resource_pxkgl"), SubResource("Resource_sweop"), SubResource("Resource_6svrv")])
 metadata/_custom_type_script = "uid://8wddbevg57e2"
 
 [sub_resource type="Resource" id="Resource_qt83j"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "fire_rate"
 mode = 1
 value = 0.2
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_q3acc"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "damage"
 value = 3.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_y804f"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "crit_shot"
 mode = 1
 value = 6.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_nm5xb"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "crit_damage"
 mode = 1
 value = 40.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_cuunf"]
-script = ExtResource("2_mld6x")
+script = ExtResource("5")
 upgrade_name = "Flurry of Blows"
-icon = ExtResource("10_61nar")
+icon = ExtResource("10")
 cost = 1200
 description = "The Boxing Mouse unleashes a relentless barrage of punches, occasionally landing a devastating knockout blow."
-new_tower_sprite_idle = ExtResource("11_nyj3u")
-new_tower_sprite_shoot = ExtResource("12_7uhfg")
-stat_changes = Array[ExtResource("6_mob10")]([SubResource("Resource_qt83j"), SubResource("Resource_q3acc"), SubResource("Resource_y804f"), SubResource("Resource_nm5xb")])
+new_tower_sprite_idle = ExtResource("11")
+new_tower_sprite_shoot = ExtResource("12")
+stat_changes = Array[ExtResource("6")]([SubResource("Resource_qt83j"), SubResource("Resource_q3acc"), SubResource("Resource_y804f"), SubResource("Resource_nm5xb")])
 metadata/_custom_type_script = "uid://8wddbevg57e2"
 
 [sub_resource type="Resource" id="Resource_2bdb8"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "damage"
 value = 8.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_rdxhf"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "fire_rate"
 mode = 1
 value = 0.12
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_njyjb"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "pierce"
 value = 5.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_wepho"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "range"
 value = 25.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_iq8ef"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "boss_damage"
 value = 12.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_emifj"]
-script = ExtResource("6_mob10")
+script = ExtResource("6")
 stat = "crit_damage"
 mode = 1
 value = 80.0
 metadata/_custom_type_script = "uid://lbyvro0ekv6l"
 
 [sub_resource type="Resource" id="Resource_xs1v7"]
-script = ExtResource("2_mld6x")
+script = ExtResource("5")
 upgrade_name = "Champion Mouse"
-icon = ExtResource("13_v4lx6")
+icon = ExtResource("13")
 cost = 4500
 description = "A legendary fighter in peak condition. Strikes unbelievably fast, shreds through entire crowds of Cheese, and does serious damage to Gouha-Class Cheeses."
-new_tower_sprite_idle = ExtResource("14_eaxdl")
-new_tower_sprite_shoot = ExtResource("15_2at2m")
-stat_changes = Array[ExtResource("6_mob10")]([SubResource("Resource_2bdb8"), SubResource("Resource_rdxhf"), SubResource("Resource_njyjb"), SubResource("Resource_wepho"), SubResource("Resource_iq8ef"), SubResource("Resource_emifj")])
+new_tower_sprite_idle = ExtResource("14")
+new_tower_sprite_shoot = ExtResource("15")
+stat_changes = Array[ExtResource("6")]([SubResource("Resource_2bdb8"), SubResource("Resource_rdxhf"), SubResource("Resource_njyjb"), SubResource("Resource_wepho"), SubResource("Resource_iq8ef"), SubResource("Resource_emifj")])
 metadata/_custom_type_script = "uid://8wddbevg57e2"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g68kd"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_eosqn")
+"texture": ExtResource("16")
 }],
 "loop": true,
 "name": &"idle",
@@ -170,7 +171,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_1hwyd")
+"texture": ExtResource("17")
 }],
 "loop": false,
 "name": &"shoot",
@@ -184,7 +185,7 @@ radius = 79.15807
 radius = 19.0
 
 [node name="Tower" type="Node2D" unique_id=1376173315]
-script = ExtResource("1_eosqn")
+script = ExtResource("1")
 detection_range = 95.0
 tower_name = "Boxing Mouse"
 tower_id = 6
@@ -193,8 +194,9 @@ damage = 1
 pierce = 4
 projectile_speed = -1
 cost = 750
+display_image_scene = ExtResource("2_bt37k")
 can_detect_camo = true
-upgrades = Array[ExtResource("2_mld6x")]([SubResource("Resource_df7om"), SubResource("Resource_hj7eq"), SubResource("Resource_cuunf"), SubResource("Resource_xs1v7")])
+upgrades = Array[ExtResource("5")]([SubResource("Resource_df7om"), SubResource("Resource_hj7eq"), SubResource("Resource_cuunf"), SubResource("Resource_xs1v7")])
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=534244761]
 texture_filter = 1

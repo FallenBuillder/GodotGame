@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://d0ku0qav7tb4c"]
 
-[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1_06yf5"]
-[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2_xybp4"]
+[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1"]
+[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2"]
 
 [sub_resource type="Resource" id="Resource_q0r1g"]
-script = ExtResource("1_06yf5")
+script = ExtResource("1")
 enemy_id = 4
 count = 25
 end = 9.0
 
 [sub_resource type="Resource" id="Resource_juwmp"]
-script = ExtResource("1_06yf5")
+script = ExtResource("1")
 enemy_id = 5
 count = 12
 start = 13.5
@@ -18,5 +18,5 @@ end = 15.612
 regen = true
 
 [resource]
-script = ExtResource("2_xybp4")
-groups = Array[ExtResource("1_06yf5")]([SubResource("Resource_q0r1g"), SubResource("Resource_juwmp")])
+script = ExtResource("2")
+groups = [SubResource("Resource_q0r1g"), SubResource("Resource_juwmp")]

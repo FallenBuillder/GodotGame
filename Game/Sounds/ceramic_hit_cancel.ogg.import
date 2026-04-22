@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/ceramic_hit_cancel.ogg-2492e5723e94d3dbb9a3c5
 [params]
 
 loop=false
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

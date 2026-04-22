@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dpisuqc0cd08u"]
 
-[ext_resource type="Script" uid="uid://dwfiqpls48e05" path="res://Game/Scripts/UI/Menus/Collection/collection_enemy_info.gd" id="1_ly63m"]
-[ext_resource type="Texture2D" uid="uid://dd8i83ay1hhor" path="res://Game/Graphics/Enemies/1 Basic/SerBasicRed.png" id="2_mvgjk"]
+[ext_resource type="Script" uid="uid://dwfiqpls48e05" path="res://Game/Scripts/UI/Menus/Collection/collection_enemy_info.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dd8i83ay1hhor" path="res://Game/Graphics/Enemies/1 Basic/SerBasicRed.png" id="2"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mvgjk"]
 
@@ -18,7 +18,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ly63m")
+script = ExtResource("1")
 
 [node name="Panel" type="Panel" parent="." unique_id=1907045688]
 layout_mode = 1
@@ -47,7 +47,7 @@ alignment = 1
 [node name="Sprite" type="TextureRect" parent="Panel/VBoxContainer" unique_id=352774763]
 layout_mode = 2
 size_flags_vertical = 4
-texture = ExtResource("2_mvgjk")
+texture = ExtResource("2")
 expand_mode = 4
 stretch_mode = 5
 

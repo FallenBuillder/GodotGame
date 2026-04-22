@@ -1,33 +1,33 @@
 [gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://ctylbyhxoymcp"]
 
-[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1_0d48p"]
-[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2_bnhpq"]
+[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1"]
+[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2"]
 
 [sub_resource type="Resource" id="Resource_4s0eg"]
-script = ExtResource("1_0d48p")
+script = ExtResource("1")
 enemy_id = 5
 count = 80
 end = 45.11
 camo = true
 
 [sub_resource type="Resource" id="Resource_j3p4w"]
-script = ExtResource("1_0d48p")
+script = ExtResource("1")
 enemy_id = 12
 start = 27.9625
 end = 27.9625
 
 [sub_resource type="Resource" id="Resource_ja6r8"]
-script = ExtResource("1_0d48p")
+script = ExtResource("1")
 enemy_id = 12
 start = 31.976
 end = 31.976
 
 [sub_resource type="Resource" id="Resource_y15to"]
-script = ExtResource("1_0d48p")
+script = ExtResource("1")
 enemy_id = 12
 start = 35.733
 end = 35.733
 
 [resource]
-script = ExtResource("2_bnhpq")
-groups = Array[ExtResource("1_0d48p")]([SubResource("Resource_4s0eg"), SubResource("Resource_j3p4w"), SubResource("Resource_ja6r8"), SubResource("Resource_y15to")])
+script = ExtResource("2")
+groups = [SubResource("Resource_4s0eg"), SubResource("Resource_j3p4w"), SubResource("Resource_ja6r8"), SubResource("Resource_y15to")]

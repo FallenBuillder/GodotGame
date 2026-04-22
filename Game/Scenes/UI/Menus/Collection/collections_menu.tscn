@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://d1jh2h27xyawo"]
 
-[ext_resource type="Script" uid="uid://b8vx3kkek2ju6" path="res://Game/Scripts/UI/Menus/Collection/collections_menu.gd" id="1_b81cb"]
+[ext_resource type="Script" uid="uid://b8vx3kkek2ju6" path="res://Game/Scripts/UI/Menus/Collection/collections_menu.gd" id="1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xtc83"]
-bg_color = Color(0.17657751, 0.17657751, 0.17657751, 1)
+bg_color = Color(0.06879827, 0.06879828, 0.06879828, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ntttj"]
 
@@ -40,7 +40,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_b81cb")
+script = ExtResource("1")
 
 [node name="Panel" type="Panel" parent="." unique_id=401960533]
 layout_mode = 1
@@ -75,10 +75,10 @@ columns = 7
 [node name="ExitButton" type="Button" parent="Panel" unique_id=1227861725]
 custom_minimum_size = Vector2(200, 50)
 layout_mode = 0
-offset_left = 1772.0
-offset_top = -23.0
-offset_right = 1972.0
-offset_bottom = 60.0
+offset_left = -35.0
+offset_top = -11.0
+offset_right = 165.0
+offset_bottom = 72.0
 rotation = 0.24609143
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
