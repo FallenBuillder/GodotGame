@@ -1,6 +1,0 @@
-[gd_resource type="Theme" format=3 uid="uid://dflaq2mblkeht"]
-
-[ext_resource type="FontFile" uid="uid://c87wlgt4m1kgk" path="res://KimsBitHand.ttf" id="1_amlv4"]
-
-[resource]
-default_font = ExtResource("1_amlv4")

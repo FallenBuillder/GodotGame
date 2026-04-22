@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://2516k6tvh76w"]
-
-[node name="Dark" type="CanvasLayer" unique_id=1449004306]
-
-[node name="Panel" type="Panel" parent="." unique_id=639173021]
-modulate = Color(0, 0, 0, 1)
-self_modulate = Color(0, 0, 0, 1)
-offset_right = 1931.0
-offset_bottom = 1091.0
