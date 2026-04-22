@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dpqixtvwojox7"]
+
+[ext_resource type="Script" uid="uid://c5m7nx6y2w0dh" path="res://Game/Scripts/Enemies/enemy.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://c2usprfngfat0" path="res://Game/Graphics/Enemies/8 Explosion & Freeze/SerExplosionFreezeZebraRegen.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dnh76t7u2gghf" path="res://Game/Graphics/Enemies/8 Explosion & Freeze/SerExplosionFreezeZebra.png" id="3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mk3ek"]
+
+[node name="8 Freeze & Explosion Enemy" type="Area2D" unique_id=1010572463]
+texture_filter = 1
+script = ExtResource("1")
+enemy_name = "Zebra Mozzarella"
+enemy_id = 8
+speed = 126.0
+health = 1
+damage = 23
+unlocked = true
+regen_texture = ExtResource("2")
+damage_immunities = [1, 2]
+child_enemy_ids = [6, 7]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=242599431]
+position = Vector2(1.275, 0)
+texture = ExtResource("3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=134822881]
+shape = SubResource("CircleShape2D_mk3ek")

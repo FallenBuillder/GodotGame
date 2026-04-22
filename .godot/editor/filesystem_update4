@@ -1,0 +1,26 @@
+res://Game/Scenes/UI/Menus/Main Menu/main_menu.tscn
+res://Game/Scripts/Towers/tower.gd
+res://Game/Scripts/UI/Game UI/Game Layout/game_layout.gd
+res://Game/Scenes/UI/Game UI/Game Layout/game_layout.tscn
+res://Speed up.tres
+res://Game/Scripts/UI/Game UI/Tower Info/tower_info.gd
+res://Game/Scenes/UI/Game UI/Tower Info/upgrade_button.tscn
+res://choice_button_small.tres
+res://Game/Scripts/Autoloads/PlacementManager.gd
+res://Game/Scenes/Projectiles/Bomb.tscn
+res://Game/Scenes/Projectiles/Super_3.tscn
+res://Game/Scenes/Projectiles/Super_4.tscn
+res://Game/Scenes/Projectiles/Super_1.tscn
+res://Game/Scenes/Towers/Super.tscn
+res://Game/Scripts/UI/Game UI/Tower Info/upgrade_button.gd
+res://Game/Scenes/Towers/Basic.tscn
+res://Game/Scenes/Towers/Mele.tscn
+res://Game/Scenes/Towers/Sniper.tscn
+res://Game/Scenes/Towers/Bomb.tscn
+res://Game/Scenes/Towers/Engineer.tscn
+res://Game/Scenes/Towers/Farm.tscn
+res://Game/Scenes/Towers/Freeze.tscn
+res://Game/Scenes/UI/Menus/Stage Selector/stage_selector.tscn
+res://Game/Scenes/UI/Menus/Collection/123.tres
+res://Game/Scenes/UI/Menus/Collection/collections_menu.tscn
+res://Game/Scripts/UI/Game UI/General UI/game_ui.gd

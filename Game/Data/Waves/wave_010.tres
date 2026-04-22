@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://ckbyi4wdo5h02"]
+
+[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1"]
+[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2"]
+
+[sub_resource type="Resource" id="Resource_el6lv"]
+script = ExtResource("1")
+enemy_id = 2
+count = 60
+end = 35.0
+
+[sub_resource type="Resource" id="Resource_uj71p"]
+script = ExtResource("1")
+enemy_id = 2
+count = 20
+start = 35.0
+end = 44.0
+
+[sub_resource type="Resource" id="Resource_o3urb"]
+script = ExtResource("1")
+enemy_id = 2
+count = 22
+start = 44.0
+end = 48.0
+
+[resource]
+script = ExtResource("2")
+groups = [SubResource("Resource_el6lv"), SubResource("Resource_uj71p"), SubResource("Resource_o3urb")]

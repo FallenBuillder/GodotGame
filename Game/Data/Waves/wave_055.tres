@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://xtfufa2lisre"]
+
+[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1"]
+[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2"]
+
+[sub_resource type="Resource" id="Resource_rmwb8"]
+script = ExtResource("1")
+enemy_id = 11
+count = 10
+start = 1.17
+end = 2.8075
+
+[sub_resource type="Resource" id="Resource_rl2j8"]
+script = ExtResource("1")
+enemy_id = 11
+count = 10
+start = 7.83
+end = 9.3
+
+[sub_resource type="Resource" id="Resource_20ny7"]
+script = ExtResource("1")
+enemy_id = 11
+count = 10
+start = 14.42
+end = 15.89
+
+[sub_resource type="Resource" id="Resource_tbt2b"]
+script = ExtResource("1")
+enemy_id = 11
+count = 10
+start = 22.17
+end = 23.08
+
+[sub_resource type="Resource" id="Resource_54tmg"]
+script = ExtResource("1")
+enemy_id = 12
+start = 28.78
+end = 28.78
+
+[resource]
+script = ExtResource("2")
+groups = [SubResource("Resource_rmwb8"), SubResource("Resource_rl2j8"), SubResource("Resource_20ny7"), SubResource("Resource_tbt2b"), SubResource("Resource_54tmg")]

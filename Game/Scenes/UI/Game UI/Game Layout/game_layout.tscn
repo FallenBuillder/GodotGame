@@ -1,0 +1,911 @@
+[gd_scene format=3 uid="uid://bb4eqc18anpon"]
+
+[ext_resource type="Script" uid="uid://c2i1itd6mdafy" path="res://Game/Scripts/UI/Game UI/Game Layout/game_layout.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bwi27c835jkq6" path="res://Game/Graphics/UI/MoneyIcon.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://fdrigkqpyduw" path="res://Game/Graphics/UI/HealthIcon.png" id="3"]
+[ext_resource type="Script" uid="uid://ookou77h858c" path="res://Game/Scripts/UI/Game UI/General UI/game_ui.gd" id="4"]
+[ext_resource type="StyleBox" uid="uid://cgtbkowgoif2u" path="res://Speed up.tres" id="5"]
+[ext_resource type="PackedScene" uid="uid://5v5gpfnnyso4" path="res://Game/Scenes/UI/Game UI/Tower Shop/tower_button.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://cxggubm1b21qv" path="res://Game/Scenes/Towers/Freeze.tscn" id="7"]
+[ext_resource type="Texture2D" uid="uid://cesbo7wrhgtch" path="res://Game/Graphics/Towers/Freeze/MyszSpowalniajacaLVL1Spo.png" id="8"]
+[ext_resource type="PackedScene" uid="uid://cokk7g3a665kn" path="res://Game/Scenes/Towers/Sniper.tscn" id="9"]
+[ext_resource type="Texture2D" uid="uid://dy2flleug4eo2" path="res://Game/Graphics/Towers/Sniper/MyszSnajperskaLVL1Spo.png" id="10"]
+[ext_resource type="PackedScene" uid="uid://dnm8pcatc1qix" path="res://Game/Scenes/Towers/Engineer.tscn" id="11"]
+[ext_resource type="Texture2D" uid="uid://cfvqprav55q8x" path="res://Game/Graphics/Towers/Engineer/MyszInzynierLVL1.png" id="12"]
+[ext_resource type="PackedScene" uid="uid://c62mddrq2b0ne" path="res://Game/Scenes/Towers/Bomb.tscn" id="13"]
+[ext_resource type="Texture2D" uid="uid://d0whmg2o1ihhr" path="res://Game/Graphics/Towers/Bomb/MyszBombowaLVL1Spo.png" id="14"]
+[ext_resource type="PackedScene" uid="uid://dtejyenrtur05" path="res://Game/Scenes/Towers/Mele.tscn" id="15"]
+[ext_resource type="Texture2D" uid="uid://d1av8de5hduk4" path="res://Game/Graphics/Towers/Mele/MyszMeleLVL1Spo.png" id="16"]
+[ext_resource type="PackedScene" uid="uid://b8hwrlfuuwyuy" path="res://Game/Scenes/Towers/Farm.tscn" id="17"]
+[ext_resource type="Texture2D" uid="uid://jcgutr7rj8p3" path="res://Game/Graphics/Towers/Farm/FarmaSeraLVL1.png" id="18"]
+[ext_resource type="PackedScene" uid="uid://qrprcsph2rgg" path="res://Game/Scenes/Towers/Super.tscn" id="19"]
+[ext_resource type="Texture2D" uid="uid://c2k3cpjr6c8ii" path="res://Game/Graphics/Towers/Super/SuperMyszLVL1.5ATK.png" id="20"]
+[ext_resource type="PackedScene" uid="uid://chvrp73bwgiux" path="res://Game/Scenes/UI/Game UI/Enemy Shop/enemy_button.tscn" id="21"]
+[ext_resource type="Script" uid="uid://jhpsjdfkdenf" path="res://Game/Scripts/UI/Game UI/Game Layout/bottom_info_panel.gd" id="22"]
+[ext_resource type="Script" uid="uid://7xa5wc1c47mr" path="res://Game/Scripts/UI/Game UI/Tower Info/tower_info.gd" id="23"]
+[ext_resource type="StyleBox" uid="uid://cg52caiabwkel" path="res://sell_button.tres" id="23_a140x"]
+[ext_resource type="PackedScene" uid="uid://2rmn6m0bnnir" path="res://Game/Scenes/UI/Game UI/Tower Info/upgrade_button.tscn" id="24"]
+[ext_resource type="Texture2D" uid="uid://bfpy5283ry1ry" path="res://Game/Graphics/logo/black.png" id="25_lckyj"]
+[ext_resource type="Texture2D" uid="uid://cs2kyeif5u4m4" path="res://Game/Graphics/UI/MyszBasic.png" id="27_vr1to"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vr1to"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uyt3x"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+
+[sub_resource type="ImageTexture" id="ImageTexture_ab75l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mc22t"]
+bg_color = Color(0.13319641, 0.13319641, 0.13319635, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ab75l"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+border_color = Color(0.7862614, 0.8052046, 0.8005614, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a140x"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6pkdi"]
+bg_color = Color(0.2627451, 0.2627451, 0.2627451, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rn366"]
+bg_color = Color(0.4117647, 0.4117647, 0.4117647, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lk1kj"]
+bg_color = Color(0.33333334, 0.33333334, 0.33333334, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k0g1d"]
+bg_color = Color(0.2627451, 0.2627451, 0.2627451, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ii61m"]
+bg_color = Color(0.41215247, 0.41215247, 0.41215247, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8heaq"]
+bg_color = Color(0.3328807, 0.33288068, 0.33288068, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lckyj"]
+bg_color = Color(0.23753932, 0.23753905, 0.2375392, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dmdch"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+corner_radius_top_right = 200
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o33ym"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+corner_radius_top_left = 200
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2icsh"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+corner_radius_top_right = 200
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_abh7g"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+
+[node name="Game Layout" type="Control" unique_id=206767018]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="GameViewport" type="SubViewportContainer" parent="." unique_id=635514744]
+layout_mode = 1
+offset_right = 1580.0
+offset_bottom = 880.0
+mouse_filter = 0
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="GameViewport" unique_id=2103248275]
+handle_input_locally = false
+physics_object_picking = true
+size = Vector2i(1580, 880)
+render_target_update_mode = 4
+
+[node name="ShopInfoPanel" type="Panel" parent="." unique_id=1500269543]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1580.0
+offset_bottom = -957.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ShopInfoPanel" unique_id=485241640]
+layout_mode = 0
+offset_right = 340.0
+offset_bottom = 113.0
+alignment = 1
+
+[node name="MoneyContainer" type="HBoxContainer" parent="ShopInfoPanel/VBoxContainer" unique_id=573316928]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="ShopInfoPanel/VBoxContainer/MoneyContainer" unique_id=2000023014]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2")
+stretch_mode = 3
+
+[node name="ShopMoneyLabel" type="Label" parent="ShopInfoPanel/VBoxContainer/MoneyContainer" unique_id=613625325]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HealthContainer" type="HBoxContainer" parent="ShopInfoPanel/VBoxContainer" unique_id=133290225]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="ShopInfoPanel/VBoxContainer/HealthContainer" unique_id=955310826]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3")
+stretch_mode = 3
+
+[node name="ShopHealthLabel" type="Label" parent="ShopInfoPanel/VBoxContainer/HealthContainer" unique_id=1611532833]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WaveSelectContainer" type="HBoxContainer" parent="ShopInfoPanel/VBoxContainer" unique_id=1285755638]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+alignment = 1
+
+[node name="WaveInput" type="LineEdit" parent="ShopInfoPanel/VBoxContainer/WaveSelectContainer" unique_id=1574051447]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+placeholder_text = "Wave 1-85"
+alignment = 1
+max_length = 2
+
+[node name="StartWaveButton" type="Button" parent="ShopInfoPanel/VBoxContainer/WaveSelectContainer" unique_id=1937757454]
+layout_mode = 2
+text = "Start Wave"
+
+[node name="Game UI" type="Control" parent="." unique_id=1067915753]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -340.0
+offset_bottom = -201.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4")
+
+[node name="Panel" type="Panel" parent="Game UI" unique_id=1519421345]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_right = 340.0
+offset_bottom = 201.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_vr1to")
+
+[node name="SpeedUpButton" type="Button" parent="Game UI/Panel" unique_id=454647165]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 0
+offset_left = -974.0
+offset_top = -855.0
+offset_right = -508.0
+offset_bottom = -823.0
+theme_override_styles/normal = ExtResource("5")
+theme_override_styles/pressed = ExtResource("5")
+theme_override_styles/hover = ExtResource("5")
+text = "Speed up"
+icon_alignment = 1
+
+[node name="SettingsButton" type="Button" parent="Game UI/Panel" unique_id=1841342112]
+layout_mode = 0
+offset_left = -502.0
+offset_top = -855.0
+offset_right = -432.0
+offset_bottom = -823.0
+theme_override_styles/normal = ExtResource("5")
+theme_override_styles/pressed = ExtResource("5")
+theme_override_styles/hover = ExtResource("5")
+text = "Menu
+"
+
+[node name="LoseButton" type="Button" parent="Game UI" unique_id=1602112370]
+visible = false
+layout_mode = 0
+offset_left = 1871.0
+offset_top = 7.0
+offset_right = 1918.0
+offset_bottom = 31.0
+text = "Lose"
+
+[node name="VictoryButton" type="Button" parent="Game UI" unique_id=254425838]
+visible = false
+layout_mode = 0
+offset_left = 1859.0
+offset_top = 33.0
+offset_right = 1918.0
+offset_bottom = 57.0
+text = "Victory"
+
+[node name="Tower Shop" type="Control" parent="." unique_id=891436558]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = 123.0
+offset_bottom = -200.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Panel" type="Panel" parent="Tower Shop" unique_id=152841368]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_uyt3x")
+
+[node name="VBoxContainer" type="TextureRect" parent="Tower Shop/Panel" unique_id=912239950]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 11.0
+offset_top = -1.0
+offset_right = 11.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("ImageTexture_ab75l")
+
+[node name="Tower Shop Label" type="Label" parent="Tower Shop/Panel/VBoxContainer" unique_id=888908743]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 0
+offset_right = 340.0
+offset_bottom = 30.0
+text = "Tower Shop"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="Tower Shop/Panel/VBoxContainer" unique_id=2033660888]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -155.0
+offset_top = -341.5
+offset_right = 135.0
+offset_bottom = 350.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 2
+
+[node name="BasicPanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=446331340 instance=ExtResource("6")]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mc22t")
+tower_name = "Crossbow Mouse"
+tower_cost = 200
+
+[node name="FreezePanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=2055426772 instance=ExtResource("6")]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mc22t")
+tower_scene = ExtResource("7")
+tower_name = "Magic Mouse"
+tower_cost = 300
+tower_icon = ExtResource("8")
+
+[node name="SniperPanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=1059696837 instance=ExtResource("6")]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mc22t")
+tower_scene = ExtResource("9")
+tower_name = "Sniper Mouse"
+tower_cost = 350
+tower_icon = ExtResource("10")
+
+[node name="EngineerPanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=831779071 instance=ExtResource("6")]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mc22t")
+tower_scene = ExtResource("11")
+tower_name = "Engineer Mouse"
+tower_cost = 450
+tower_icon = ExtResource("12")
+
+[node name="BombPanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=1536722401 instance=ExtResource("6")]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mc22t")
+tower_scene = ExtResource("13")
+tower_name = "Bomber Mouse"
+tower_cost = 650
+tower_icon = ExtResource("14")
+
+[node name="MelePanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=1458454471 instance=ExtResource("6")]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mc22t")
+tower_scene = ExtResource("15")
+tower_name = "Boxing Mouse"
+tower_cost = 750
+tower_icon = ExtResource("16")
+
+[node name="FarmPanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=1243030917 instance=ExtResource("6")]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mc22t")
+tower_scene = ExtResource("17")
+tower_name = "Cheese Farm"
+tower_cost = 1080
+tower_icon = ExtResource("18")
+
+[node name="SuperPanel" parent="Tower Shop/Panel/VBoxContainer/GridContainer" unique_id=377521972 instance=ExtResource("6")]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mc22t")
+tower_scene = ExtResource("19")
+tower_name = "Super Mouse"
+tower_icon = ExtResource("20")
+
+[node name="Mouse-Tower-Defense" type="Label" parent="Tower Shop" unique_id=1987804788]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 640.0
+offset_right = 323.0
+offset_bottom = 719.0
+theme_override_font_sizes/font_size = 30
+text = "Mouse-Tower-Defense
+"
+
+[node name="MTD" type="Label" parent="Tower Shop" unique_id=1456463944]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 672.0
+offset_right = 218.0
+offset_bottom = 737.0
+theme_override_font_sizes/font_size = 30
+text = "( MTD )
+"
+
+[node name="Enemy Shop" type="Control" parent="." unique_id=30546103]
+visible = false
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = 123.0
+offset_bottom = -200.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Panel" type="Panel" parent="Enemy Shop" unique_id=1888204648]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Enemy Shop/Panel" unique_id=1749447152]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Enemy Select Label" type="Label" parent="Enemy Shop/Panel/VBoxContainer" unique_id=2128392984]
+layout_mode = 2
+text = "Enemy Select"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Enemy Shop/Panel/VBoxContainer" unique_id=1379101577]
+layout_mode = 2
+alignment = 1
+
+[node name="CamoToggle" type="CheckBox" parent="Enemy Shop/Panel/VBoxContainer/HBoxContainer" unique_id=635823578]
+layout_mode = 2
+text = "Camo"
+
+[node name="RegenToggle" type="CheckBox" parent="Enemy Shop/Panel/VBoxContainer/HBoxContainer" unique_id=748729206]
+layout_mode = 2
+text = "Regen"
+
+[node name="GridContainer" type="GridContainer" parent="Enemy Shop/Panel/VBoxContainer" unique_id=1338546076]
+custom_minimum_size = Vector2(54, 54)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 29
+theme_override_constants/v_separation = 19
+columns = 2
+
+[node name="Enemy Button" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=702761378 instance=ExtResource("21")]
+layout_mode = 2
+enemy_name = "Red Swiss"
+
+[node name="Enemy Button2" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=736337435 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 2
+enemy_name = "Blue Swiss"
+
+[node name="Enemy Button3" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=840845164 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 3
+enemy_name = "Green Swiss"
+
+[node name="Enemy Button4" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=1151933086 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 4
+enemy_name = "Yellow Swiss"
+
+[node name="Enemy Button5" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=1047339534 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 5
+enemy_name = "Pink Swiss"
+
+[node name="Enemy Button6" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=1399585505 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 6
+enemy_name = "Black Mozzarella"
+
+[node name="Enemy Button7" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=1136324993 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 7
+enemy_name = "White Mozzarella"
+
+[node name="Enemy Button8" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=125036114 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 8
+enemy_name = "Zebra Mozzarella"
+
+[node name="Enemy Button9" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=1871867430 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 9
+enemy_name = "Feta"
+
+[node name="Enemy Button10" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=419479425 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 10
+enemy_name = "Rainbow Swiss"
+
+[node name="Enemy Button11" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=1385267191 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 11
+enemy_name = "Parmesan"
+
+[node name="Enemy Button12" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=1006749719 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 12
+enemy_name = "Gouha"
+
+[node name="Enemy Button13" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=937483311 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 13
+enemy_name = "Camembert"
+
+[node name="Enemy Button14" parent="Enemy Shop/Panel/VBoxContainer/GridContainer" unique_id=1273957229 instance=ExtResource("21")]
+layout_mode = 2
+enemy_id = 14
+enemy_name = "Cheddar"
+
+[node name="Bottom Info" type="Control" parent="." unique_id=583590327]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -200.0
+offset_right = -340.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+script = ExtResource("22")
+
+[node name="Panel" type="Panel" parent="Bottom Info" unique_id=746712125]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ab75l")
+
+[node name="WaveLabel" type="Label" parent="Bottom Info/Panel" unique_id=1862688754]
+layout_mode = 0
+offset_left = 62.0
+offset_top = -800.0
+offset_right = 220.0
+offset_bottom = -677.0
+theme_override_font_sizes/font_size = 40
+text = "0
+"
+
+[node name="ShopToggleButton" type="Button" parent="Bottom Info/Panel" unique_id=877740320]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 0
+offset_left = 1644.0
+offset_top = -47.0
+offset_right = 1860.0
+offset_bottom = -16.0
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_styles/normal = ExtResource("23_a140x")
+theme_override_styles/pressed = ExtResource("23_a140x")
+theme_override_styles/hover = ExtResource("23_a140x")
+text = "Shop Toggle ( Sandbox )
+"
+
+[node name="Label" type="Label" parent="Bottom Info/Panel" unique_id=314089823]
+layout_mode = 0
+offset_left = 26.0
+offset_top = -861.0
+offset_right = 154.0
+offset_bottom = -801.0
+theme_override_font_sizes/font_size = 60
+text = "Wave"
+
+[node name="Tower Info" type="Control" parent="." unique_id=1565339918]
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -200.0
+offset_right = -340.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("23")
+
+[node name="Panel" type="Panel" parent="Tower Info" unique_id=26319601]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_a140x")
+
+[node name="UpgradeButton" parent="Tower Info/Panel" unique_id=2035069362 instance=ExtResource("24")]
+visible = false
+layout_mode = 0
+offset_left = 1308.0
+offset_top = 48.0
+offset_right = 1506.0
+offset_bottom = 147.0
+
+[node name="TowerNameLabel" type="Label" parent="Tower Info/Panel" unique_id=2146250105]
+layout_mode = 0
+offset_left = 828.0
+offset_top = 30.0
+offset_right = 1025.0
+offset_bottom = 76.0
+theme_override_font_sizes/font_size = 35
+text = "Tower Name"
+
+[node name="DamageLabel" type="Label" parent="Tower Info/Panel" unique_id=499736668]
+layout_mode = 0
+offset_left = 809.0
+offset_top = 99.0
+offset_right = 965.0
+offset_bottom = 130.0
+theme_override_font_sizes/font_size = 30
+text = "Damage delt"
+
+[node name="PrevButton" type="Button" parent="Tower Info/Panel" unique_id=1041651399]
+layout_mode = 0
+offset_left = 595.0
+offset_top = 34.0
+offset_right = 609.0
+offset_bottom = 58.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_6pkdi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rn366")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lk1kj")
+text = "<"
+
+[node name="FocusModeLabel" type="Label" parent="Tower Info/Panel" unique_id=1112723561]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 0
+offset_left = 596.0
+offset_top = 31.0
+offset_right = 750.0
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 30
+text = "First"
+horizontal_alignment = 1
+
+[node name="NextButton" type="Button" parent="Tower Info/Panel" unique_id=53421953]
+layout_mode = 0
+offset_left = 736.0
+offset_top = 34.0
+offset_right = 751.0
+offset_bottom = 58.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_k0g1d")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ii61m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8heaq")
+text = ">"
+
+[node name="SellButton" type="Button" parent="Tower Info/Panel" unique_id=1582234103]
+layout_mode = 0
+offset_left = 595.0
+offset_top = 94.0
+offset_right = 752.0
+offset_bottom = 132.0
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = ExtResource("23_a140x")
+theme_override_styles/pressed = ExtResource("23_a140x")
+theme_override_styles/hover = ExtResource("23_a140x")
+text = "Sell
+"
+
+[node name="TowerPreview" type="TextureRect" parent="Tower Info/Panel" unique_id=1329412007]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1088.0
+offset_top = 24.0
+offset_right = 1227.0
+offset_bottom = 164.0
+texture = ExtResource("25_lckyj")
+expand_mode = 1
+
+[node name="UpgradeToolTip" type="Control" parent="Tower Info" unique_id=1150788687]
+visible = false
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -293.0
+offset_top = -140.0
+offset_right = -64.0
+offset_bottom = -14.0
+grow_horizontal = 0
+
+[node name="Panel" type="Panel" parent="Tower Info/UpgradeToolTip" unique_id=434065576]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -5.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_lckyj")
+
+[node name="Label" type="Label" parent="Tower Info/UpgradeToolTip" unique_id=1690684678]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -5.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="CornetLeft" type="Panel" parent="." unique_id=1377696900]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 863.0
+offset_right = -1500.0
+offset_bottom = -199.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_dmdch")
+
+[node name="CornetRight" type="Panel" parent="." unique_id=1690809720]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1162.0
+offset_top = 863.0
+offset_right = -338.0
+offset_bottom = -199.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_o33ym")
+
+[node name="CornerTowerShop" type="Panel" parent="." unique_id=1787359724]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1564.0
+offset_top = 864.0
+offset_right = 64.0
+offset_bottom = -198.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.5707964
+theme_override_styles/panel = SubResource("StyleBoxFlat_2icsh")
+
+[node name="VersionLabel" type="Label" parent="." unique_id=334075691]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 1064.0
+offset_right = 42.0
+offset_bottom = 1080.0
+text = "v0.3.4"
+
+[node name="FrameLeft" type="Panel" parent="." unique_id=426199276]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 864.0
+offset_right = -1055.9209
+offset_bottom = -198.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.5707964
+theme_override_styles/panel = SubResource("StyleBoxFlat_abh7g")
+
+[node name="FrameTop" type="Panel" parent="." unique_id=1650853523]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1582.1931
+offset_top = 17.999939
+offset_right = 1226.4653
+offset_bottom = -1044.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -3.1415927
+theme_override_styles/panel = SubResource("StyleBoxFlat_abh7g")
+
+[node name="UpgradeMenuLabel" type="Label" parent="." unique_id=848546751]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 889.0
+offset_right = 421.0
+offset_bottom = 955.0
+theme_override_font_sizes/font_size = 65
+text = "Upgrade Menu"
+
+[node name="MyszBasic" type="Sprite2D" parent="." unique_id=1386780040]
+position = Vector2(47.000004, 1070.0001)
+rotation = -3.5691984
+scale = Vector2(0.28576204, 0.293396)
+texture = ExtResource("27_vr1to")
+
+[connection signal="pressed" from="Game UI/Panel/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button2" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button3" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button4" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button5" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button6" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button7" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button8" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button9" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button10" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button11" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button12" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button13" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/CamoToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button14" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button2" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button3" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button4" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button5" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button6" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button7" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button8" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button9" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button10" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button11" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button12" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button13" method="_update_visuals"]
+[connection signal="toggled" from="Enemy Shop/Panel/VBoxContainer/HBoxContainer/RegenToggle" to="Enemy Shop/Panel/VBoxContainer/GridContainer/Enemy Button14" method="_update_visuals"]

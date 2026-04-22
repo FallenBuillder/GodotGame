@@ -1,0 +1,70 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Nowy projekt gry"
+run/main_scene="uid://jyd6x5e2p7e0"
+config/features=PackedStringArray("4.6", "Forward Plus")
+
+[autoload]
+
+GameManager="*uid://c7xjnp7hyl6h4"
+WaveManager="*uid://7n2pgs7v4ska"
+SettingsManager="*uid://b4ikp3bcy10c"
+ScreenManager="*uid://xn5m1y0fu2pj"
+ProgressManager="*uid://ccj85gsi852mx"
+CollectionData="*uid://c4aoha58r2mg3"
+PlacementManager="*uid://di455vn5brsuv"
+SoundManager="*uid://d4nmy8rsj73ho"
+FadeManager="*uid://cfh1d6qs0tp5x"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_width"
+
+[editor_overrides]
+
+text_editor/behavior/indent/type=1
+
+[gui]
+
+theme/custom_font="uid://c87wlgt4m1kgk"
+
+[input]
+
+fast_forward_3x={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":49,"key_label":0,"unicode":49,"location":0,"echo":false,"script":null)
+]
+}
+fast_forward_6x={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":50,"key_label":0,"unicode":50,"location":0,"echo":false,"script":null)
+]
+}
+super_fast_forward_12x={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":51,"key_label":0,"unicode":51,"location":0,"echo":false,"script":null)
+]
+}
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"

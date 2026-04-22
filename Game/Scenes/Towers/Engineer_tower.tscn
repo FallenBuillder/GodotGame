@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://catc1pdroxyx2"]
+
+[ext_resource type="Script" uid="uid://ducefwdeb4jrl" path="res://Game/Scripts/Towers/engineer_tower.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://d32cleqi85msr" path="res://Game/Scenes/Projectiles/Engineer_tower.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://cknhd51i8fdus" path="res://Game/Graphics/Towers/Tower/WiezaInzynierLVL1Spo.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dib6exq8vfgns" path="res://Game/Graphics/Towers/Tower/WiezaInzynierLVL1ATK.png" id="4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i8wrt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4")
+}],
+"loop": false,
+"name": &"shoot",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tb7mp"]
+radius = 79.15807
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iepj5"]
+
+[node name="Tower" type="Node2D" unique_id=1376173315]
+script = ExtResource("1")
+nail_scene = ExtResource("2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=330176808]
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_i8wrt")
+animation = &"shoot"
+autoplay = "idle"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=268038414]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1496828702]
+shape = SubResource("CircleShape2D_tb7mp")
+
+[node name="ClickArea" type="Area2D" parent="." unique_id=319618098]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea" unique_id=712842676]
+scale = Vector2(1.5, 1.5)
+shape = SubResource("RectangleShape2D_iepj5")

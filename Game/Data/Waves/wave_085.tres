@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://d3kbchpkie60j"]
+
+[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1"]
+[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2"]
+
+[sub_resource type="Resource" id="Resource_yy4ht"]
+script = ExtResource("1")
+enemy_id = 14
+end = 0.0
+
+[resource]
+script = ExtResource("2")
+groups = [SubResource("Resource_yy4ht")]

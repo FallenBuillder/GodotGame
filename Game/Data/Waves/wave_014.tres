@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://dtmtnw35pi6os"]
+
+[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1"]
+[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2"]
+
+[sub_resource type="Resource" id="Resource_uyyln"]
+script = ExtResource("1")
+count = 18
+end = 9.707
+
+[sub_resource type="Resource" id="Resource_npg1e"]
+script = ExtResource("1")
+enemy_id = 2
+count = 5
+start = 2.855
+end = 3.975
+
+[sub_resource type="Resource" id="Resource_ko7va"]
+script = ExtResource("1")
+enemy_id = 3
+count = 5
+start = 5.71
+end = 6.83
+
+[sub_resource type="Resource" id="Resource_7ufow"]
+script = ExtResource("1")
+enemy_id = 4
+count = 4
+start = 8.565
+end = 9.515
+
+[sub_resource type="Resource" id="Resource_hnm1o"]
+script = ExtResource("1")
+count = 31
+start = 9.5
+end = 26.63
+
+[sub_resource type="Resource" id="Resource_5kjpl"]
+script = ExtResource("1")
+enemy_id = 2
+count = 10
+start = 15.9625
+end = 17.35
+
+[sub_resource type="Resource" id="Resource_qej74"]
+script = ExtResource("1")
+enemy_id = 3
+count = 5
+start = 19.8375
+end = 21.225
+
+[sub_resource type="Resource" id="Resource_204ou"]
+script = ExtResource("1")
+enemy_id = 4
+count = 5
+start = 23.708
+end = 25.262
+
+[resource]
+script = ExtResource("2")
+groups = [SubResource("Resource_uyyln"), SubResource("Resource_npg1e"), SubResource("Resource_ko7va"), SubResource("Resource_7ufow"), SubResource("Resource_hnm1o"), SubResource("Resource_5kjpl"), SubResource("Resource_qej74"), SubResource("Resource_204ou")]

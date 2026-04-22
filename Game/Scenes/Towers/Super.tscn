@@ -1,0 +1,269 @@
+[gd_scene format=3 uid="uid://qrprcsph2rgg"]
+
+[ext_resource type="Script" uid="uid://7w8crscepu3h" path="res://Game/Scripts/Towers/tower.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://c0qskk5ivm6yn" path="res://Game/Scenes/Projectiles/Basic.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://du5tcr8tt17is" path="res://Game/Graphics/Towers/Super/SuperMyszUpgrade1.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://wx58wvd5cie" path="res://Game/Graphics/Towers/Super/KartaSuperMysz.png" id="3_b8g0o"]
+[ext_resource type="Texture2D" uid="uid://cikyd2ruiw1si" path="res://Game/Graphics/Towers/Super/SuperMyszLVL1.5Spo.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://c2k3cpjr6c8ii" path="res://Game/Graphics/Towers/Super/SuperMyszLVL1.5ATK.png" id="5"]
+[ext_resource type="PackedScene" uid="uid://b0w46ec4gb2sb" path="res://Game/Scenes/Projectiles/Super_1.tscn" id="5_uliam"]
+[ext_resource type="Script" uid="uid://8wddbevg57e2" path="res://Game/Scripts/Data/TowerUpgradeData.gd" id="6"]
+[ext_resource type="Script" uid="uid://lbyvro0ekv6l" path="res://Game/Scripts/Data/StatChange.gd" id="7"]
+[ext_resource type="Texture2D" uid="uid://vlqj755wh63t" path="res://Game/Graphics/Towers/Super/SuperMyszUpgrade2.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bongcgubllgrr" path="res://Game/Graphics/Towers/Super/SuperMyszLVL2Spo.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://o70s2w67spi0" path="res://Game/Graphics/Towers/Super/SuperMyszLVL2ATK.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://bu2bvs8buc5e" path="res://Game/Graphics/Towers/Super/SuperMyszUpgrade3.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://dufvjmbkmcyb1" path="res://Game/Graphics/Towers/Super/SuperMyszLVL3Spo.png" id="13"]
+[ext_resource type="PackedScene" uid="uid://do0jlt3mnsbil" path="res://Game/Scenes/Projectiles/Super_3.tscn" id="13_uliam"]
+[ext_resource type="Texture2D" uid="uid://67fb4ibb2g88" path="res://Game/Graphics/Towers/Super/SuperMyszLVL3ATK.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://bfus1ed7hstiq" path="res://Game/Graphics/Towers/Super/SuperMyszUpgrade4.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bu1sn7poqt8th" path="res://Game/Graphics/Towers/Super/SuperMyszLVL4Spo.png" id="17"]
+[ext_resource type="PackedScene" uid="uid://b1godvdnkmx22" path="res://Game/Scenes/Projectiles/Super_4.tscn" id="17_b8g0o"]
+[ext_resource type="Texture2D" uid="uid://wrx40lfivtpb" path="res://Game/Graphics/Towers/Super/SuperMyszLVL4ATK.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://bedgrx7d5ak6h" path="res://Game/Graphics/Towers/Super/SuperMyszLVL1Spo.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://c2p2l88asaw5e" path="res://Game/Graphics/Towers/Super/SuperMyszLVL1ATK.png" id="20"]
+
+[sub_resource type="Resource" id="Resource_r7aub"]
+script = ExtResource("7")
+stat = "range"
+value = 100.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_3lvju"]
+script = ExtResource("7")
+stat = "camo"
+mode = 1
+value = 1.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_8jhcb"]
+script = ExtResource("7")
+stat = "pierce"
+value = 1.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_pe3pp"]
+script = ExtResource("6")
+upgrade_name = "Super Range"
+icon = ExtResource("3")
+cost = 1275
+description = "Super Mouse gains 100 range , 1 pierce , ability to see camo"
+new_bullet_scene = ExtResource("5_uliam")
+new_tower_sprite_idle = ExtResource("4")
+new_tower_sprite_shoot = ExtResource("5")
+stat_changes = Array[ExtResource("7")]([SubResource("Resource_r7aub"), SubResource("Resource_3lvju"), SubResource("Resource_8jhcb")])
+metadata/_custom_type_script = "uid://8wddbevg57e2"
+
+[sub_resource type="Resource" id="Resource_nqtat"]
+script = ExtResource("7")
+stat = "pierce"
+value = 1.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_mptpb"]
+script = ExtResource("7")
+stat = "projectile_speed"
+mode = 1
+value = 600.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_afcho"]
+script = ExtResource("7")
+stat = "tavel_distance"
+value = 38.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_4ttu4"]
+script = ExtResource("7")
+stat = "range"
+value = 20.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_qpdq7"]
+script = ExtResource("6")
+upgrade_name = "fast strikes"
+icon = ExtResource("8")
+cost = 1615
+description = "SuperMouse gains additional 20 range , 1 pierce , proejctile speed is increased"
+new_bullet_scene = ExtResource("5_uliam")
+new_tower_sprite_idle = ExtResource("9")
+new_tower_sprite_shoot = ExtResource("10")
+stat_changes = Array[ExtResource("7")]([SubResource("Resource_nqtat"), SubResource("Resource_mptpb"), SubResource("Resource_afcho"), SubResource("Resource_4ttu4")])
+metadata/_custom_type_script = "uid://8wddbevg57e2"
+
+[sub_resource type="Resource" id="Resource_81r1y"]
+script = ExtResource("7")
+stat = "damage"
+mode = 1
+value = 10.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_3p7xd"]
+script = ExtResource("7")
+stat = "fire_rate"
+mode = 1
+value = 0.08
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_1g68p"]
+script = ExtResource("7")
+stat = "projectile_speed"
+mode = 1
+value = 700.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_nrbk3"]
+script = ExtResource("7")
+stat = "crit_shots"
+mode = 1
+value = 10.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_fmjws"]
+script = ExtResource("7")
+stat = "crit_damage"
+mode = 1
+value = 25.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_uliam"]
+script = ExtResource("7")
+stat = "lead"
+value = 1.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_g0k5a"]
+script = ExtResource("6")
+upgrade_name = "Mouse Hero"
+icon = ExtResource("11")
+cost = 6375
+description = "Super Mouse turns into a hero delivering heavy damage , crit shots , high speed"
+new_bullet_scene = ExtResource("13_uliam")
+new_tower_sprite_idle = ExtResource("13")
+new_tower_sprite_shoot = ExtResource("14")
+stat_changes = Array[ExtResource("7")]([SubResource("Resource_81r1y"), SubResource("Resource_3p7xd"), SubResource("Resource_1g68p"), SubResource("Resource_nrbk3"), SubResource("Resource_fmjws"), SubResource("Resource_uliam")])
+metadata/_custom_type_script = "uid://8wddbevg57e2"
+
+[sub_resource type="Resource" id="Resource_bcgmw"]
+script = ExtResource("7")
+stat = "fire_rate"
+mode = 1
+value = 0.03
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_12vme"]
+script = ExtResource("7")
+stat = "damage"
+mode = 1
+value = 100.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_fgdp8"]
+script = ExtResource("7")
+stat = "crit_damage"
+mode = 1
+value = 200.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_v5tjb"]
+script = ExtResource("7")
+stat = "pierce"
+mode = 1
+value = 100.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_n7yv8"]
+script = ExtResource("7")
+stat = "range"
+value = 75.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_jmcn6"]
+script = ExtResource("7")
+stat = "crit_shot"
+mode = 1
+value = 2.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_pwbd2"]
+script = ExtResource("7")
+stat = "frozen"
+mode = 1
+value = 1.0
+metadata/_custom_type_script = "uid://lbyvro0ekv6l"
+
+[sub_resource type="Resource" id="Resource_g6gl5"]
+script = ExtResource("6")
+upgrade_name = "Mouse Inihilator"
+icon = ExtResource("15")
+cost = 49999
+description = "Mouse Hero turns into an absolute Inihilator that can destroy any foe with ease"
+new_bullet_scene = ExtResource("17_b8g0o")
+new_tower_sprite_idle = ExtResource("17")
+new_tower_sprite_shoot = ExtResource("18")
+stat_changes = Array[ExtResource("7")]([SubResource("Resource_bcgmw"), SubResource("Resource_12vme"), SubResource("Resource_fgdp8"), SubResource("Resource_v5tjb"), SubResource("Resource_n7yv8"), SubResource("Resource_jmcn6"), SubResource("Resource_pwbd2")])
+metadata/_custom_type_script = "uid://8wddbevg57e2"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g7l84"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20")
+}],
+"loop": false,
+"name": &"shoot",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tb7mp"]
+radius = 79.15807
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y3h2v"]
+radius = 19.0
+
+[node name="Tower" type="Node2D" unique_id=1376173315]
+texture_filter = 1
+script = ExtResource("1")
+detection_range = 250.0
+tower_name = "Super Mouse"
+tower_id = 8
+unlocked = true
+fire_rate = 0.12
+damage = 1
+pierce = 3
+projectile_speed = 600
+cost = 2000
+bullet_scene = ExtResource("2")
+display_image_scene = ExtResource("3_b8g0o")
+upgrades = Array[ExtResource("6")]([SubResource("Resource_pe3pp"), SubResource("Resource_qpdq7"), SubResource("Resource_g0k5a"), SubResource("Resource_g6gl5")])
+max_projectile_travel_distance = 225.0
+crit_damage = 0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=198514786]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_g7l84")
+animation = &"idle"
+autoplay = "idle"
+offset = Vector2(-2.535, -3)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=268038414]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1496828702]
+shape = SubResource("CircleShape2D_tb7mp")
+
+[node name="ClickArea" type="Area2D" parent="." unique_id=319618098]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea" unique_id=712842676]
+position = Vector2(-3, -4)
+scale = Vector2(1.5, 1.5)
+shape = SubResource("CircleShape2D_y3h2v")

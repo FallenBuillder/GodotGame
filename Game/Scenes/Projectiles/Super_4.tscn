@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b1godvdnkmx22"]
+
+[ext_resource type="Script" uid="uid://b8kjs3wurgqrj" path="res://Game/Scripts/Projectiles/bullet.gd" id="1_cgpqi"]
+[ext_resource type="Texture2D" uid="uid://b4ct2lntso4cu" path="res://Game/Graphics/Projectiles/Super/AtakSuperMyszyDuży.png" id="2_cgpqi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1db5a"]
+radius = 9.055386
+
+[node name="Bullet" type="Area2D" unique_id=1583972615]
+script = ExtResource("1_cgpqi")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1134165799]
+position = Vector2(2.2851565, 1.783001)
+scale = Vector2(1.0703125, 1.0564063)
+texture = ExtResource("2_cgpqi")
+offset = Vector2(-0.5, 0.39)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=998652334]
+shape = SubResource("CircleShape2D_1db5a")

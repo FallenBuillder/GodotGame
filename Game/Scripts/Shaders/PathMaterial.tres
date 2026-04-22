@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cckc4iamam7v7"]
+
+[ext_resource type="Shader" uid="uid://ihfl6iiqa5xj" path="res://Game/Scripts/Shaders/level.gdshader" id="1"]
+[ext_resource type="Texture2D" uid="uid://g0xqqh7w2dc1" path="res://Game/Graphics/TileMap/Texture_path.png" id="2"]
+
+[resource]
+shader = ExtResource("1")
+shader_parameter/overlay_tex = ExtResource("2")
+shader_parameter/scale = 0.00390625

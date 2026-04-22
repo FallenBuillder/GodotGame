@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="WaveData" format=3 uid="uid://cus1hhhurqvo3"]
+
+[ext_resource type="Script" uid="uid://x85jf0st2xum" path="res://Game/Scripts/Data/WaveGroupData.gd" id="1"]
+[ext_resource type="Script" uid="uid://dpjn1hsle6f80" path="res://Game/Scripts/Data/WaveData.gd" id="2"]
+
+[sub_resource type="Resource" id="Resource_coalh"]
+script = ExtResource("1")
+enemy_id = 13
+end = 0.0
+
+[sub_resource type="Resource" id="Resource_qtx7m"]
+script = ExtResource("1")
+enemy_id = 9
+count = 14
+start = 0.571
+end = 8.001
+
+[sub_resource type="Resource" id="Resource_ox7cs"]
+script = ExtResource("1")
+enemy_id = 12
+count = 2
+start = 8.565
+end = 9.136
+
+[sub_resource type="Resource" id="Resource_vgydv"]
+script = ExtResource("1")
+enemy_id = 13
+start = 9.71
+end = 9.71
+
+[sub_resource type="Resource" id="Resource_fg23i"]
+script = ExtResource("1")
+enemy_id = 9
+count = 14
+start = 10.278
+end = 17.708
+
+[sub_resource type="Resource" id="Resource_db1qc"]
+script = ExtResource("1")
+enemy_id = 12
+count = 2
+start = 18.272
+end = 18.843
+
+[sub_resource type="Resource" id="Resource_s64a5"]
+script = ExtResource("1")
+enemy_id = 13
+start = 22.4875
+end = 22.4875
+
+[resource]
+script = ExtResource("2")
+groups = [SubResource("Resource_coalh"), SubResource("Resource_qtx7m"), SubResource("Resource_ox7cs"), SubResource("Resource_vgydv"), SubResource("Resource_fg23i"), SubResource("Resource_db1qc"), SubResource("Resource_s64a5")]

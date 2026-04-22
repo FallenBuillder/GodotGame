@@ -1,0 +1,43 @@
+GDRE Tools v2.5.0-beta.5
+Windows 10.0.26200, NVIDIA GeForce RTX 4070 SUPER, vulkan
+WARNING: EXE does not have an embedded pck, not loading ~/\Desktop\Test1.console.exe
+   at: GDRESettings::sort_and_validate_pck_files (modules\gdsdecomp\utility\gdre_settings.cpp:606)
+ERROR: No valid paths provided!
+   at: GDRESettings::load_project (modules\gdsdecomp\utility\gdre_settings.cpp:726)
+GDRE Tools v2.5.0-beta.5
+Windows 10.0.26200, NVIDIA GeForce RTX 4070 SUPER, vulkan
+Opening file: ~/\Desktop\Test1.exe
+WARNING: Duplicate IDs found in cache:
+  uid://b2r7e18bt7rhi -> res://Game/Graphics/Temp/sound2.png
+    Replacing with: res://Game/Graphics/Temp/Bez nazwy.png
+   at: GDRESettings::load_pack_uid_cache (modules\gdsdecomp\utility\gdre_settings.cpp:1999)
+Loaded 396 imported files
+Detected Engine Version: 4.6.0
+Detected Bytecode Revision: 4.5.0-stable (ebc36a7)
+Verified 797 files, no errors detected!
+Extracted 797 files, no errors detected!
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     45
+Failed scripts:                         0
+Imported resources for export session:  396
+Successfully converted:                 396
+Lossy:                                  0
+Rewrote metadata:                       199
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.6.0 to edit the project.
+
+*******************************************************************************
+
