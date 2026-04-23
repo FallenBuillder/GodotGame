@@ -18,10 +18,14 @@ Special Thanks for
 # Installation
 
 1. Clone the repository
+   
 git clone https://github.com/FallenBuillder/GodotGame
-2. Install Godot
+2. Install the Godot engine
+
 https://godotengine.org/
+
 3. Import a new project and select the repository as the source
+   
 4. upon opening GDscript export the game to your desire and enjoy your .exe file !
 
 
