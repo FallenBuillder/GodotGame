@@ -13,10 +13,6 @@ Mice Kingdom Defense is a Tower Defense game that simulates a strategic conflict
 
 The objective is straightforward: as the player, you deploy defensive towers to defeat waves of aggressive cheese enemies. You must progress through five distinct stages (plus a tutorial) to reach the final boss. Once the final boss is defeated, the game concludes with a congratulations screen and the project credits.
 
-## Special Thanks
-
-[Insert names/details here]
-
 ## Installation
 
 You can play the game by either running the pre-compiled executable or by importing the source code into the Godot Engine.
