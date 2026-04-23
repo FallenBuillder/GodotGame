@@ -1,48 +1,43 @@
-### Mice Kingdom Defense
+# Mice Kingdom Defense
 
-Mice Kingdom Defense ( as the title suggests ) is a Tower Defense game that acts as a simulation of a fight between mice and mutated cheese 
-The game is entirely made using GDscript and is only available for Windows users.
+Mice Kingdom Defense is a Tower Defense game that simulates a strategic conflict between a kingdom of mice and hordes of mutated cheese. The game is developed entirely using GDScript and is currently built for Windows platforms.
 
-Some of the game's features include:
-- a robust Tower solution consisting of a couple of well-made tower designs
-- a Wave system with 85 waves and a boss at the end of the most important ones like wave 85 which is the end of the game
-- a pretty good UI system with a bunch of features
+## Key Features
 
-# Goal:
+- **Robust Tower System:** Features a variety of well-balanced and uniquely designed tower types.
+- **Wave System:** Includes 85 challenging waves of enemies.
+- **Epic Boss Encounters:** Significant milestones feature boss fights, including a final confrontation at wave 85.
+- **Comprehensive UI:** A functional user interface system with a full suite of gameplay features.
 
-The goal of the game is pretty straight forward , you play as the "player" who has access to placing down Towers which will help you defeat the angry cheese enemies that come yout way. 
-Your Goal as a player is to make it past all 5 stages of the game ( without inclouding the tutorial ) and making it to the final one where you face off against the final boss , once the boss is defeated the game is virtually over and you will be greeted with a Congratulation Screen as well as credits
+## Gameplay Goal
 
-Special Thanks for 
+The objective is straightforward: as the player, you deploy defensive towers to defeat waves of aggressive cheese enemies. You must progress through five distinct stages (plus a tutorial) to reach the final boss. Once the final boss is defeated, the game concludes with a congratulations screen and the project credits.
 
-# Installation
+## Special Thanks
 
-You can either clone the entire repo and then import it to GDscript , export it ( i would recommend to delete the .exe , .console file then )
-or you can just copy the .exe file from here by just cloning a specific folder 
+[Insert names/details here]
 
+## Installation
 
+You can play the game by either running the pre-compiled executable or by importing the source code into the Godot Engine.
 
-1. clone the repository
+### Option 1: Running the Executable
 
-2. open the exe folder
+1. Clone the repository to your local machine.
+2. Navigate to the `exe` folder.
+3. Run the `.exe` file to start the game.
 
-3. run the exe file 
+### Option 2: Importing the Source Code
 
+If you wish to modify the game or export your own build:
 
-OR
+1. Clone the repository:
+   `git clone https://github.com/FallenBuillder/GodotGame`
 
+2. Download and install the Godot Engine:
+   [https://godotengine.org/](https://godotengine.org/)
 
-
-1. Clone the repository
-   
-git clone https://github.com/FallenBuillder/GodotGame
-
-2. Install the Godot engine
-
-https://godotengine.org/
-
-3. Import a new project and select the repository as the source
-   
-4. upon opening GDscript export the game to your desire and enjoy your .exe file !
+3. Open Godot, select "Import," and navigate to the cloned repository folder.
+4. Once the project is loaded, you can run it directly in the editor or use the Export menu to generate your own `.exe` file.
 
 
