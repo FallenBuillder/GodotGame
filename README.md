@@ -17,6 +17,22 @@ Special Thanks for
 
 # Installation
 
+You can either clone the entire repo and then import it to GDscript , export it ( i would recommend to delete the .exe , .console file then )
+or you can just copy the .exe file from here by just cloning a specific folder 
+
+
+
+1. clone the repository
+
+2. open the exe folder
+
+3. run the exe file 
+
+
+OR
+
+
+
 1. Clone the repository
    
 git clone https://github.com/FallenBuillder/GodotGame
@@ -27,6 +43,6 @@ https://godotengine.org/
 
 3. Import a new project and select the repository as the source
    
-5. upon opening GDscript export the game to your desire and enjoy your .exe file !
+4. upon opening GDscript export the game to your desire and enjoy your .exe file !
 
 
