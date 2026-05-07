@@ -1,7 +1,6 @@
 # Mice Kingdom Defense
 
 ![GDScript](https://img.shields.io/badge/GDScript-478CBF?logo=godot-engine&logoColor=white)
-![stars]
 [![Stars](https://img.shields.io/github/stars/FallenBuillder/Mice_Kingdom_Defense?style=flat)](https://github.com/FallenBuillder/Mice_Kingdom_Defense/stargazers)
 
 
