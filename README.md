@@ -6,8 +6,6 @@
 
 <strong>Mice Kingdom Defense is a Tower Defense game that simulates a strategic conflict between a kingdom of mice and hordes of mutated cheese. The game is developed entirely using GDScript and is currently built for Windows platforms.</strong>
 
-***
-
 <img width="1403" height="793" alt="image" src="https://github.com/user-attachments/assets/e5fb1b28-65d8-4697-bf95-3c9d0685cbf5" />
 
 ***
