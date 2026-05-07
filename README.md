@@ -2,7 +2,7 @@
 
 ![GDScript](https://img.shields.io/badge/GDScript-478CBF?logo=godot-engine&logoColor=white)
 [![GitHub Stars](https://img.shields.io/github/stars/FallenBuillder/Mice_Kingdom_Defense?style=social)](https://github.com/FallenBuillder/Mice_Kingdom_Defense/stargazers)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Mice Kingdom Defense is a Tower Defense game that simulates a strategic conflict between a kingdom of mice and hordes of mutated cheese. The game is developed entirely using GDScript and is currently built for Windows platforms.
 
